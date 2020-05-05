@@ -1,0 +1,3 @@
+[submodule "miniqmc"]
+	path = miniqmc
+	url = git://github.com/QMCPACK/miniqmc.git
