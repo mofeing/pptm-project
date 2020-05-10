@@ -5,12 +5,12 @@
  initial-mode="detail"
  type="paraver"
 >
-  <mpi enables="no">
-    <counters enables="yes" />
+  <mpi enabled="no">
+    <counters enabled="yes" />
   </mpi>
 
   <openmp enabled="yes" ompt="no">
-    <locks enabled="no" />
+    <locks enabled="yes" />
 		<taskloop enabled="no" />
     <counters enabled="yes" />
   </openmp>
@@ -22,16 +22,9 @@
   </callers>
 
   <counters enabled="yes">
-    <cpu enabled="yes" starting-set-distribution="cyclic">
+    <cpu enabled="yes" starting-set-distribution="1">
       <set enabled="yes" domain="all" changeat-time="0">
-        PAPI_TOT_INS,PAPI_TOT_CYC,PAPI_L1_DCM,PAPI_L2_DCM,PAPI_L3_TCM,PAPI_BR_INS,PAPI_BR_MSP
-      </set>
-      <set enabled="yes" domain="all" changeat-time="0">
-        PAPI_TOT_INS,PAPI_TOT_CYC,PAPI_SR_INS,PAPI_LD_INS,RESOURCE_STALLS,PAPI_L1_DCM,PAPI_L2_DCM,PAPI_BR_MSP
-        <sampling enabled="yes" period="10000000000">PAPI_TOT_CYC</sampling>
-      </set>
-      <set enabled="yes" domain="all" changeat-time="0">
-        PAPI_TOT_CYC,PAPI_RES_STL,PAPI_STL_CCY,PAPI_STL_ICY,PAPI_MEM_WCY,PAPI_DP_OPS,PAPI_VEC_SP,PAPI_VEC_DP
+        PAPI_TOT_INS,PAPI_TOT_CYC,PAPI_L1_DCM,PAPI_L2_DCM,PAPI_L3_TCM,PAPI_BR_INS,PAPI_BR_MSP,RESOURCE_STALLS
       </set>
     </cpu>
     <network enabled="no" />
@@ -39,29 +32,7 @@
     <memory-usage enabled="no" />
   </counters>
 
-  <storage enabled="no">
-    <trace-prefix enabled="yes">TRACE</trace-prefix>
-    <size enabled="no">5</size>
-    <temporal-directory enabled="yes">/scratch/tmp</temporal-directory>
-    <final-directory enabled="yes">/gpfs/scratch/pptm71/pptm71019</final-directory>
-  </storage>
-
   <sampling enabled="yes" type="virtual" period="100m" variability="10m" />
-
-  <user-functions enabled="no"
-    list="/home/pptm71/pptm71019/miniqmc/build/bin/miniqmc.dat"
-    exclude-automatic-functions="no">
-    <counters enabled="yes" />
-  </user-functions>
-
-  <dynamic-memory enabled="no">
-    <alloc enabled="yes" threshold="32768" />
-    <free enabled="no" />
-  </dynamic-memory>
-
-  <input-output enabled="no" />
-
-  <syscall enabled="no" />
 
   <buffer enabled="yes">
     <size enabled="yes">5000000</size>
