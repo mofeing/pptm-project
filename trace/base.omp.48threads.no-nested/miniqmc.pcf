@@ -1,0 +1,2607 @@
+DEFAULT_OPTIONS
+
+LEVEL               THREAD
+UNITS               NANOSEC
+LOOK_BACK           100
+SPEED               1
+FLAG_ICONS          ENABLED
+NUM_OF_STATE_COLORS 1000
+YMAX_SCALE          37
+
+
+DEFAULT_SEMANTIC
+
+THREAD_FUNC          State As Is
+
+
+STATES
+0    Idle
+1    Running
+2    Not created
+3    Waiting a message
+4    Blocking Send
+5    Synchronization
+6    Test/Probe
+7    Scheduling and Fork/Join
+8    Wait/WaitAll
+9    Blocked
+10    Immediate Send
+11    Immediate Receive
+12    I/O
+13    Group Communication
+14    Tracing Disabled
+15    Others
+16    Send Receive
+17    Memory transfer
+18    Profiling
+19    On-line analysis
+20    Remote memory access
+21    Atomic memory operation
+22    Memory ordering operation
+23    Distributed locking
+24    Overhead
+25    One-sided op
+26    Startup latency
+27    Waiting links
+28    Data copy
+29    RTT
+30    Allocating memory
+31    Freeing memory
+
+
+STATES_COLOR
+0    {117,195,255}
+1    {0,0,255}
+2    {255,255,255}
+3    {255,0,0}
+4    {255,0,174}
+5    {179,0,0}
+6    {0,255,0}
+7    {255,255,0}
+8    {235,0,0}
+9    {0,162,0}
+10    {255,0,255}
+11    {100,100,177}
+12    {172,174,41}
+13    {255,144,26}
+14    {2,255,177}
+15    {192,224,0}
+16    {66,66,66}
+17    {255,0,96}
+18    {169,169,169}
+19    {169,0,0}
+20    {0,109,255}
+21    {200,61,68}
+22    {200,66,0}
+23    {0,41,0}
+24    {139,121,177}
+25    {116,116,116}
+26    {200,50,89}
+27    {255,171,98}
+28    {0,68,189}
+29    {52,43,0}
+30    {255,46,0}
+31    {100,216,32}
+
+
+EVENT_TYPE
+0 60000001  Parallel (OMP)
+VALUES
+0 close
+1 DO (open)
+2 SECTIONS (open)
+3 REGION (open)
+
+EVENT_TYPE
+0    60000018    Executed OpenMP parallel function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 qmcplusp..eOrbital [qmcplusplus::BsplineAllocator<double, 64ul, qmcplusplus::Mallocator<double, 64ul> >::setCoefficientsForOneOrbital]
+4 std::mer..gen_rand [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand]
+5 std::gen..253ul> > [std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >]
+6 Array<do..erator() [Array<double, 3u>::operator()]
+7 std::mer..erator() [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()]
+8 L_main_3..op0_2_91 [L_main_379__par_loop0_2_91]
+9 std::__u.. 64ul> > [std::__uninitialized_default_n_a<double*, unsigned long, qmcplusplus::Mallocator<double, 64ul> >]
+10 std::all..<double> [std::allocator_traits<qmcplusplus::Mallocator<double, 64ul> >::_S_construct<double>]
+11 qmcplusp..4ul> > > [qmcplusplus::DTD_BConds<double, 3u, 39>::computeDistances<qmcplusplus::TinyVector<double, 3u>, qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> > >]
+12 qmcplusp..erator[] [qmcplusplus::TinyVector<double, 3u>::operator[]]
+13 std::__f..e, 3u> > [std::__fill_n_a<qmcplusplus::TinyVector<double, 3u>*, unsigned long, qmcplusplus::TinyVector<double, 3u> >]
+14 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_vgh<double>]
+15 qmcplusp..nyVector [qmcplusplus::TinyVector<double, 3u>::TinyVector]
+16 qmcplusp..erator[] [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::operator[]]
+17 qmcplusp..evaluate [qmcplusplus::einspline_spo<double>::evaluate]
+18 qmcplusp.. double> [qmcplusplus::simd::transpose<double, double>]
+19 qmcplusp..<double> [qmcplusplus::simd::dot<double>]
+20 qmcplusp..>::apply [qmcplusplus::OTBinary<double, qmcplusplus::TinyVector<double, 3u>, qmcplusplus::OpMultiply>::apply]
+21 _INTERNA..flag_64> [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_wait_template<kmp_flag_64>]
+22 qmcplusp..luateVGL [qmcplusplus::BsplineFunctor<double>::evaluateVGL]
+23 qmcplusp..ecompute [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::recompute]
+24 __kmp_x86_pause
+25 __kmp_yield
+26 L_main_4..op1_2_92 [L_main_408__par_loop1_2_92]
+27 qmcplusp..ceptMove [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+28 qmcplusp..r::start [qmcplusplus::NewTimer::start]
+29 qmcplusp..umulateG [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateG]
+30 qmcplusp.. >::data [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::data]
+31 qmcplusp..t::first [qmcplusplus::ParticleSet::first]
+32 qmcplusp.. double> [qmcplusplus::OpAddAssign::operator()<double, double>]
+33 std::__f.. double> [std::__fill_a<double*, double>]
+34 qmcplusp..ble, 3u> [qmcplusplus::simd::dot<double, 3u>]
+35 std::vec.. >::size [std::vector<qmcplusplus::DistanceTableData*, std::allocator<qmcplusplus::DistanceTableData*> >::size]
+36 qmcplusp.. double> [qmcplusplus::OpMultiply::operator()<double, double>]
+37 BLAS::gemm
+38 qmcplusp..e, 3u> > [qmcplusplus::simd::copy<qmcplusplus::TinyVector<double, 3u> >]
+39 std::__c..<double> [std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>]
+40 std::__f.. double> [std::__fill_n_a<double*, int, double>]
+41 qmcplusp.. double> [qmcplusplus::OpAdd::operator()<double, double>]
+42 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_v<double>]
+43 qmcplusp..valuateV [qmcplusplus::BsplineFunctor<double>::evaluateV]
+44 qmcplusp..n::ratio [qmcplusplus::WaveFunction::ratio]
+45 qmcplusp..>::ratio [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+46 qmcplusp..computeU [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+47 qmcplusp..er::stop [qmcplusplus::NewTimer::stop]
+48 _INTERNA..r_gather [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_gather]
+49 qmcplusp..omputeU3 [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+50 __kmp_ge..d_id_reg [__kmp_get_global_thread_id_reg]
+51 qmcplusp..<double> [qmcplusplus::spline2::computeLocationAndFractional<double>]
+52 qmcplusp..ble> > > [qmcplusplus::DelayedUpdate<double, double>::acceptRow<qmcplusplus::Vector<double, std::allocator<double> > >]
+53 std::les..erator() [std::less<qmcplusplus::StackKeyParam<2> >::operator()]
+54 __kmp_ap..parallel [__kmp_api_omp_in_parallel]
+55 qmcplusp..atioGrad [qmcplusplus::WaveFunction::ratioGrad]
+56 qmcplusp.. double> [qmcplusplus::spline2::getSplineBound<double, double>]
+57 qmcplusp..>::ratio [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+58 qmcplusp..>::ratio [qmcplusplus::DiracDeterminant<qmcplusplus::DelayedUpdate<double, double> >::ratio]
+59 qmcplusp..9>::move [qmcplusplus::DistanceTableBA<double, 3u, 39>::move]
+60 qmcplusp..et::last [qmcplusplus::ParticleSet::last]
+61 qmcplusp..>, void> [qmcplusplus::Vector<int, std::allocator<int> >::operator[]<std::allocator<int>, void>]
+62 qmcplusp..TotalNum [qmcplusplus::ParticleSet::getTotalNum]
+63 __kmp_ap..et_level [__kmp_api_omp_get_level]
+64 qmcplusp..atioGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratioGrad]
+65 std::vec.. >::data [std::vector<double, qmcplusplus::Mallocator<double, 64ul> >::data]
+66 qmcplusp..makeMove [qmcplusplus::ParticleSet::makeMove]
+67 qmcplusp..evalGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::evalGrad]
+68 qmcplusp..evalGrad [qmcplusplus::WaveFunction::evalGrad]
+69 __kmp_ge..read_num [__kmp_get_ancestor_thread_num]
+70 qmcplusp..efactors [qmcplusplus::MultiBsplineData<double>::compute_prefactors]
+71 qmcplusp.. >::size [qmcplusplus::Vector<double, std::allocator<double> >::size]
+72 qmcplusp..<double> [qmcplusplus::CrystalLattice<double, 3u, false>::toUnit_floor<double>]
+73 _INTERNA.._release [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_release]
+74 qmcplusp..perator< [qmcplusplus::StackKeyParam<2>::operator<]
+75 qmcplusp..ceptMove [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+76 qmcplusp.. double> [qmcplusplus::simd::accumulate_n<double, double>]
+77 qmcplusp..mulateGL [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateGL]
+78 qmcplusp..omputeU3 [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+79 qmcplusp..jectMove [qmcplusplus::ParticleSet::rejectMove]
+80 qmcplusp..>, void> [qmcplusplus::Vector<qmcplusplus::TinyVector<double, 3u>, std::allocator<qmcplusplus::TinyVector<double, 3u> > >::operator[]<std::allocator<qmcplusplus::TinyVector<double, 3u> >, void>]
+81 qmcplusp..9>::move [qmcplusplus::DistanceTableAA<double, 3u, 39>::move]
+82 qmcplusp..computeU [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+83 L_main_5..op2_2_94 [L_main_503__par_loop2_2_94]
+
+
+EVENT_TYPE
+0    60000118    Executed OpenMP parallel function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 174 (BsplineA..ator.hpp) [174 (BsplineAllocator.hpp, miniqmc)]
+4 236 (BsplineFunctor.h, miniqmc)
+5 238 (BsplineFunctor.h, miniqmc)
+6 240 (BsplineFunctor.h, miniqmc)
+7 241 (BsplineFunctor.h, miniqmc)
+8 244 (BsplineFunctor.h, miniqmc)
+9 246 (BsplineFunctor.h, miniqmc)
+10 250 (BsplineFunctor.h, miniqmc)
+11 256 (BsplineFunctor.h, miniqmc)
+12 257 (BsplineFunctor.h, miniqmc)
+13 258 (BsplineFunctor.h, miniqmc)
+14 259 (BsplineFunctor.h, miniqmc)
+15 260 (BsplineFunctor.h, miniqmc)
+16 286 (BsplineFunctor.h, miniqmc)
+17 291 (BsplineFunctor.h, miniqmc)
+18 293 (BsplineFunctor.h, miniqmc)
+19 294 (BsplineFunctor.h, miniqmc)
+20 297 (BsplineFunctor.h, miniqmc)
+21 298 (BsplineFunctor.h, miniqmc)
+22 305 (BsplineFunctor.h, miniqmc)
+23 309 (BsplineFunctor.h, miniqmc)
+24 311 (BsplineFunctor.h, miniqmc)
+25 321 (BsplineFunctor.h, miniqmc)
+26 324 (BsplineFunctor.h, miniqmc)
+27 325 (BsplineFunctor.h, miniqmc)
+28 327 (BsplineFunctor.h, miniqmc)
+29 334 (BsplineFunctor.h, miniqmc)
+30 336 (BsplineFunctor.h, miniqmc)
+31 194 (CrystalLattice.h, miniqmc)
+32 138 (DelayedUpdate.h, miniqmc)
+33 195 (DiracDet..nant.cpp) [195 (DiracDeterminant.cpp, miniqmc)]
+34 101 (DistanceTableAA.h, miniqmc)
+35 97 (DistanceTableBA.h, miniqmc)
+36 58 (MultiBspline.hpp, miniqmc)
+37 59 (MultiBspline.hpp, miniqmc)
+38 60 (MultiBspline.hpp, miniqmc)
+39 61 (MultiBspline.hpp, miniqmc)
+40 174 (MultiBspline.hpp, miniqmc)
+41 195 (MultiBspline.hpp, miniqmc)
+42 233 (MultiBspline.hpp, miniqmc)
+43 235 (MultiBspline.hpp, miniqmc)
+44 236 (MultiBspline.hpp, miniqmc)
+45 237 (MultiBspline.hpp, miniqmc)
+46 238 (MultiBspline.hpp, miniqmc)
+47 240 (MultiBspline.hpp, miniqmc)
+48 241 (MultiBspline.hpp, miniqmc)
+49 242 (MultiBspline.hpp, miniqmc)
+50 244 (MultiBspline.hpp, miniqmc)
+51 245 (MultiBspline.hpp, miniqmc)
+52 246 (MultiBspline.hpp, miniqmc)
+53 247 (MultiBspline.hpp, miniqmc)
+54 248 (MultiBspline.hpp, miniqmc)
+55 249 (MultiBspline.hpp, miniqmc)
+56 250 (MultiBspline.hpp, miniqmc)
+57 251 (MultiBspline.hpp, miniqmc)
+58 252 (MultiBspline.hpp, miniqmc)
+59 253 (MultiBspline.hpp, miniqmc)
+60 258 (MultiBspline.hpp, miniqmc)
+61 268 (MultiBspline.hpp, miniqmc)
+62 271 (MultiBspline.hpp, miniqmc)
+63 272 (MultiBspline.hpp, miniqmc)
+64 274 (MultiBspline.hpp, miniqmc)
+65 275 (MultiBspline.hpp, miniqmc)
+66 276 (MultiBspline.hpp, miniqmc)
+67 277 (MultiBspline.hpp, miniqmc)
+68 278 (MultiBspline.hpp, miniqmc)
+69 57 (MultiBsp..Data.hpp) [57 (MultiBsplineData.hpp, miniqmc)]
+70 71 (MultiBsp..Data.hpp) [71 (MultiBsplineData.hpp, miniqmc)]
+71 55 (MultiBsp..lper.hpp) [55 (MultiBsplineEvalHelper.hpp, miniqmc)]
+72 81 (MultiBsp..lper.hpp) [81 (MultiBsplineEvalHelper.hpp, miniqmc)]
+73 106 (MultiBsp..lper.hpp) [106 (MultiBsplineEvalHelper.hpp, miniqmc)]
+74 215 (NewTimer.h, miniqmc)
+75 354 (NewTimer.h, miniqmc)
+76 363 (NewTimer.h, miniqmc)
+77 364 (NewTimer.h, miniqmc)
+78 365 (NewTimer.h, miniqmc)
+79 400 (NewTimer.h, miniqmc)
+80 411 (NewTimer.h, miniqmc)
+81 156 (OhmmsArray.h, miniqmc)
+82 234 (OhmmsBlas.h, miniqmc)
+83 120 (OhmmsVector.h, miniqmc)
+84 170 (OhmmsVector.h, miniqmc)
+85 176 (OhmmsVector.h, miniqmc)
+86 130 (OneBodyJastrow.h, miniqmc)
+87 131 (OneBodyJastrow.h, miniqmc)
+88 145 (OneBodyJastrow.h, miniqmc)
+89 192 (OneBodyJastrow.h, miniqmc)
+90 218 (OneBodyJastrow.h, miniqmc)
+91 251 (OneBodyJastrow.h, miniqmc)
+92 267 (OneBodyJastrow.h, miniqmc)
+93 279 (OneBodyJastrow.h, miniqmc)
+94 43 (OperatorTags.h, miniqmc)
+95 63 (OperatorTags.h, miniqmc)
+96 94 (OperatorTags.h, miniqmc)
+97 184 (ParticleBConds.h, miniqmc)
+98 186 (ParticleBConds.h, miniqmc)
+99 187 (ParticleBConds.h, miniqmc)
+100 188 (ParticleBConds.h, miniqmc)
+101 189 (ParticleBConds.h, miniqmc)
+102 191 (ParticleBConds.h, miniqmc)
+103 192 (ParticleBConds.h, miniqmc)
+104 193 (ParticleBConds.h, miniqmc)
+105 195 (ParticleBConds.h, miniqmc)
+106 196 (ParticleBConds.h, miniqmc)
+107 197 (ParticleBConds.h, miniqmc)
+108 199 (ParticleBConds.h, miniqmc)
+109 204 (ParticleBConds.h, miniqmc)
+110 205 (ParticleBConds.h, miniqmc)
+111 206 (ParticleBConds.h, miniqmc)
+112 207 (ParticleBConds.h, miniqmc)
+113 208 (ParticleBConds.h, miniqmc)
+114 209 (ParticleBConds.h, miniqmc)
+115 212 (ParticleBConds.h, miniqmc)
+116 213 (ParticleBConds.h, miniqmc)
+117 214 (ParticleBConds.h, miniqmc)
+118 215 (ParticleBConds.h, miniqmc)
+119 319 (ParticleSet.cpp, miniqmc)
+120 375 (ParticleSet.cpp, miniqmc)
+121 269 (ParticleSet.h, miniqmc)
+122 308 (ParticleSet.h, miniqmc)
+123 311 (ParticleSet.h, miniqmc)
+124 146 (TinyVector.h, miniqmc)
+125 176 (TinyVector.h, miniqmc)
+126 177 (TinyVector.h, miniqmc)
+127 111 (TinyVectorOps.h, miniqmc)
+128 124 (TwoBodyJastrow.h, miniqmc)
+129 153 (TwoBodyJastrow.h, miniqmc)
+130 154 (TwoBodyJastrow.h, miniqmc)
+131 265 (TwoBodyJastrow.h, miniqmc)
+132 266 (TwoBodyJastrow.h, miniqmc)
+133 280 (TwoBodyJastrow.h, miniqmc)
+134 284 (TwoBodyJastrow.h, miniqmc)
+135 312 (TwoBodyJastrow.h, miniqmc)
+136 322 (TwoBodyJastrow.h, miniqmc)
+137 324 (TwoBodyJastrow.h, miniqmc)
+138 325 (TwoBodyJastrow.h, miniqmc)
+139 326 (TwoBodyJastrow.h, miniqmc)
+140 327 (TwoBodyJastrow.h, miniqmc)
+141 328 (TwoBodyJastrow.h, miniqmc)
+142 340 (TwoBodyJastrow.h, miniqmc)
+143 342 (TwoBodyJastrow.h, miniqmc)
+144 343 (TwoBodyJastrow.h, miniqmc)
+145 344 (TwoBodyJastrow.h, miniqmc)
+146 349 (TwoBodyJastrow.h, miniqmc)
+147 380 (TwoBodyJastrow.h, miniqmc)
+148 203 (VectorSo..tainer.h) [203 (VectorSoAContainer.h, miniqmc)]
+149 241 (VectorSo..tainer.h) [241 (VectorSoAContainer.h, miniqmc)]
+150 243 (VectorSo..tainer.h) [243 (VectorSoAContainer.h, miniqmc)]
+151 204 (WaveFunction.cpp, miniqmc)
+152 213 (WaveFunction.cpp, miniqmc)
+153 218 (WaveFunction.cpp, miniqmc)
+154 228 (WaveFunction.cpp, miniqmc)
+155 230 (WaveFunction.cpp, miniqmc)
+156 231 (WaveFunction.cpp, miniqmc)
+157 28 (algorithm.hpp, miniqmc)
+158 46 (algorithm.hpp, miniqmc)
+159 47 (algorithm.hpp, miniqmc)
+160 65 (algorithm.hpp, miniqmc)
+161 66 (algorithm.hpp, miniqmc)
+162 74 (algorithm.hpp, miniqmc)
+163 75 (algorithm.hpp, miniqmc)
+164 87 (algorithm.hpp, miniqmc)
+165 250 (alloc_traits.h, miniqmc)
+166 211 (einspline_spo.hpp, miniqmc)
+167 213 (einspline_spo.hpp, miniqmc)
+168 215 (einspline_spo.hpp, miniqmc)
+169 1102 (kmp.h, libiomp5.so)
+170 791 (kmp_barrier.cpp, libiomp5.so)
+171 865 (kmp_barrier.cpp, libiomp5.so)
+172 479 (kmp_ftn_entry.h, libiomp5.so)
+173 493 (kmp_ftn_entry.h, libiomp5.so)
+174 549 (kmp_ftn_entry.h, libiomp5.so)
+175 262 (kmp_runtime.cpp, libiomp5.so)
+176 269 (kmp_runtime.cpp, libiomp5.so)
+177 271 (kmp_runtime.cpp, libiomp5.so)
+178 284 (kmp_runtime.cpp, libiomp5.so)
+179 301 (kmp_runtime.cpp, libiomp5.so)
+180 3038 (kmp_runtime.cpp, libiomp5.so)
+181 246 (kmp_wait..elease.h) [246 (kmp_wait_release.h, libiomp5.so)]
+182 256 (kmp_wait..elease.h) [256 (kmp_wait_release.h, libiomp5.so)]
+183 262 (kmp_wait..elease.h) [262 (kmp_wait_release.h, libiomp5.so)]
+184 273 (kmp_wait..elease.h) [273 (kmp_wait_release.h, libiomp5.so)]
+185 274 (kmp_wait..elease.h) [274 (kmp_wait_release.h, libiomp5.so)]
+186 288 (kmp_wait..elease.h) [288 (kmp_wait_release.h, libiomp5.so)]
+187 296 (kmp_wait..elease.h) [296 (kmp_wait_release.h, libiomp5.so)]
+188 297 (kmp_wait..elease.h) [297 (kmp_wait_release.h, libiomp5.so)]
+189 326 (kmp_wait..elease.h) [326 (kmp_wait_release.h, libiomp5.so)]
+190 330 (kmp_wait..elease.h) [330 (kmp_wait_release.h, libiomp5.so)]
+191 338 (kmp_wait..elease.h) [338 (kmp_wait_release.h, libiomp5.so)]
+192 379 (miniqmc.cpp, miniqmc)
+193 408 (miniqmc.cpp, miniqmc)
+194 429 (miniqmc.cpp, miniqmc)
+195 445 (miniqmc.cpp, miniqmc)
+196 481 (miniqmc.cpp, miniqmc)
+197 486 (miniqmc.cpp, miniqmc)
+198 503 (miniqmc.cpp, miniqmc)
+199 416 (random.tcc, miniqmc)
+200 463 (random.tcc, miniqmc)
+201 464 (random.tcc, miniqmc)
+202 465 (random.tcc, miniqmc)
+203 3328 (random.tcc, miniqmc)
+204 3334 (random.tcc, miniqmc)
+205 367 (stl_algobase.h, miniqmc)
+206 695 (stl_algobase.h, miniqmc)
+207 740 (stl_algobase.h, miniqmc)
+208 752 (stl_algobase.h, miniqmc)
+209 386 (stl_function.h, miniqmc)
+210 630 (stl_unin..alized.h) [630 (stl_uninitialized.h, miniqmc)]
+211 671 (stl_vector.h, miniqmc)
+212 921 (stl_vector.h, miniqmc)
+213 2168 (z_Linux_util.cpp, libiomp5.so)
+
+
+EVENT_TYPE
+0    60000023    Executed OpenMP task function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 qmcplusp..eOrbital [qmcplusplus::BsplineAllocator<double, 64ul, qmcplusplus::Mallocator<double, 64ul> >::setCoefficientsForOneOrbital]
+4 std::mer..gen_rand [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand]
+5 std::gen..253ul> > [std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >]
+6 Array<do..erator() [Array<double, 3u>::operator()]
+7 std::mer..erator() [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()]
+8 L_main_3..op0_2_91 [L_main_379__par_loop0_2_91]
+9 std::__u.. 64ul> > [std::__uninitialized_default_n_a<double*, unsigned long, qmcplusplus::Mallocator<double, 64ul> >]
+10 std::all..<double> [std::allocator_traits<qmcplusplus::Mallocator<double, 64ul> >::_S_construct<double>]
+11 qmcplusp..4ul> > > [qmcplusplus::DTD_BConds<double, 3u, 39>::computeDistances<qmcplusplus::TinyVector<double, 3u>, qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> > >]
+12 qmcplusp..erator[] [qmcplusplus::TinyVector<double, 3u>::operator[]]
+13 std::__f..e, 3u> > [std::__fill_n_a<qmcplusplus::TinyVector<double, 3u>*, unsigned long, qmcplusplus::TinyVector<double, 3u> >]
+14 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_vgh<double>]
+15 qmcplusp..nyVector [qmcplusplus::TinyVector<double, 3u>::TinyVector]
+16 qmcplusp..erator[] [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::operator[]]
+17 qmcplusp..evaluate [qmcplusplus::einspline_spo<double>::evaluate]
+18 qmcplusp.. double> [qmcplusplus::simd::transpose<double, double>]
+19 qmcplusp..<double> [qmcplusplus::simd::dot<double>]
+20 qmcplusp..>::apply [qmcplusplus::OTBinary<double, qmcplusplus::TinyVector<double, 3u>, qmcplusplus::OpMultiply>::apply]
+21 _INTERNA..flag_64> [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_wait_template<kmp_flag_64>]
+22 qmcplusp..luateVGL [qmcplusplus::BsplineFunctor<double>::evaluateVGL]
+23 qmcplusp..ecompute [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::recompute]
+24 __kmp_x86_pause
+25 __kmp_yield
+26 L_main_4..op1_2_92 [L_main_408__par_loop1_2_92]
+27 qmcplusp..ceptMove [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+28 qmcplusp..r::start [qmcplusplus::NewTimer::start]
+29 qmcplusp..umulateG [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateG]
+30 qmcplusp.. >::data [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::data]
+31 qmcplusp..t::first [qmcplusplus::ParticleSet::first]
+32 qmcplusp.. double> [qmcplusplus::OpAddAssign::operator()<double, double>]
+33 std::__f.. double> [std::__fill_a<double*, double>]
+34 qmcplusp..ble, 3u> [qmcplusplus::simd::dot<double, 3u>]
+35 std::vec.. >::size [std::vector<qmcplusplus::DistanceTableData*, std::allocator<qmcplusplus::DistanceTableData*> >::size]
+36 qmcplusp.. double> [qmcplusplus::OpMultiply::operator()<double, double>]
+37 BLAS::gemm
+38 qmcplusp..e, 3u> > [qmcplusplus::simd::copy<qmcplusplus::TinyVector<double, 3u> >]
+39 std::__c..<double> [std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>]
+40 std::__f.. double> [std::__fill_n_a<double*, int, double>]
+41 qmcplusp.. double> [qmcplusplus::OpAdd::operator()<double, double>]
+42 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_v<double>]
+43 qmcplusp..valuateV [qmcplusplus::BsplineFunctor<double>::evaluateV]
+44 qmcplusp..n::ratio [qmcplusplus::WaveFunction::ratio]
+45 qmcplusp..>::ratio [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+46 qmcplusp..computeU [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+47 qmcplusp..er::stop [qmcplusplus::NewTimer::stop]
+48 _INTERNA..r_gather [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_gather]
+49 qmcplusp..omputeU3 [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+50 __kmp_ge..d_id_reg [__kmp_get_global_thread_id_reg]
+51 qmcplusp..<double> [qmcplusplus::spline2::computeLocationAndFractional<double>]
+52 qmcplusp..ble> > > [qmcplusplus::DelayedUpdate<double, double>::acceptRow<qmcplusplus::Vector<double, std::allocator<double> > >]
+53 std::les..erator() [std::less<qmcplusplus::StackKeyParam<2> >::operator()]
+54 __kmp_ap..parallel [__kmp_api_omp_in_parallel]
+55 qmcplusp..atioGrad [qmcplusplus::WaveFunction::ratioGrad]
+56 qmcplusp.. double> [qmcplusplus::spline2::getSplineBound<double, double>]
+57 qmcplusp..>::ratio [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+58 qmcplusp..>::ratio [qmcplusplus::DiracDeterminant<qmcplusplus::DelayedUpdate<double, double> >::ratio]
+59 qmcplusp..9>::move [qmcplusplus::DistanceTableBA<double, 3u, 39>::move]
+60 qmcplusp..et::last [qmcplusplus::ParticleSet::last]
+61 qmcplusp..>, void> [qmcplusplus::Vector<int, std::allocator<int> >::operator[]<std::allocator<int>, void>]
+62 qmcplusp..TotalNum [qmcplusplus::ParticleSet::getTotalNum]
+63 __kmp_ap..et_level [__kmp_api_omp_get_level]
+64 qmcplusp..atioGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratioGrad]
+65 std::vec.. >::data [std::vector<double, qmcplusplus::Mallocator<double, 64ul> >::data]
+66 qmcplusp..makeMove [qmcplusplus::ParticleSet::makeMove]
+67 qmcplusp..evalGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::evalGrad]
+68 qmcplusp..evalGrad [qmcplusplus::WaveFunction::evalGrad]
+69 __kmp_ge..read_num [__kmp_get_ancestor_thread_num]
+70 qmcplusp..efactors [qmcplusplus::MultiBsplineData<double>::compute_prefactors]
+71 qmcplusp.. >::size [qmcplusplus::Vector<double, std::allocator<double> >::size]
+72 qmcplusp..<double> [qmcplusplus::CrystalLattice<double, 3u, false>::toUnit_floor<double>]
+73 _INTERNA.._release [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_release]
+74 qmcplusp..perator< [qmcplusplus::StackKeyParam<2>::operator<]
+75 qmcplusp..ceptMove [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+76 qmcplusp.. double> [qmcplusplus::simd::accumulate_n<double, double>]
+77 qmcplusp..mulateGL [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateGL]
+78 qmcplusp..omputeU3 [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+79 qmcplusp..jectMove [qmcplusplus::ParticleSet::rejectMove]
+80 qmcplusp..>, void> [qmcplusplus::Vector<qmcplusplus::TinyVector<double, 3u>, std::allocator<qmcplusplus::TinyVector<double, 3u> > >::operator[]<std::allocator<qmcplusplus::TinyVector<double, 3u> >, void>]
+81 qmcplusp..9>::move [qmcplusplus::DistanceTableAA<double, 3u, 39>::move]
+82 qmcplusp..computeU [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+83 L_main_5..op2_2_94 [L_main_503__par_loop2_2_94]
+
+
+EVENT_TYPE
+0    60000123    Executed OpenMP task function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 174 (BsplineA..ator.hpp) [174 (BsplineAllocator.hpp, miniqmc)]
+4 236 (BsplineFunctor.h, miniqmc)
+5 238 (BsplineFunctor.h, miniqmc)
+6 240 (BsplineFunctor.h, miniqmc)
+7 241 (BsplineFunctor.h, miniqmc)
+8 244 (BsplineFunctor.h, miniqmc)
+9 246 (BsplineFunctor.h, miniqmc)
+10 250 (BsplineFunctor.h, miniqmc)
+11 256 (BsplineFunctor.h, miniqmc)
+12 257 (BsplineFunctor.h, miniqmc)
+13 258 (BsplineFunctor.h, miniqmc)
+14 259 (BsplineFunctor.h, miniqmc)
+15 260 (BsplineFunctor.h, miniqmc)
+16 286 (BsplineFunctor.h, miniqmc)
+17 291 (BsplineFunctor.h, miniqmc)
+18 293 (BsplineFunctor.h, miniqmc)
+19 294 (BsplineFunctor.h, miniqmc)
+20 297 (BsplineFunctor.h, miniqmc)
+21 298 (BsplineFunctor.h, miniqmc)
+22 305 (BsplineFunctor.h, miniqmc)
+23 309 (BsplineFunctor.h, miniqmc)
+24 311 (BsplineFunctor.h, miniqmc)
+25 321 (BsplineFunctor.h, miniqmc)
+26 324 (BsplineFunctor.h, miniqmc)
+27 325 (BsplineFunctor.h, miniqmc)
+28 327 (BsplineFunctor.h, miniqmc)
+29 334 (BsplineFunctor.h, miniqmc)
+30 336 (BsplineFunctor.h, miniqmc)
+31 194 (CrystalLattice.h, miniqmc)
+32 138 (DelayedUpdate.h, miniqmc)
+33 195 (DiracDet..nant.cpp) [195 (DiracDeterminant.cpp, miniqmc)]
+34 101 (DistanceTableAA.h, miniqmc)
+35 97 (DistanceTableBA.h, miniqmc)
+36 58 (MultiBspline.hpp, miniqmc)
+37 59 (MultiBspline.hpp, miniqmc)
+38 60 (MultiBspline.hpp, miniqmc)
+39 61 (MultiBspline.hpp, miniqmc)
+40 174 (MultiBspline.hpp, miniqmc)
+41 195 (MultiBspline.hpp, miniqmc)
+42 233 (MultiBspline.hpp, miniqmc)
+43 235 (MultiBspline.hpp, miniqmc)
+44 236 (MultiBspline.hpp, miniqmc)
+45 237 (MultiBspline.hpp, miniqmc)
+46 238 (MultiBspline.hpp, miniqmc)
+47 240 (MultiBspline.hpp, miniqmc)
+48 241 (MultiBspline.hpp, miniqmc)
+49 242 (MultiBspline.hpp, miniqmc)
+50 244 (MultiBspline.hpp, miniqmc)
+51 245 (MultiBspline.hpp, miniqmc)
+52 246 (MultiBspline.hpp, miniqmc)
+53 247 (MultiBspline.hpp, miniqmc)
+54 248 (MultiBspline.hpp, miniqmc)
+55 249 (MultiBspline.hpp, miniqmc)
+56 250 (MultiBspline.hpp, miniqmc)
+57 251 (MultiBspline.hpp, miniqmc)
+58 252 (MultiBspline.hpp, miniqmc)
+59 253 (MultiBspline.hpp, miniqmc)
+60 258 (MultiBspline.hpp, miniqmc)
+61 268 (MultiBspline.hpp, miniqmc)
+62 271 (MultiBspline.hpp, miniqmc)
+63 272 (MultiBspline.hpp, miniqmc)
+64 274 (MultiBspline.hpp, miniqmc)
+65 275 (MultiBspline.hpp, miniqmc)
+66 276 (MultiBspline.hpp, miniqmc)
+67 277 (MultiBspline.hpp, miniqmc)
+68 278 (MultiBspline.hpp, miniqmc)
+69 57 (MultiBsp..Data.hpp) [57 (MultiBsplineData.hpp, miniqmc)]
+70 71 (MultiBsp..Data.hpp) [71 (MultiBsplineData.hpp, miniqmc)]
+71 55 (MultiBsp..lper.hpp) [55 (MultiBsplineEvalHelper.hpp, miniqmc)]
+72 81 (MultiBsp..lper.hpp) [81 (MultiBsplineEvalHelper.hpp, miniqmc)]
+73 106 (MultiBsp..lper.hpp) [106 (MultiBsplineEvalHelper.hpp, miniqmc)]
+74 215 (NewTimer.h, miniqmc)
+75 354 (NewTimer.h, miniqmc)
+76 363 (NewTimer.h, miniqmc)
+77 364 (NewTimer.h, miniqmc)
+78 365 (NewTimer.h, miniqmc)
+79 400 (NewTimer.h, miniqmc)
+80 411 (NewTimer.h, miniqmc)
+81 156 (OhmmsArray.h, miniqmc)
+82 234 (OhmmsBlas.h, miniqmc)
+83 120 (OhmmsVector.h, miniqmc)
+84 170 (OhmmsVector.h, miniqmc)
+85 176 (OhmmsVector.h, miniqmc)
+86 130 (OneBodyJastrow.h, miniqmc)
+87 131 (OneBodyJastrow.h, miniqmc)
+88 145 (OneBodyJastrow.h, miniqmc)
+89 192 (OneBodyJastrow.h, miniqmc)
+90 218 (OneBodyJastrow.h, miniqmc)
+91 251 (OneBodyJastrow.h, miniqmc)
+92 267 (OneBodyJastrow.h, miniqmc)
+93 279 (OneBodyJastrow.h, miniqmc)
+94 43 (OperatorTags.h, miniqmc)
+95 63 (OperatorTags.h, miniqmc)
+96 94 (OperatorTags.h, miniqmc)
+97 184 (ParticleBConds.h, miniqmc)
+98 186 (ParticleBConds.h, miniqmc)
+99 187 (ParticleBConds.h, miniqmc)
+100 188 (ParticleBConds.h, miniqmc)
+101 189 (ParticleBConds.h, miniqmc)
+102 191 (ParticleBConds.h, miniqmc)
+103 192 (ParticleBConds.h, miniqmc)
+104 193 (ParticleBConds.h, miniqmc)
+105 195 (ParticleBConds.h, miniqmc)
+106 196 (ParticleBConds.h, miniqmc)
+107 197 (ParticleBConds.h, miniqmc)
+108 199 (ParticleBConds.h, miniqmc)
+109 204 (ParticleBConds.h, miniqmc)
+110 205 (ParticleBConds.h, miniqmc)
+111 206 (ParticleBConds.h, miniqmc)
+112 207 (ParticleBConds.h, miniqmc)
+113 208 (ParticleBConds.h, miniqmc)
+114 209 (ParticleBConds.h, miniqmc)
+115 212 (ParticleBConds.h, miniqmc)
+116 213 (ParticleBConds.h, miniqmc)
+117 214 (ParticleBConds.h, miniqmc)
+118 215 (ParticleBConds.h, miniqmc)
+119 319 (ParticleSet.cpp, miniqmc)
+120 375 (ParticleSet.cpp, miniqmc)
+121 269 (ParticleSet.h, miniqmc)
+122 308 (ParticleSet.h, miniqmc)
+123 311 (ParticleSet.h, miniqmc)
+124 146 (TinyVector.h, miniqmc)
+125 176 (TinyVector.h, miniqmc)
+126 177 (TinyVector.h, miniqmc)
+127 111 (TinyVectorOps.h, miniqmc)
+128 124 (TwoBodyJastrow.h, miniqmc)
+129 153 (TwoBodyJastrow.h, miniqmc)
+130 154 (TwoBodyJastrow.h, miniqmc)
+131 265 (TwoBodyJastrow.h, miniqmc)
+132 266 (TwoBodyJastrow.h, miniqmc)
+133 280 (TwoBodyJastrow.h, miniqmc)
+134 284 (TwoBodyJastrow.h, miniqmc)
+135 312 (TwoBodyJastrow.h, miniqmc)
+136 322 (TwoBodyJastrow.h, miniqmc)
+137 324 (TwoBodyJastrow.h, miniqmc)
+138 325 (TwoBodyJastrow.h, miniqmc)
+139 326 (TwoBodyJastrow.h, miniqmc)
+140 327 (TwoBodyJastrow.h, miniqmc)
+141 328 (TwoBodyJastrow.h, miniqmc)
+142 340 (TwoBodyJastrow.h, miniqmc)
+143 342 (TwoBodyJastrow.h, miniqmc)
+144 343 (TwoBodyJastrow.h, miniqmc)
+145 344 (TwoBodyJastrow.h, miniqmc)
+146 349 (TwoBodyJastrow.h, miniqmc)
+147 380 (TwoBodyJastrow.h, miniqmc)
+148 203 (VectorSo..tainer.h) [203 (VectorSoAContainer.h, miniqmc)]
+149 241 (VectorSo..tainer.h) [241 (VectorSoAContainer.h, miniqmc)]
+150 243 (VectorSo..tainer.h) [243 (VectorSoAContainer.h, miniqmc)]
+151 204 (WaveFunction.cpp, miniqmc)
+152 213 (WaveFunction.cpp, miniqmc)
+153 218 (WaveFunction.cpp, miniqmc)
+154 228 (WaveFunction.cpp, miniqmc)
+155 230 (WaveFunction.cpp, miniqmc)
+156 231 (WaveFunction.cpp, miniqmc)
+157 28 (algorithm.hpp, miniqmc)
+158 46 (algorithm.hpp, miniqmc)
+159 47 (algorithm.hpp, miniqmc)
+160 65 (algorithm.hpp, miniqmc)
+161 66 (algorithm.hpp, miniqmc)
+162 74 (algorithm.hpp, miniqmc)
+163 75 (algorithm.hpp, miniqmc)
+164 87 (algorithm.hpp, miniqmc)
+165 250 (alloc_traits.h, miniqmc)
+166 211 (einspline_spo.hpp, miniqmc)
+167 213 (einspline_spo.hpp, miniqmc)
+168 215 (einspline_spo.hpp, miniqmc)
+169 1102 (kmp.h, libiomp5.so)
+170 791 (kmp_barrier.cpp, libiomp5.so)
+171 865 (kmp_barrier.cpp, libiomp5.so)
+172 479 (kmp_ftn_entry.h, libiomp5.so)
+173 493 (kmp_ftn_entry.h, libiomp5.so)
+174 549 (kmp_ftn_entry.h, libiomp5.so)
+175 262 (kmp_runtime.cpp, libiomp5.so)
+176 269 (kmp_runtime.cpp, libiomp5.so)
+177 271 (kmp_runtime.cpp, libiomp5.so)
+178 284 (kmp_runtime.cpp, libiomp5.so)
+179 301 (kmp_runtime.cpp, libiomp5.so)
+180 3038 (kmp_runtime.cpp, libiomp5.so)
+181 246 (kmp_wait..elease.h) [246 (kmp_wait_release.h, libiomp5.so)]
+182 256 (kmp_wait..elease.h) [256 (kmp_wait_release.h, libiomp5.so)]
+183 262 (kmp_wait..elease.h) [262 (kmp_wait_release.h, libiomp5.so)]
+184 273 (kmp_wait..elease.h) [273 (kmp_wait_release.h, libiomp5.so)]
+185 274 (kmp_wait..elease.h) [274 (kmp_wait_release.h, libiomp5.so)]
+186 288 (kmp_wait..elease.h) [288 (kmp_wait_release.h, libiomp5.so)]
+187 296 (kmp_wait..elease.h) [296 (kmp_wait_release.h, libiomp5.so)]
+188 297 (kmp_wait..elease.h) [297 (kmp_wait_release.h, libiomp5.so)]
+189 326 (kmp_wait..elease.h) [326 (kmp_wait_release.h, libiomp5.so)]
+190 330 (kmp_wait..elease.h) [330 (kmp_wait_release.h, libiomp5.so)]
+191 338 (kmp_wait..elease.h) [338 (kmp_wait_release.h, libiomp5.so)]
+192 379 (miniqmc.cpp, miniqmc)
+193 408 (miniqmc.cpp, miniqmc)
+194 429 (miniqmc.cpp, miniqmc)
+195 445 (miniqmc.cpp, miniqmc)
+196 481 (miniqmc.cpp, miniqmc)
+197 486 (miniqmc.cpp, miniqmc)
+198 503 (miniqmc.cpp, miniqmc)
+199 416 (random.tcc, miniqmc)
+200 463 (random.tcc, miniqmc)
+201 464 (random.tcc, miniqmc)
+202 465 (random.tcc, miniqmc)
+203 3328 (random.tcc, miniqmc)
+204 3334 (random.tcc, miniqmc)
+205 367 (stl_algobase.h, miniqmc)
+206 695 (stl_algobase.h, miniqmc)
+207 740 (stl_algobase.h, miniqmc)
+208 752 (stl_algobase.h, miniqmc)
+209 386 (stl_function.h, miniqmc)
+210 630 (stl_unin..alized.h) [630 (stl_uninitialized.h, miniqmc)]
+211 671 (stl_vector.h, miniqmc)
+212 921 (stl_vector.h, miniqmc)
+213 2168 (z_Linux_util.cpp, libiomp5.so)
+
+
+EVENT_TYPE
+0    60000024    Instantiated OpenMP task function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 qmcplusp..eOrbital [qmcplusplus::BsplineAllocator<double, 64ul, qmcplusplus::Mallocator<double, 64ul> >::setCoefficientsForOneOrbital]
+4 std::mer..gen_rand [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand]
+5 std::gen..253ul> > [std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >]
+6 Array<do..erator() [Array<double, 3u>::operator()]
+7 std::mer..erator() [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()]
+8 L_main_3..op0_2_91 [L_main_379__par_loop0_2_91]
+9 std::__u.. 64ul> > [std::__uninitialized_default_n_a<double*, unsigned long, qmcplusplus::Mallocator<double, 64ul> >]
+10 std::all..<double> [std::allocator_traits<qmcplusplus::Mallocator<double, 64ul> >::_S_construct<double>]
+11 qmcplusp..4ul> > > [qmcplusplus::DTD_BConds<double, 3u, 39>::computeDistances<qmcplusplus::TinyVector<double, 3u>, qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> > >]
+12 qmcplusp..erator[] [qmcplusplus::TinyVector<double, 3u>::operator[]]
+13 std::__f..e, 3u> > [std::__fill_n_a<qmcplusplus::TinyVector<double, 3u>*, unsigned long, qmcplusplus::TinyVector<double, 3u> >]
+14 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_vgh<double>]
+15 qmcplusp..nyVector [qmcplusplus::TinyVector<double, 3u>::TinyVector]
+16 qmcplusp..erator[] [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::operator[]]
+17 qmcplusp..evaluate [qmcplusplus::einspline_spo<double>::evaluate]
+18 qmcplusp.. double> [qmcplusplus::simd::transpose<double, double>]
+19 qmcplusp..<double> [qmcplusplus::simd::dot<double>]
+20 qmcplusp..>::apply [qmcplusplus::OTBinary<double, qmcplusplus::TinyVector<double, 3u>, qmcplusplus::OpMultiply>::apply]
+21 _INTERNA..flag_64> [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_wait_template<kmp_flag_64>]
+22 qmcplusp..luateVGL [qmcplusplus::BsplineFunctor<double>::evaluateVGL]
+23 qmcplusp..ecompute [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::recompute]
+24 __kmp_x86_pause
+25 __kmp_yield
+26 L_main_4..op1_2_92 [L_main_408__par_loop1_2_92]
+27 qmcplusp..ceptMove [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+28 qmcplusp..r::start [qmcplusplus::NewTimer::start]
+29 qmcplusp..umulateG [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateG]
+30 qmcplusp.. >::data [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::data]
+31 qmcplusp..t::first [qmcplusplus::ParticleSet::first]
+32 qmcplusp.. double> [qmcplusplus::OpAddAssign::operator()<double, double>]
+33 std::__f.. double> [std::__fill_a<double*, double>]
+34 qmcplusp..ble, 3u> [qmcplusplus::simd::dot<double, 3u>]
+35 std::vec.. >::size [std::vector<qmcplusplus::DistanceTableData*, std::allocator<qmcplusplus::DistanceTableData*> >::size]
+36 qmcplusp.. double> [qmcplusplus::OpMultiply::operator()<double, double>]
+37 BLAS::gemm
+38 qmcplusp..e, 3u> > [qmcplusplus::simd::copy<qmcplusplus::TinyVector<double, 3u> >]
+39 std::__c..<double> [std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>]
+40 std::__f.. double> [std::__fill_n_a<double*, int, double>]
+41 qmcplusp.. double> [qmcplusplus::OpAdd::operator()<double, double>]
+42 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_v<double>]
+43 qmcplusp..valuateV [qmcplusplus::BsplineFunctor<double>::evaluateV]
+44 qmcplusp..n::ratio [qmcplusplus::WaveFunction::ratio]
+45 qmcplusp..>::ratio [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+46 qmcplusp..computeU [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+47 qmcplusp..er::stop [qmcplusplus::NewTimer::stop]
+48 _INTERNA..r_gather [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_gather]
+49 qmcplusp..omputeU3 [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+50 __kmp_ge..d_id_reg [__kmp_get_global_thread_id_reg]
+51 qmcplusp..<double> [qmcplusplus::spline2::computeLocationAndFractional<double>]
+52 qmcplusp..ble> > > [qmcplusplus::DelayedUpdate<double, double>::acceptRow<qmcplusplus::Vector<double, std::allocator<double> > >]
+53 std::les..erator() [std::less<qmcplusplus::StackKeyParam<2> >::operator()]
+54 __kmp_ap..parallel [__kmp_api_omp_in_parallel]
+55 qmcplusp..atioGrad [qmcplusplus::WaveFunction::ratioGrad]
+56 qmcplusp.. double> [qmcplusplus::spline2::getSplineBound<double, double>]
+57 qmcplusp..>::ratio [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+58 qmcplusp..>::ratio [qmcplusplus::DiracDeterminant<qmcplusplus::DelayedUpdate<double, double> >::ratio]
+59 qmcplusp..9>::move [qmcplusplus::DistanceTableBA<double, 3u, 39>::move]
+60 qmcplusp..et::last [qmcplusplus::ParticleSet::last]
+61 qmcplusp..>, void> [qmcplusplus::Vector<int, std::allocator<int> >::operator[]<std::allocator<int>, void>]
+62 qmcplusp..TotalNum [qmcplusplus::ParticleSet::getTotalNum]
+63 __kmp_ap..et_level [__kmp_api_omp_get_level]
+64 qmcplusp..atioGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratioGrad]
+65 std::vec.. >::data [std::vector<double, qmcplusplus::Mallocator<double, 64ul> >::data]
+66 qmcplusp..makeMove [qmcplusplus::ParticleSet::makeMove]
+67 qmcplusp..evalGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::evalGrad]
+68 qmcplusp..evalGrad [qmcplusplus::WaveFunction::evalGrad]
+69 __kmp_ge..read_num [__kmp_get_ancestor_thread_num]
+70 qmcplusp..efactors [qmcplusplus::MultiBsplineData<double>::compute_prefactors]
+71 qmcplusp.. >::size [qmcplusplus::Vector<double, std::allocator<double> >::size]
+72 qmcplusp..<double> [qmcplusplus::CrystalLattice<double, 3u, false>::toUnit_floor<double>]
+73 _INTERNA.._release [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_release]
+74 qmcplusp..perator< [qmcplusplus::StackKeyParam<2>::operator<]
+75 qmcplusp..ceptMove [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+76 qmcplusp.. double> [qmcplusplus::simd::accumulate_n<double, double>]
+77 qmcplusp..mulateGL [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateGL]
+78 qmcplusp..omputeU3 [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+79 qmcplusp..jectMove [qmcplusplus::ParticleSet::rejectMove]
+80 qmcplusp..>, void> [qmcplusplus::Vector<qmcplusplus::TinyVector<double, 3u>, std::allocator<qmcplusplus::TinyVector<double, 3u> > >::operator[]<std::allocator<qmcplusplus::TinyVector<double, 3u> >, void>]
+81 qmcplusp..9>::move [qmcplusplus::DistanceTableAA<double, 3u, 39>::move]
+82 qmcplusp..computeU [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+83 L_main_5..op2_2_94 [L_main_503__par_loop2_2_94]
+
+
+EVENT_TYPE
+0    60000124    Instantiated OpenMP task function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 174 (BsplineA..ator.hpp) [174 (BsplineAllocator.hpp, miniqmc)]
+4 236 (BsplineFunctor.h, miniqmc)
+5 238 (BsplineFunctor.h, miniqmc)
+6 240 (BsplineFunctor.h, miniqmc)
+7 241 (BsplineFunctor.h, miniqmc)
+8 244 (BsplineFunctor.h, miniqmc)
+9 246 (BsplineFunctor.h, miniqmc)
+10 250 (BsplineFunctor.h, miniqmc)
+11 256 (BsplineFunctor.h, miniqmc)
+12 257 (BsplineFunctor.h, miniqmc)
+13 258 (BsplineFunctor.h, miniqmc)
+14 259 (BsplineFunctor.h, miniqmc)
+15 260 (BsplineFunctor.h, miniqmc)
+16 286 (BsplineFunctor.h, miniqmc)
+17 291 (BsplineFunctor.h, miniqmc)
+18 293 (BsplineFunctor.h, miniqmc)
+19 294 (BsplineFunctor.h, miniqmc)
+20 297 (BsplineFunctor.h, miniqmc)
+21 298 (BsplineFunctor.h, miniqmc)
+22 305 (BsplineFunctor.h, miniqmc)
+23 309 (BsplineFunctor.h, miniqmc)
+24 311 (BsplineFunctor.h, miniqmc)
+25 321 (BsplineFunctor.h, miniqmc)
+26 324 (BsplineFunctor.h, miniqmc)
+27 325 (BsplineFunctor.h, miniqmc)
+28 327 (BsplineFunctor.h, miniqmc)
+29 334 (BsplineFunctor.h, miniqmc)
+30 336 (BsplineFunctor.h, miniqmc)
+31 194 (CrystalLattice.h, miniqmc)
+32 138 (DelayedUpdate.h, miniqmc)
+33 195 (DiracDet..nant.cpp) [195 (DiracDeterminant.cpp, miniqmc)]
+34 101 (DistanceTableAA.h, miniqmc)
+35 97 (DistanceTableBA.h, miniqmc)
+36 58 (MultiBspline.hpp, miniqmc)
+37 59 (MultiBspline.hpp, miniqmc)
+38 60 (MultiBspline.hpp, miniqmc)
+39 61 (MultiBspline.hpp, miniqmc)
+40 174 (MultiBspline.hpp, miniqmc)
+41 195 (MultiBspline.hpp, miniqmc)
+42 233 (MultiBspline.hpp, miniqmc)
+43 235 (MultiBspline.hpp, miniqmc)
+44 236 (MultiBspline.hpp, miniqmc)
+45 237 (MultiBspline.hpp, miniqmc)
+46 238 (MultiBspline.hpp, miniqmc)
+47 240 (MultiBspline.hpp, miniqmc)
+48 241 (MultiBspline.hpp, miniqmc)
+49 242 (MultiBspline.hpp, miniqmc)
+50 244 (MultiBspline.hpp, miniqmc)
+51 245 (MultiBspline.hpp, miniqmc)
+52 246 (MultiBspline.hpp, miniqmc)
+53 247 (MultiBspline.hpp, miniqmc)
+54 248 (MultiBspline.hpp, miniqmc)
+55 249 (MultiBspline.hpp, miniqmc)
+56 250 (MultiBspline.hpp, miniqmc)
+57 251 (MultiBspline.hpp, miniqmc)
+58 252 (MultiBspline.hpp, miniqmc)
+59 253 (MultiBspline.hpp, miniqmc)
+60 258 (MultiBspline.hpp, miniqmc)
+61 268 (MultiBspline.hpp, miniqmc)
+62 271 (MultiBspline.hpp, miniqmc)
+63 272 (MultiBspline.hpp, miniqmc)
+64 274 (MultiBspline.hpp, miniqmc)
+65 275 (MultiBspline.hpp, miniqmc)
+66 276 (MultiBspline.hpp, miniqmc)
+67 277 (MultiBspline.hpp, miniqmc)
+68 278 (MultiBspline.hpp, miniqmc)
+69 57 (MultiBsp..Data.hpp) [57 (MultiBsplineData.hpp, miniqmc)]
+70 71 (MultiBsp..Data.hpp) [71 (MultiBsplineData.hpp, miniqmc)]
+71 55 (MultiBsp..lper.hpp) [55 (MultiBsplineEvalHelper.hpp, miniqmc)]
+72 81 (MultiBsp..lper.hpp) [81 (MultiBsplineEvalHelper.hpp, miniqmc)]
+73 106 (MultiBsp..lper.hpp) [106 (MultiBsplineEvalHelper.hpp, miniqmc)]
+74 215 (NewTimer.h, miniqmc)
+75 354 (NewTimer.h, miniqmc)
+76 363 (NewTimer.h, miniqmc)
+77 364 (NewTimer.h, miniqmc)
+78 365 (NewTimer.h, miniqmc)
+79 400 (NewTimer.h, miniqmc)
+80 411 (NewTimer.h, miniqmc)
+81 156 (OhmmsArray.h, miniqmc)
+82 234 (OhmmsBlas.h, miniqmc)
+83 120 (OhmmsVector.h, miniqmc)
+84 170 (OhmmsVector.h, miniqmc)
+85 176 (OhmmsVector.h, miniqmc)
+86 130 (OneBodyJastrow.h, miniqmc)
+87 131 (OneBodyJastrow.h, miniqmc)
+88 145 (OneBodyJastrow.h, miniqmc)
+89 192 (OneBodyJastrow.h, miniqmc)
+90 218 (OneBodyJastrow.h, miniqmc)
+91 251 (OneBodyJastrow.h, miniqmc)
+92 267 (OneBodyJastrow.h, miniqmc)
+93 279 (OneBodyJastrow.h, miniqmc)
+94 43 (OperatorTags.h, miniqmc)
+95 63 (OperatorTags.h, miniqmc)
+96 94 (OperatorTags.h, miniqmc)
+97 184 (ParticleBConds.h, miniqmc)
+98 186 (ParticleBConds.h, miniqmc)
+99 187 (ParticleBConds.h, miniqmc)
+100 188 (ParticleBConds.h, miniqmc)
+101 189 (ParticleBConds.h, miniqmc)
+102 191 (ParticleBConds.h, miniqmc)
+103 192 (ParticleBConds.h, miniqmc)
+104 193 (ParticleBConds.h, miniqmc)
+105 195 (ParticleBConds.h, miniqmc)
+106 196 (ParticleBConds.h, miniqmc)
+107 197 (ParticleBConds.h, miniqmc)
+108 199 (ParticleBConds.h, miniqmc)
+109 204 (ParticleBConds.h, miniqmc)
+110 205 (ParticleBConds.h, miniqmc)
+111 206 (ParticleBConds.h, miniqmc)
+112 207 (ParticleBConds.h, miniqmc)
+113 208 (ParticleBConds.h, miniqmc)
+114 209 (ParticleBConds.h, miniqmc)
+115 212 (ParticleBConds.h, miniqmc)
+116 213 (ParticleBConds.h, miniqmc)
+117 214 (ParticleBConds.h, miniqmc)
+118 215 (ParticleBConds.h, miniqmc)
+119 319 (ParticleSet.cpp, miniqmc)
+120 375 (ParticleSet.cpp, miniqmc)
+121 269 (ParticleSet.h, miniqmc)
+122 308 (ParticleSet.h, miniqmc)
+123 311 (ParticleSet.h, miniqmc)
+124 146 (TinyVector.h, miniqmc)
+125 176 (TinyVector.h, miniqmc)
+126 177 (TinyVector.h, miniqmc)
+127 111 (TinyVectorOps.h, miniqmc)
+128 124 (TwoBodyJastrow.h, miniqmc)
+129 153 (TwoBodyJastrow.h, miniqmc)
+130 154 (TwoBodyJastrow.h, miniqmc)
+131 265 (TwoBodyJastrow.h, miniqmc)
+132 266 (TwoBodyJastrow.h, miniqmc)
+133 280 (TwoBodyJastrow.h, miniqmc)
+134 284 (TwoBodyJastrow.h, miniqmc)
+135 312 (TwoBodyJastrow.h, miniqmc)
+136 322 (TwoBodyJastrow.h, miniqmc)
+137 324 (TwoBodyJastrow.h, miniqmc)
+138 325 (TwoBodyJastrow.h, miniqmc)
+139 326 (TwoBodyJastrow.h, miniqmc)
+140 327 (TwoBodyJastrow.h, miniqmc)
+141 328 (TwoBodyJastrow.h, miniqmc)
+142 340 (TwoBodyJastrow.h, miniqmc)
+143 342 (TwoBodyJastrow.h, miniqmc)
+144 343 (TwoBodyJastrow.h, miniqmc)
+145 344 (TwoBodyJastrow.h, miniqmc)
+146 349 (TwoBodyJastrow.h, miniqmc)
+147 380 (TwoBodyJastrow.h, miniqmc)
+148 203 (VectorSo..tainer.h) [203 (VectorSoAContainer.h, miniqmc)]
+149 241 (VectorSo..tainer.h) [241 (VectorSoAContainer.h, miniqmc)]
+150 243 (VectorSo..tainer.h) [243 (VectorSoAContainer.h, miniqmc)]
+151 204 (WaveFunction.cpp, miniqmc)
+152 213 (WaveFunction.cpp, miniqmc)
+153 218 (WaveFunction.cpp, miniqmc)
+154 228 (WaveFunction.cpp, miniqmc)
+155 230 (WaveFunction.cpp, miniqmc)
+156 231 (WaveFunction.cpp, miniqmc)
+157 28 (algorithm.hpp, miniqmc)
+158 46 (algorithm.hpp, miniqmc)
+159 47 (algorithm.hpp, miniqmc)
+160 65 (algorithm.hpp, miniqmc)
+161 66 (algorithm.hpp, miniqmc)
+162 74 (algorithm.hpp, miniqmc)
+163 75 (algorithm.hpp, miniqmc)
+164 87 (algorithm.hpp, miniqmc)
+165 250 (alloc_traits.h, miniqmc)
+166 211 (einspline_spo.hpp, miniqmc)
+167 213 (einspline_spo.hpp, miniqmc)
+168 215 (einspline_spo.hpp, miniqmc)
+169 1102 (kmp.h, libiomp5.so)
+170 791 (kmp_barrier.cpp, libiomp5.so)
+171 865 (kmp_barrier.cpp, libiomp5.so)
+172 479 (kmp_ftn_entry.h, libiomp5.so)
+173 493 (kmp_ftn_entry.h, libiomp5.so)
+174 549 (kmp_ftn_entry.h, libiomp5.so)
+175 262 (kmp_runtime.cpp, libiomp5.so)
+176 269 (kmp_runtime.cpp, libiomp5.so)
+177 271 (kmp_runtime.cpp, libiomp5.so)
+178 284 (kmp_runtime.cpp, libiomp5.so)
+179 301 (kmp_runtime.cpp, libiomp5.so)
+180 3038 (kmp_runtime.cpp, libiomp5.so)
+181 246 (kmp_wait..elease.h) [246 (kmp_wait_release.h, libiomp5.so)]
+182 256 (kmp_wait..elease.h) [256 (kmp_wait_release.h, libiomp5.so)]
+183 262 (kmp_wait..elease.h) [262 (kmp_wait_release.h, libiomp5.so)]
+184 273 (kmp_wait..elease.h) [273 (kmp_wait_release.h, libiomp5.so)]
+185 274 (kmp_wait..elease.h) [274 (kmp_wait_release.h, libiomp5.so)]
+186 288 (kmp_wait..elease.h) [288 (kmp_wait_release.h, libiomp5.so)]
+187 296 (kmp_wait..elease.h) [296 (kmp_wait_release.h, libiomp5.so)]
+188 297 (kmp_wait..elease.h) [297 (kmp_wait_release.h, libiomp5.so)]
+189 326 (kmp_wait..elease.h) [326 (kmp_wait_release.h, libiomp5.so)]
+190 330 (kmp_wait..elease.h) [330 (kmp_wait_release.h, libiomp5.so)]
+191 338 (kmp_wait..elease.h) [338 (kmp_wait_release.h, libiomp5.so)]
+192 379 (miniqmc.cpp, miniqmc)
+193 408 (miniqmc.cpp, miniqmc)
+194 429 (miniqmc.cpp, miniqmc)
+195 445 (miniqmc.cpp, miniqmc)
+196 481 (miniqmc.cpp, miniqmc)
+197 486 (miniqmc.cpp, miniqmc)
+198 503 (miniqmc.cpp, miniqmc)
+199 416 (random.tcc, miniqmc)
+200 463 (random.tcc, miniqmc)
+201 464 (random.tcc, miniqmc)
+202 465 (random.tcc, miniqmc)
+203 3328 (random.tcc, miniqmc)
+204 3334 (random.tcc, miniqmc)
+205 367 (stl_algobase.h, miniqmc)
+206 695 (stl_algobase.h, miniqmc)
+207 740 (stl_algobase.h, miniqmc)
+208 752 (stl_algobase.h, miniqmc)
+209 386 (stl_function.h, miniqmc)
+210 630 (stl_unin..alized.h) [630 (stl_uninitialized.h, miniqmc)]
+211 671 (stl_vector.h, miniqmc)
+212 921 (stl_vector.h, miniqmc)
+213 2168 (z_Linux_util.cpp, libiomp5.so)
+
+
+EVENT_TYPE
+0 60000006 OpenMP named-Lock
+VALUES
+0 Unlocked status
+3 Lock
+5 Unlock
+6 Locked status
+
+EVENT_TYPE
+0 60000032 OpenMP named-Lock address name
+EVENT_TYPE
+0    60000020    pthread function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 qmcplusp..eOrbital [qmcplusplus::BsplineAllocator<double, 64ul, qmcplusplus::Mallocator<double, 64ul> >::setCoefficientsForOneOrbital]
+4 std::mer..gen_rand [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand]
+5 std::gen..253ul> > [std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >]
+6 Array<do..erator() [Array<double, 3u>::operator()]
+7 std::mer..erator() [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()]
+8 L_main_3..op0_2_91 [L_main_379__par_loop0_2_91]
+9 std::__u.. 64ul> > [std::__uninitialized_default_n_a<double*, unsigned long, qmcplusplus::Mallocator<double, 64ul> >]
+10 std::all..<double> [std::allocator_traits<qmcplusplus::Mallocator<double, 64ul> >::_S_construct<double>]
+11 qmcplusp..4ul> > > [qmcplusplus::DTD_BConds<double, 3u, 39>::computeDistances<qmcplusplus::TinyVector<double, 3u>, qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> > >]
+12 qmcplusp..erator[] [qmcplusplus::TinyVector<double, 3u>::operator[]]
+13 std::__f..e, 3u> > [std::__fill_n_a<qmcplusplus::TinyVector<double, 3u>*, unsigned long, qmcplusplus::TinyVector<double, 3u> >]
+14 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_vgh<double>]
+15 qmcplusp..nyVector [qmcplusplus::TinyVector<double, 3u>::TinyVector]
+16 qmcplusp..erator[] [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::operator[]]
+17 qmcplusp..evaluate [qmcplusplus::einspline_spo<double>::evaluate]
+18 qmcplusp.. double> [qmcplusplus::simd::transpose<double, double>]
+19 qmcplusp..<double> [qmcplusplus::simd::dot<double>]
+20 qmcplusp..>::apply [qmcplusplus::OTBinary<double, qmcplusplus::TinyVector<double, 3u>, qmcplusplus::OpMultiply>::apply]
+21 _INTERNA..flag_64> [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_wait_template<kmp_flag_64>]
+22 qmcplusp..luateVGL [qmcplusplus::BsplineFunctor<double>::evaluateVGL]
+23 qmcplusp..ecompute [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::recompute]
+24 __kmp_x86_pause
+25 __kmp_yield
+26 L_main_4..op1_2_92 [L_main_408__par_loop1_2_92]
+27 qmcplusp..ceptMove [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+28 qmcplusp..r::start [qmcplusplus::NewTimer::start]
+29 qmcplusp..umulateG [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateG]
+30 qmcplusp.. >::data [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::data]
+31 qmcplusp..t::first [qmcplusplus::ParticleSet::first]
+32 qmcplusp.. double> [qmcplusplus::OpAddAssign::operator()<double, double>]
+33 std::__f.. double> [std::__fill_a<double*, double>]
+34 qmcplusp..ble, 3u> [qmcplusplus::simd::dot<double, 3u>]
+35 std::vec.. >::size [std::vector<qmcplusplus::DistanceTableData*, std::allocator<qmcplusplus::DistanceTableData*> >::size]
+36 qmcplusp.. double> [qmcplusplus::OpMultiply::operator()<double, double>]
+37 BLAS::gemm
+38 qmcplusp..e, 3u> > [qmcplusplus::simd::copy<qmcplusplus::TinyVector<double, 3u> >]
+39 std::__c..<double> [std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>]
+40 std::__f.. double> [std::__fill_n_a<double*, int, double>]
+41 qmcplusp.. double> [qmcplusplus::OpAdd::operator()<double, double>]
+42 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_v<double>]
+43 qmcplusp..valuateV [qmcplusplus::BsplineFunctor<double>::evaluateV]
+44 qmcplusp..n::ratio [qmcplusplus::WaveFunction::ratio]
+45 qmcplusp..>::ratio [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+46 qmcplusp..computeU [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+47 qmcplusp..er::stop [qmcplusplus::NewTimer::stop]
+48 _INTERNA..r_gather [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_gather]
+49 qmcplusp..omputeU3 [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+50 __kmp_ge..d_id_reg [__kmp_get_global_thread_id_reg]
+51 qmcplusp..<double> [qmcplusplus::spline2::computeLocationAndFractional<double>]
+52 qmcplusp..ble> > > [qmcplusplus::DelayedUpdate<double, double>::acceptRow<qmcplusplus::Vector<double, std::allocator<double> > >]
+53 std::les..erator() [std::less<qmcplusplus::StackKeyParam<2> >::operator()]
+54 __kmp_ap..parallel [__kmp_api_omp_in_parallel]
+55 qmcplusp..atioGrad [qmcplusplus::WaveFunction::ratioGrad]
+56 qmcplusp.. double> [qmcplusplus::spline2::getSplineBound<double, double>]
+57 qmcplusp..>::ratio [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+58 qmcplusp..>::ratio [qmcplusplus::DiracDeterminant<qmcplusplus::DelayedUpdate<double, double> >::ratio]
+59 qmcplusp..9>::move [qmcplusplus::DistanceTableBA<double, 3u, 39>::move]
+60 qmcplusp..et::last [qmcplusplus::ParticleSet::last]
+61 qmcplusp..>, void> [qmcplusplus::Vector<int, std::allocator<int> >::operator[]<std::allocator<int>, void>]
+62 qmcplusp..TotalNum [qmcplusplus::ParticleSet::getTotalNum]
+63 __kmp_ap..et_level [__kmp_api_omp_get_level]
+64 qmcplusp..atioGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratioGrad]
+65 std::vec.. >::data [std::vector<double, qmcplusplus::Mallocator<double, 64ul> >::data]
+66 qmcplusp..makeMove [qmcplusplus::ParticleSet::makeMove]
+67 qmcplusp..evalGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::evalGrad]
+68 qmcplusp..evalGrad [qmcplusplus::WaveFunction::evalGrad]
+69 __kmp_ge..read_num [__kmp_get_ancestor_thread_num]
+70 qmcplusp..efactors [qmcplusplus::MultiBsplineData<double>::compute_prefactors]
+71 qmcplusp.. >::size [qmcplusplus::Vector<double, std::allocator<double> >::size]
+72 qmcplusp..<double> [qmcplusplus::CrystalLattice<double, 3u, false>::toUnit_floor<double>]
+73 _INTERNA.._release [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_release]
+74 qmcplusp..perator< [qmcplusplus::StackKeyParam<2>::operator<]
+75 qmcplusp..ceptMove [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+76 qmcplusp.. double> [qmcplusplus::simd::accumulate_n<double, double>]
+77 qmcplusp..mulateGL [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateGL]
+78 qmcplusp..omputeU3 [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+79 qmcplusp..jectMove [qmcplusplus::ParticleSet::rejectMove]
+80 qmcplusp..>, void> [qmcplusplus::Vector<qmcplusplus::TinyVector<double, 3u>, std::allocator<qmcplusplus::TinyVector<double, 3u> > >::operator[]<std::allocator<qmcplusplus::TinyVector<double, 3u> >, void>]
+81 qmcplusp..9>::move [qmcplusplus::DistanceTableAA<double, 3u, 39>::move]
+82 qmcplusp..computeU [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+83 L_main_5..op2_2_94 [L_main_503__par_loop2_2_94]
+
+
+EVENT_TYPE
+0    60000120    pthread function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 174 (BsplineA..ator.hpp) [174 (BsplineAllocator.hpp, miniqmc)]
+4 236 (BsplineFunctor.h, miniqmc)
+5 238 (BsplineFunctor.h, miniqmc)
+6 240 (BsplineFunctor.h, miniqmc)
+7 241 (BsplineFunctor.h, miniqmc)
+8 244 (BsplineFunctor.h, miniqmc)
+9 246 (BsplineFunctor.h, miniqmc)
+10 250 (BsplineFunctor.h, miniqmc)
+11 256 (BsplineFunctor.h, miniqmc)
+12 257 (BsplineFunctor.h, miniqmc)
+13 258 (BsplineFunctor.h, miniqmc)
+14 259 (BsplineFunctor.h, miniqmc)
+15 260 (BsplineFunctor.h, miniqmc)
+16 286 (BsplineFunctor.h, miniqmc)
+17 291 (BsplineFunctor.h, miniqmc)
+18 293 (BsplineFunctor.h, miniqmc)
+19 294 (BsplineFunctor.h, miniqmc)
+20 297 (BsplineFunctor.h, miniqmc)
+21 298 (BsplineFunctor.h, miniqmc)
+22 305 (BsplineFunctor.h, miniqmc)
+23 309 (BsplineFunctor.h, miniqmc)
+24 311 (BsplineFunctor.h, miniqmc)
+25 321 (BsplineFunctor.h, miniqmc)
+26 324 (BsplineFunctor.h, miniqmc)
+27 325 (BsplineFunctor.h, miniqmc)
+28 327 (BsplineFunctor.h, miniqmc)
+29 334 (BsplineFunctor.h, miniqmc)
+30 336 (BsplineFunctor.h, miniqmc)
+31 194 (CrystalLattice.h, miniqmc)
+32 138 (DelayedUpdate.h, miniqmc)
+33 195 (DiracDet..nant.cpp) [195 (DiracDeterminant.cpp, miniqmc)]
+34 101 (DistanceTableAA.h, miniqmc)
+35 97 (DistanceTableBA.h, miniqmc)
+36 58 (MultiBspline.hpp, miniqmc)
+37 59 (MultiBspline.hpp, miniqmc)
+38 60 (MultiBspline.hpp, miniqmc)
+39 61 (MultiBspline.hpp, miniqmc)
+40 174 (MultiBspline.hpp, miniqmc)
+41 195 (MultiBspline.hpp, miniqmc)
+42 233 (MultiBspline.hpp, miniqmc)
+43 235 (MultiBspline.hpp, miniqmc)
+44 236 (MultiBspline.hpp, miniqmc)
+45 237 (MultiBspline.hpp, miniqmc)
+46 238 (MultiBspline.hpp, miniqmc)
+47 240 (MultiBspline.hpp, miniqmc)
+48 241 (MultiBspline.hpp, miniqmc)
+49 242 (MultiBspline.hpp, miniqmc)
+50 244 (MultiBspline.hpp, miniqmc)
+51 245 (MultiBspline.hpp, miniqmc)
+52 246 (MultiBspline.hpp, miniqmc)
+53 247 (MultiBspline.hpp, miniqmc)
+54 248 (MultiBspline.hpp, miniqmc)
+55 249 (MultiBspline.hpp, miniqmc)
+56 250 (MultiBspline.hpp, miniqmc)
+57 251 (MultiBspline.hpp, miniqmc)
+58 252 (MultiBspline.hpp, miniqmc)
+59 253 (MultiBspline.hpp, miniqmc)
+60 258 (MultiBspline.hpp, miniqmc)
+61 268 (MultiBspline.hpp, miniqmc)
+62 271 (MultiBspline.hpp, miniqmc)
+63 272 (MultiBspline.hpp, miniqmc)
+64 274 (MultiBspline.hpp, miniqmc)
+65 275 (MultiBspline.hpp, miniqmc)
+66 276 (MultiBspline.hpp, miniqmc)
+67 277 (MultiBspline.hpp, miniqmc)
+68 278 (MultiBspline.hpp, miniqmc)
+69 57 (MultiBsp..Data.hpp) [57 (MultiBsplineData.hpp, miniqmc)]
+70 71 (MultiBsp..Data.hpp) [71 (MultiBsplineData.hpp, miniqmc)]
+71 55 (MultiBsp..lper.hpp) [55 (MultiBsplineEvalHelper.hpp, miniqmc)]
+72 81 (MultiBsp..lper.hpp) [81 (MultiBsplineEvalHelper.hpp, miniqmc)]
+73 106 (MultiBsp..lper.hpp) [106 (MultiBsplineEvalHelper.hpp, miniqmc)]
+74 215 (NewTimer.h, miniqmc)
+75 354 (NewTimer.h, miniqmc)
+76 363 (NewTimer.h, miniqmc)
+77 364 (NewTimer.h, miniqmc)
+78 365 (NewTimer.h, miniqmc)
+79 400 (NewTimer.h, miniqmc)
+80 411 (NewTimer.h, miniqmc)
+81 156 (OhmmsArray.h, miniqmc)
+82 234 (OhmmsBlas.h, miniqmc)
+83 120 (OhmmsVector.h, miniqmc)
+84 170 (OhmmsVector.h, miniqmc)
+85 176 (OhmmsVector.h, miniqmc)
+86 130 (OneBodyJastrow.h, miniqmc)
+87 131 (OneBodyJastrow.h, miniqmc)
+88 145 (OneBodyJastrow.h, miniqmc)
+89 192 (OneBodyJastrow.h, miniqmc)
+90 218 (OneBodyJastrow.h, miniqmc)
+91 251 (OneBodyJastrow.h, miniqmc)
+92 267 (OneBodyJastrow.h, miniqmc)
+93 279 (OneBodyJastrow.h, miniqmc)
+94 43 (OperatorTags.h, miniqmc)
+95 63 (OperatorTags.h, miniqmc)
+96 94 (OperatorTags.h, miniqmc)
+97 184 (ParticleBConds.h, miniqmc)
+98 186 (ParticleBConds.h, miniqmc)
+99 187 (ParticleBConds.h, miniqmc)
+100 188 (ParticleBConds.h, miniqmc)
+101 189 (ParticleBConds.h, miniqmc)
+102 191 (ParticleBConds.h, miniqmc)
+103 192 (ParticleBConds.h, miniqmc)
+104 193 (ParticleBConds.h, miniqmc)
+105 195 (ParticleBConds.h, miniqmc)
+106 196 (ParticleBConds.h, miniqmc)
+107 197 (ParticleBConds.h, miniqmc)
+108 199 (ParticleBConds.h, miniqmc)
+109 204 (ParticleBConds.h, miniqmc)
+110 205 (ParticleBConds.h, miniqmc)
+111 206 (ParticleBConds.h, miniqmc)
+112 207 (ParticleBConds.h, miniqmc)
+113 208 (ParticleBConds.h, miniqmc)
+114 209 (ParticleBConds.h, miniqmc)
+115 212 (ParticleBConds.h, miniqmc)
+116 213 (ParticleBConds.h, miniqmc)
+117 214 (ParticleBConds.h, miniqmc)
+118 215 (ParticleBConds.h, miniqmc)
+119 319 (ParticleSet.cpp, miniqmc)
+120 375 (ParticleSet.cpp, miniqmc)
+121 269 (ParticleSet.h, miniqmc)
+122 308 (ParticleSet.h, miniqmc)
+123 311 (ParticleSet.h, miniqmc)
+124 146 (TinyVector.h, miniqmc)
+125 176 (TinyVector.h, miniqmc)
+126 177 (TinyVector.h, miniqmc)
+127 111 (TinyVectorOps.h, miniqmc)
+128 124 (TwoBodyJastrow.h, miniqmc)
+129 153 (TwoBodyJastrow.h, miniqmc)
+130 154 (TwoBodyJastrow.h, miniqmc)
+131 265 (TwoBodyJastrow.h, miniqmc)
+132 266 (TwoBodyJastrow.h, miniqmc)
+133 280 (TwoBodyJastrow.h, miniqmc)
+134 284 (TwoBodyJastrow.h, miniqmc)
+135 312 (TwoBodyJastrow.h, miniqmc)
+136 322 (TwoBodyJastrow.h, miniqmc)
+137 324 (TwoBodyJastrow.h, miniqmc)
+138 325 (TwoBodyJastrow.h, miniqmc)
+139 326 (TwoBodyJastrow.h, miniqmc)
+140 327 (TwoBodyJastrow.h, miniqmc)
+141 328 (TwoBodyJastrow.h, miniqmc)
+142 340 (TwoBodyJastrow.h, miniqmc)
+143 342 (TwoBodyJastrow.h, miniqmc)
+144 343 (TwoBodyJastrow.h, miniqmc)
+145 344 (TwoBodyJastrow.h, miniqmc)
+146 349 (TwoBodyJastrow.h, miniqmc)
+147 380 (TwoBodyJastrow.h, miniqmc)
+148 203 (VectorSo..tainer.h) [203 (VectorSoAContainer.h, miniqmc)]
+149 241 (VectorSo..tainer.h) [241 (VectorSoAContainer.h, miniqmc)]
+150 243 (VectorSo..tainer.h) [243 (VectorSoAContainer.h, miniqmc)]
+151 204 (WaveFunction.cpp, miniqmc)
+152 213 (WaveFunction.cpp, miniqmc)
+153 218 (WaveFunction.cpp, miniqmc)
+154 228 (WaveFunction.cpp, miniqmc)
+155 230 (WaveFunction.cpp, miniqmc)
+156 231 (WaveFunction.cpp, miniqmc)
+157 28 (algorithm.hpp, miniqmc)
+158 46 (algorithm.hpp, miniqmc)
+159 47 (algorithm.hpp, miniqmc)
+160 65 (algorithm.hpp, miniqmc)
+161 66 (algorithm.hpp, miniqmc)
+162 74 (algorithm.hpp, miniqmc)
+163 75 (algorithm.hpp, miniqmc)
+164 87 (algorithm.hpp, miniqmc)
+165 250 (alloc_traits.h, miniqmc)
+166 211 (einspline_spo.hpp, miniqmc)
+167 213 (einspline_spo.hpp, miniqmc)
+168 215 (einspline_spo.hpp, miniqmc)
+169 1102 (kmp.h, libiomp5.so)
+170 791 (kmp_barrier.cpp, libiomp5.so)
+171 865 (kmp_barrier.cpp, libiomp5.so)
+172 479 (kmp_ftn_entry.h, libiomp5.so)
+173 493 (kmp_ftn_entry.h, libiomp5.so)
+174 549 (kmp_ftn_entry.h, libiomp5.so)
+175 262 (kmp_runtime.cpp, libiomp5.so)
+176 269 (kmp_runtime.cpp, libiomp5.so)
+177 271 (kmp_runtime.cpp, libiomp5.so)
+178 284 (kmp_runtime.cpp, libiomp5.so)
+179 301 (kmp_runtime.cpp, libiomp5.so)
+180 3038 (kmp_runtime.cpp, libiomp5.so)
+181 246 (kmp_wait..elease.h) [246 (kmp_wait_release.h, libiomp5.so)]
+182 256 (kmp_wait..elease.h) [256 (kmp_wait_release.h, libiomp5.so)]
+183 262 (kmp_wait..elease.h) [262 (kmp_wait_release.h, libiomp5.so)]
+184 273 (kmp_wait..elease.h) [273 (kmp_wait_release.h, libiomp5.so)]
+185 274 (kmp_wait..elease.h) [274 (kmp_wait_release.h, libiomp5.so)]
+186 288 (kmp_wait..elease.h) [288 (kmp_wait_release.h, libiomp5.so)]
+187 296 (kmp_wait..elease.h) [296 (kmp_wait_release.h, libiomp5.so)]
+188 297 (kmp_wait..elease.h) [297 (kmp_wait_release.h, libiomp5.so)]
+189 326 (kmp_wait..elease.h) [326 (kmp_wait_release.h, libiomp5.so)]
+190 330 (kmp_wait..elease.h) [330 (kmp_wait_release.h, libiomp5.so)]
+191 338 (kmp_wait..elease.h) [338 (kmp_wait_release.h, libiomp5.so)]
+192 379 (miniqmc.cpp, miniqmc)
+193 408 (miniqmc.cpp, miniqmc)
+194 429 (miniqmc.cpp, miniqmc)
+195 445 (miniqmc.cpp, miniqmc)
+196 481 (miniqmc.cpp, miniqmc)
+197 486 (miniqmc.cpp, miniqmc)
+198 503 (miniqmc.cpp, miniqmc)
+199 416 (random.tcc, miniqmc)
+200 463 (random.tcc, miniqmc)
+201 464 (random.tcc, miniqmc)
+202 465 (random.tcc, miniqmc)
+203 3328 (random.tcc, miniqmc)
+204 3334 (random.tcc, miniqmc)
+205 367 (stl_algobase.h, miniqmc)
+206 695 (stl_algobase.h, miniqmc)
+207 740 (stl_algobase.h, miniqmc)
+208 752 (stl_algobase.h, miniqmc)
+209 386 (stl_function.h, miniqmc)
+210 630 (stl_unin..alized.h) [630 (stl_uninitialized.h, miniqmc)]
+211 671 (stl_vector.h, miniqmc)
+212 921 (stl_vector.h, miniqmc)
+213 2168 (z_Linux_util.cpp, libiomp5.so)
+
+
+EVENT_TYPE
+6    40000033    Executing CPU
+6    40000133    CPU-Event sampling interval
+
+
+EVENT_TYPE
+6    40000001    Application
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000050    RAW clock() value from system
+
+
+EVENT_TYPE
+6    40000003    Flushing Traces
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000002    Trace initialization
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000036    Process IDentifier
+6    40000037    Parent Process IDentifier
+6    40000038    fork() depth
+
+
+EVENT_TYPE
+7  42000050 PAPI_TOT_INS [Instr completed]
+7  42000059 PAPI_TOT_CYC [Total cycles]
+7  42000000 PAPI_L1_DCM [L1D cache misses]
+7  42000002 PAPI_L2_DCM [L2D cache misses]
+7  42000008 PAPI_L3_TCM [L3 cache misses]
+7  42000055 PAPI_BR_INS [Branches]
+7  42000046 PAPI_BR_MSP [Cond br mspredictd]
+7  42001047 RESOURCE_STALLS [Cycles Allocation is stalled due to Resource Related reason]
+7  41999999 Active hardware counter set
+
+
+GRADIENT_COLOR
+0    {0,255,2}
+1    {0,244,13}
+2    {0,232,25}
+3    {0,220,37}
+4    {0,209,48}
+5    {0,197,60}
+6    {0,185,72}
+7    {0,173,84}
+8    {0,162,95}
+9    {0,150,107}
+10    {0,138,119}
+11    {0,127,130}
+12    {0,115,142}
+13    {0,103,154}
+14    {0,91,166}
+
+
+GRADIENT_NAMES
+0    Gradient 0
+1    Grad. 1/MPI Events
+2    Grad. 2/OMP Events
+3    Grad. 3/OMP locks
+4    Grad. 4/User func
+5    Grad. 5/User Events
+6    Grad. 6/General Events
+7    Grad. 7/Hardware Counters
+8    Gradient 8
+9    Gradient 9
+10    Gradient 10
+11    Gradient 11
+12    Gradient 12
+13    Gradient 13
+14    Gradient 14
+
+
+EVENT_TYPE
+0    30000000    Sampled functions
+0    30000001    Sampled functions (depth 1)
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 qmcplusp..eOrbital [qmcplusplus::BsplineAllocator<double, 64ul, qmcplusplus::Mallocator<double, 64ul> >::setCoefficientsForOneOrbital]
+4 std::mer..gen_rand [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand]
+5 std::gen..253ul> > [std::generate_canonical<double, 53ul, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >]
+6 Array<do..erator() [Array<double, 3u>::operator()]
+7 std::mer..erator() [std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()]
+8 L_main_3..op0_2_91 [L_main_379__par_loop0_2_91]
+9 std::__u.. 64ul> > [std::__uninitialized_default_n_a<double*, unsigned long, qmcplusplus::Mallocator<double, 64ul> >]
+10 std::all..<double> [std::allocator_traits<qmcplusplus::Mallocator<double, 64ul> >::_S_construct<double>]
+11 qmcplusp..4ul> > > [qmcplusplus::DTD_BConds<double, 3u, 39>::computeDistances<qmcplusplus::TinyVector<double, 3u>, qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> > >]
+12 qmcplusp..erator[] [qmcplusplus::TinyVector<double, 3u>::operator[]]
+13 std::__f..e, 3u> > [std::__fill_n_a<qmcplusplus::TinyVector<double, 3u>*, unsigned long, qmcplusplus::TinyVector<double, 3u> >]
+14 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_vgh<double>]
+15 qmcplusp..nyVector [qmcplusplus::TinyVector<double, 3u>::TinyVector]
+16 qmcplusp..erator[] [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::operator[]]
+17 qmcplusp..evaluate [qmcplusplus::einspline_spo<double>::evaluate]
+18 qmcplusp.. double> [qmcplusplus::simd::transpose<double, double>]
+19 qmcplusp..<double> [qmcplusplus::simd::dot<double>]
+20 qmcplusp..>::apply [qmcplusplus::OTBinary<double, qmcplusplus::TinyVector<double, 3u>, qmcplusplus::OpMultiply>::apply]
+21 _INTERNA..flag_64> [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_wait_template<kmp_flag_64>]
+22 qmcplusp..luateVGL [qmcplusplus::BsplineFunctor<double>::evaluateVGL]
+23 qmcplusp..ecompute [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::recompute]
+24 __kmp_x86_pause
+25 __kmp_yield
+26 L_main_4..op1_2_92 [L_main_408__par_loop1_2_92]
+27 qmcplusp..ceptMove [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+28 qmcplusp..r::start [qmcplusplus::NewTimer::start]
+29 qmcplusp..umulateG [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateG]
+30 qmcplusp.. >::data [qmcplusplus::VectorSoAContainer<double, 3u, 64ul, qmcplusplus::Mallocator<double, 64ul> >::data]
+31 qmcplusp..t::first [qmcplusplus::ParticleSet::first]
+32 qmcplusp.. double> [qmcplusplus::OpAddAssign::operator()<double, double>]
+33 std::__f.. double> [std::__fill_a<double*, double>]
+34 qmcplusp..ble, 3u> [qmcplusplus::simd::dot<double, 3u>]
+35 std::vec.. >::size [std::vector<qmcplusplus::DistanceTableData*, std::allocator<qmcplusplus::DistanceTableData*> >::size]
+36 qmcplusp.. double> [qmcplusplus::OpMultiply::operator()<double, double>]
+37 BLAS::gemm
+38 qmcplusp..e, 3u> > [qmcplusplus::simd::copy<qmcplusplus::TinyVector<double, 3u> >]
+39 std::__c..<double> [std::__copy_move<false, true, std::random_access_iterator_tag>::__copy_m<double>]
+40 std::__f.. double> [std::__fill_n_a<double*, int, double>]
+41 qmcplusp.. double> [qmcplusplus::OpAdd::operator()<double, double>]
+42 qmcplusp..<double> [qmcplusplus::MultiBsplineEval::evaluate_v<double>]
+43 qmcplusp..valuateV [qmcplusplus::BsplineFunctor<double>::evaluateV]
+44 qmcplusp..n::ratio [qmcplusplus::WaveFunction::ratio]
+45 qmcplusp..>::ratio [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+46 qmcplusp..computeU [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+47 qmcplusp..er::stop [qmcplusplus::NewTimer::stop]
+48 _INTERNA..r_gather [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_gather]
+49 qmcplusp..omputeU3 [qmcplusplus::TwoBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+50 __kmp_ge..d_id_reg [__kmp_get_global_thread_id_reg]
+51 qmcplusp..<double> [qmcplusplus::spline2::computeLocationAndFractional<double>]
+52 qmcplusp..ble> > > [qmcplusplus::DelayedUpdate<double, double>::acceptRow<qmcplusplus::Vector<double, std::allocator<double> > >]
+53 std::les..erator() [std::less<qmcplusplus::StackKeyParam<2> >::operator()]
+54 __kmp_ap..parallel [__kmp_api_omp_in_parallel]
+55 qmcplusp..atioGrad [qmcplusplus::WaveFunction::ratioGrad]
+56 qmcplusp.. double> [qmcplusplus::spline2::getSplineBound<double, double>]
+57 qmcplusp..>::ratio [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratio]
+58 qmcplusp..>::ratio [qmcplusplus::DiracDeterminant<qmcplusplus::DelayedUpdate<double, double> >::ratio]
+59 qmcplusp..9>::move [qmcplusplus::DistanceTableBA<double, 3u, 39>::move]
+60 qmcplusp..et::last [qmcplusplus::ParticleSet::last]
+61 qmcplusp..>, void> [qmcplusplus::Vector<int, std::allocator<int> >::operator[]<std::allocator<int>, void>]
+62 qmcplusp..TotalNum [qmcplusplus::ParticleSet::getTotalNum]
+63 __kmp_ap..et_level [__kmp_api_omp_get_level]
+64 qmcplusp..atioGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::ratioGrad]
+65 std::vec.. >::data [std::vector<double, qmcplusplus::Mallocator<double, 64ul> >::data]
+66 qmcplusp..makeMove [qmcplusplus::ParticleSet::makeMove]
+67 qmcplusp..evalGrad [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::evalGrad]
+68 qmcplusp..evalGrad [qmcplusplus::WaveFunction::evalGrad]
+69 __kmp_ge..read_num [__kmp_get_ancestor_thread_num]
+70 qmcplusp..efactors [qmcplusplus::MultiBsplineData<double>::compute_prefactors]
+71 qmcplusp.. >::size [qmcplusplus::Vector<double, std::allocator<double> >::size]
+72 qmcplusp..<double> [qmcplusplus::CrystalLattice<double, 3u, false>::toUnit_floor<double>]
+73 _INTERNA.._release [_INTERNAL_25_______src_kmp_barrier_cpp_ce635104::__kmp_hyper_barrier_release]
+74 qmcplusp..perator< [qmcplusplus::StackKeyParam<2>::operator<]
+75 qmcplusp..ceptMove [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::acceptMove]
+76 qmcplusp.. double> [qmcplusplus::simd::accumulate_n<double, double>]
+77 qmcplusp..mulateGL [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::accumulateGL]
+78 qmcplusp..omputeU3 [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU3]
+79 qmcplusp..jectMove [qmcplusplus::ParticleSet::rejectMove]
+80 qmcplusp..>, void> [qmcplusplus::Vector<qmcplusplus::TinyVector<double, 3u>, std::allocator<qmcplusplus::TinyVector<double, 3u> > >::operator[]<std::allocator<qmcplusplus::TinyVector<double, 3u> >, void>]
+81 qmcplusp..9>::move [qmcplusplus::DistanceTableAA<double, 3u, 39>::move]
+82 qmcplusp..computeU [qmcplusplus::OneBodyJastrow<qmcplusplus::BsplineFunctor<double> >::computeU]
+83 L_main_5..op2_2_94 [L_main_503__par_loop2_2_94]
+
+
+EVENT_TYPE
+0    30000100    Sampled line functions (depth 0)
+0    30000101    Sampled lines functions (depth 1)
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 174 (BsplineA..ator.hpp) [174 (BsplineAllocator.hpp, miniqmc)]
+4 236 (BsplineFunctor.h, miniqmc)
+5 238 (BsplineFunctor.h, miniqmc)
+6 240 (BsplineFunctor.h, miniqmc)
+7 241 (BsplineFunctor.h, miniqmc)
+8 244 (BsplineFunctor.h, miniqmc)
+9 246 (BsplineFunctor.h, miniqmc)
+10 250 (BsplineFunctor.h, miniqmc)
+11 256 (BsplineFunctor.h, miniqmc)
+12 257 (BsplineFunctor.h, miniqmc)
+13 258 (BsplineFunctor.h, miniqmc)
+14 259 (BsplineFunctor.h, miniqmc)
+15 260 (BsplineFunctor.h, miniqmc)
+16 286 (BsplineFunctor.h, miniqmc)
+17 291 (BsplineFunctor.h, miniqmc)
+18 293 (BsplineFunctor.h, miniqmc)
+19 294 (BsplineFunctor.h, miniqmc)
+20 297 (BsplineFunctor.h, miniqmc)
+21 298 (BsplineFunctor.h, miniqmc)
+22 305 (BsplineFunctor.h, miniqmc)
+23 309 (BsplineFunctor.h, miniqmc)
+24 311 (BsplineFunctor.h, miniqmc)
+25 321 (BsplineFunctor.h, miniqmc)
+26 324 (BsplineFunctor.h, miniqmc)
+27 325 (BsplineFunctor.h, miniqmc)
+28 327 (BsplineFunctor.h, miniqmc)
+29 334 (BsplineFunctor.h, miniqmc)
+30 336 (BsplineFunctor.h, miniqmc)
+31 194 (CrystalLattice.h, miniqmc)
+32 138 (DelayedUpdate.h, miniqmc)
+33 195 (DiracDet..nant.cpp) [195 (DiracDeterminant.cpp, miniqmc)]
+34 101 (DistanceTableAA.h, miniqmc)
+35 97 (DistanceTableBA.h, miniqmc)
+36 58 (MultiBspline.hpp, miniqmc)
+37 59 (MultiBspline.hpp, miniqmc)
+38 60 (MultiBspline.hpp, miniqmc)
+39 61 (MultiBspline.hpp, miniqmc)
+40 174 (MultiBspline.hpp, miniqmc)
+41 195 (MultiBspline.hpp, miniqmc)
+42 233 (MultiBspline.hpp, miniqmc)
+43 235 (MultiBspline.hpp, miniqmc)
+44 236 (MultiBspline.hpp, miniqmc)
+45 237 (MultiBspline.hpp, miniqmc)
+46 238 (MultiBspline.hpp, miniqmc)
+47 240 (MultiBspline.hpp, miniqmc)
+48 241 (MultiBspline.hpp, miniqmc)
+49 242 (MultiBspline.hpp, miniqmc)
+50 244 (MultiBspline.hpp, miniqmc)
+51 245 (MultiBspline.hpp, miniqmc)
+52 246 (MultiBspline.hpp, miniqmc)
+53 247 (MultiBspline.hpp, miniqmc)
+54 248 (MultiBspline.hpp, miniqmc)
+55 249 (MultiBspline.hpp, miniqmc)
+56 250 (MultiBspline.hpp, miniqmc)
+57 251 (MultiBspline.hpp, miniqmc)
+58 252 (MultiBspline.hpp, miniqmc)
+59 253 (MultiBspline.hpp, miniqmc)
+60 258 (MultiBspline.hpp, miniqmc)
+61 268 (MultiBspline.hpp, miniqmc)
+62 271 (MultiBspline.hpp, miniqmc)
+63 272 (MultiBspline.hpp, miniqmc)
+64 274 (MultiBspline.hpp, miniqmc)
+65 275 (MultiBspline.hpp, miniqmc)
+66 276 (MultiBspline.hpp, miniqmc)
+67 277 (MultiBspline.hpp, miniqmc)
+68 278 (MultiBspline.hpp, miniqmc)
+69 57 (MultiBsp..Data.hpp) [57 (MultiBsplineData.hpp, miniqmc)]
+70 71 (MultiBsp..Data.hpp) [71 (MultiBsplineData.hpp, miniqmc)]
+71 55 (MultiBsp..lper.hpp) [55 (MultiBsplineEvalHelper.hpp, miniqmc)]
+72 81 (MultiBsp..lper.hpp) [81 (MultiBsplineEvalHelper.hpp, miniqmc)]
+73 106 (MultiBsp..lper.hpp) [106 (MultiBsplineEvalHelper.hpp, miniqmc)]
+74 215 (NewTimer.h, miniqmc)
+75 354 (NewTimer.h, miniqmc)
+76 363 (NewTimer.h, miniqmc)
+77 364 (NewTimer.h, miniqmc)
+78 365 (NewTimer.h, miniqmc)
+79 400 (NewTimer.h, miniqmc)
+80 411 (NewTimer.h, miniqmc)
+81 156 (OhmmsArray.h, miniqmc)
+82 234 (OhmmsBlas.h, miniqmc)
+83 120 (OhmmsVector.h, miniqmc)
+84 170 (OhmmsVector.h, miniqmc)
+85 176 (OhmmsVector.h, miniqmc)
+86 130 (OneBodyJastrow.h, miniqmc)
+87 131 (OneBodyJastrow.h, miniqmc)
+88 145 (OneBodyJastrow.h, miniqmc)
+89 192 (OneBodyJastrow.h, miniqmc)
+90 218 (OneBodyJastrow.h, miniqmc)
+91 251 (OneBodyJastrow.h, miniqmc)
+92 267 (OneBodyJastrow.h, miniqmc)
+93 279 (OneBodyJastrow.h, miniqmc)
+94 43 (OperatorTags.h, miniqmc)
+95 63 (OperatorTags.h, miniqmc)
+96 94 (OperatorTags.h, miniqmc)
+97 184 (ParticleBConds.h, miniqmc)
+98 186 (ParticleBConds.h, miniqmc)
+99 187 (ParticleBConds.h, miniqmc)
+100 188 (ParticleBConds.h, miniqmc)
+101 189 (ParticleBConds.h, miniqmc)
+102 191 (ParticleBConds.h, miniqmc)
+103 192 (ParticleBConds.h, miniqmc)
+104 193 (ParticleBConds.h, miniqmc)
+105 195 (ParticleBConds.h, miniqmc)
+106 196 (ParticleBConds.h, miniqmc)
+107 197 (ParticleBConds.h, miniqmc)
+108 199 (ParticleBConds.h, miniqmc)
+109 204 (ParticleBConds.h, miniqmc)
+110 205 (ParticleBConds.h, miniqmc)
+111 206 (ParticleBConds.h, miniqmc)
+112 207 (ParticleBConds.h, miniqmc)
+113 208 (ParticleBConds.h, miniqmc)
+114 209 (ParticleBConds.h, miniqmc)
+115 212 (ParticleBConds.h, miniqmc)
+116 213 (ParticleBConds.h, miniqmc)
+117 214 (ParticleBConds.h, miniqmc)
+118 215 (ParticleBConds.h, miniqmc)
+119 319 (ParticleSet.cpp, miniqmc)
+120 375 (ParticleSet.cpp, miniqmc)
+121 269 (ParticleSet.h, miniqmc)
+122 308 (ParticleSet.h, miniqmc)
+123 311 (ParticleSet.h, miniqmc)
+124 146 (TinyVector.h, miniqmc)
+125 176 (TinyVector.h, miniqmc)
+126 177 (TinyVector.h, miniqmc)
+127 111 (TinyVectorOps.h, miniqmc)
+128 124 (TwoBodyJastrow.h, miniqmc)
+129 153 (TwoBodyJastrow.h, miniqmc)
+130 154 (TwoBodyJastrow.h, miniqmc)
+131 265 (TwoBodyJastrow.h, miniqmc)
+132 266 (TwoBodyJastrow.h, miniqmc)
+133 280 (TwoBodyJastrow.h, miniqmc)
+134 284 (TwoBodyJastrow.h, miniqmc)
+135 312 (TwoBodyJastrow.h, miniqmc)
+136 322 (TwoBodyJastrow.h, miniqmc)
+137 324 (TwoBodyJastrow.h, miniqmc)
+138 325 (TwoBodyJastrow.h, miniqmc)
+139 326 (TwoBodyJastrow.h, miniqmc)
+140 327 (TwoBodyJastrow.h, miniqmc)
+141 328 (TwoBodyJastrow.h, miniqmc)
+142 340 (TwoBodyJastrow.h, miniqmc)
+143 342 (TwoBodyJastrow.h, miniqmc)
+144 343 (TwoBodyJastrow.h, miniqmc)
+145 344 (TwoBodyJastrow.h, miniqmc)
+146 349 (TwoBodyJastrow.h, miniqmc)
+147 380 (TwoBodyJastrow.h, miniqmc)
+148 203 (VectorSo..tainer.h) [203 (VectorSoAContainer.h, miniqmc)]
+149 241 (VectorSo..tainer.h) [241 (VectorSoAContainer.h, miniqmc)]
+150 243 (VectorSo..tainer.h) [243 (VectorSoAContainer.h, miniqmc)]
+151 204 (WaveFunction.cpp, miniqmc)
+152 213 (WaveFunction.cpp, miniqmc)
+153 218 (WaveFunction.cpp, miniqmc)
+154 228 (WaveFunction.cpp, miniqmc)
+155 230 (WaveFunction.cpp, miniqmc)
+156 231 (WaveFunction.cpp, miniqmc)
+157 28 (algorithm.hpp, miniqmc)
+158 46 (algorithm.hpp, miniqmc)
+159 47 (algorithm.hpp, miniqmc)
+160 65 (algorithm.hpp, miniqmc)
+161 66 (algorithm.hpp, miniqmc)
+162 74 (algorithm.hpp, miniqmc)
+163 75 (algorithm.hpp, miniqmc)
+164 87 (algorithm.hpp, miniqmc)
+165 250 (alloc_traits.h, miniqmc)
+166 211 (einspline_spo.hpp, miniqmc)
+167 213 (einspline_spo.hpp, miniqmc)
+168 215 (einspline_spo.hpp, miniqmc)
+169 1102 (kmp.h, libiomp5.so)
+170 791 (kmp_barrier.cpp, libiomp5.so)
+171 865 (kmp_barrier.cpp, libiomp5.so)
+172 479 (kmp_ftn_entry.h, libiomp5.so)
+173 493 (kmp_ftn_entry.h, libiomp5.so)
+174 549 (kmp_ftn_entry.h, libiomp5.so)
+175 262 (kmp_runtime.cpp, libiomp5.so)
+176 269 (kmp_runtime.cpp, libiomp5.so)
+177 271 (kmp_runtime.cpp, libiomp5.so)
+178 284 (kmp_runtime.cpp, libiomp5.so)
+179 301 (kmp_runtime.cpp, libiomp5.so)
+180 3038 (kmp_runtime.cpp, libiomp5.so)
+181 246 (kmp_wait..elease.h) [246 (kmp_wait_release.h, libiomp5.so)]
+182 256 (kmp_wait..elease.h) [256 (kmp_wait_release.h, libiomp5.so)]
+183 262 (kmp_wait..elease.h) [262 (kmp_wait_release.h, libiomp5.so)]
+184 273 (kmp_wait..elease.h) [273 (kmp_wait_release.h, libiomp5.so)]
+185 274 (kmp_wait..elease.h) [274 (kmp_wait_release.h, libiomp5.so)]
+186 288 (kmp_wait..elease.h) [288 (kmp_wait_release.h, libiomp5.so)]
+187 296 (kmp_wait..elease.h) [296 (kmp_wait_release.h, libiomp5.so)]
+188 297 (kmp_wait..elease.h) [297 (kmp_wait_release.h, libiomp5.so)]
+189 326 (kmp_wait..elease.h) [326 (kmp_wait_release.h, libiomp5.so)]
+190 330 (kmp_wait..elease.h) [330 (kmp_wait_release.h, libiomp5.so)]
+191 338 (kmp_wait..elease.h) [338 (kmp_wait_release.h, libiomp5.so)]
+192 379 (miniqmc.cpp, miniqmc)
+193 408 (miniqmc.cpp, miniqmc)
+194 429 (miniqmc.cpp, miniqmc)
+195 445 (miniqmc.cpp, miniqmc)
+196 481 (miniqmc.cpp, miniqmc)
+197 486 (miniqmc.cpp, miniqmc)
+198 503 (miniqmc.cpp, miniqmc)
+199 416 (random.tcc, miniqmc)
+200 463 (random.tcc, miniqmc)
+201 464 (random.tcc, miniqmc)
+202 465 (random.tcc, miniqmc)
+203 3328 (random.tcc, miniqmc)
+204 3334 (random.tcc, miniqmc)
+205 367 (stl_algobase.h, miniqmc)
+206 695 (stl_algobase.h, miniqmc)
+207 740 (stl_algobase.h, miniqmc)
+208 752 (stl_algobase.h, miniqmc)
+209 386 (stl_function.h, miniqmc)
+210 630 (stl_unin..alized.h) [630 (stl_uninitialized.h, miniqmc)]
+211 671 (stl_vector.h, miniqmc)
+212 921 (stl_vector.h, miniqmc)
+213 2168 (z_Linux_util.cpp, libiomp5.so)
+
+
+EVENT_TYPE
+0 41000000 Object addresses for task 1.1
+VALUES
+1 completed.8922 [0x00755920-0x00755920]
+2 ___kmpv_zeromain_0 [0x00755940-0x00755943]
+3 ___kmpv_zeromain_1 [0x00755944-0x00755947]
+4 ___kmpv_zeromain_2 [0x00755948-0x0075594b]
+5 main$$LSDA [0x00534834-0x005349d9]
+6 _ZN11qmcplusplus10NonLocalPPIdED1Ev$$LSDA [0x005349dc-0x005349f1]
+7 _ZN11qmcplusplus10NonLocalPPIdEC1ERK9StdRandomIdSt23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615ELm11ELm4294967295ELm7ELm2636928640ELm15ELm4022730752ELm18ELm1812433253EEERKNS_11ParticleSetE$$LSDA [0x005349f4-0x00534a19]
+8 _ZNSt6vectorIN11qmcplusplus18VirtualParticleSetESaIS1_EED1Ev$$LSDA [0x00534a1c-0x00534a31]
+9 _ZNSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00534a34-0x00534a45]
+10 _ZNSt6vectorIdSaIdEED1Ev$$LSDA [0x00534a48-0x00534a59]
+11 _ZN11qmcplusplus8NewTimer5startEv$$LSDA [0x00534a5c-0x00534a6f]
+12 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEEC1EmRKS2_$$LSDA [0x00534a70-0x00534a95]
+13 _Z10print_helpv$$LSDA [0x00534a98-0x00534aac]
+14 _ZN18OutputManagerClass9getStreamE7LogType$$LSDA [0x00534ab0-0x00534abf]
+15 _ZN14PrimeNumberSetIjEC1Ev$$LSDA [0x00534ac0-0x00534ad9]
+16 _ZNSt6vectorIjSaIjEED1Ev$$LSDA [0x00534adc-0x00534aed]
+17 _ZN14PrimeNumberSetIjED1Ev$$LSDA [0x00534af0-0x00534b01]
+18 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EED1Ev$$LSDA [0x00534b04-0x00534b15]
+19 _ZNSt6vectorIN11qmcplusplus13TimerIDName_tI13MiniQMCTimersEESaIS3_EEC1ERKS5_$$LSDA [0x00534b18-0x00534b4b]
+20 _ZNSt6vectorIN11qmcplusplus13TimerIDName_tI13MiniQMCTimersEESaIS3_EED1Ev$$LSDA [0x00534b4c-0x00534b5d]
+21 _ZNSt6vectorIPN11qmcplusplus5MoverESaIS2_EEC1EmRKS2_RKS3_$$LSDA [0x00534b60-0x00534b74]
+22 _ZNSt6vectorIPN11qmcplusplus5MoverESaIS2_EED1Ev$$LSDA [0x00534b78-0x00534b89]
+23 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEED1Ev$$LSDA [0x00534b8c-0x00534b9d]
+24 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00534ba0-0x00534bac]
+25 _ZNSt12_Destroy_auxILb0EE9__destroyIPN11qmcplusplus13TimerIDName_tI13MiniQMCTimersEEEEvT_S7_$$LSDA [0x00534bb0-0x00534bbf]
+26 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00534bc0-0x00534bcc]
+27 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED0Ev$$LSDA [0x00534bd0-0x00534bdc]
+28 _ZN11qmcplusplus16extract_sub_listERKSt6vectorIPNS_5MoverESaIS2_EEii$$LSDA [0x00534be0-0x00534bf9]
+29 _ZN11qmcplusplus16extract_els_listERKSt6vectorIPNS_5MoverESaIS2_EE$$LSDA [0x00534bfc-0x00534c15]
+30 _ZNSt6vectorIPN11qmcplusplus11ParticleSetESaIS2_EED1Ev$$LSDA [0x00534c18-0x00534c29]
+31 _ZN11qmcplusplus15extract_wf_listERKSt6vectorIPNS_5MoverESaIS2_EE$$LSDA [0x00534c2c-0x00534c45]
+32 _ZNSt6vectorIPN11qmcplusplus12WaveFunctionESaIS2_EED1Ev$$LSDA [0x00534c48-0x00534c59]
+33 _ZN11qmcplusplus17extract_nlpp_listERKSt6vectorIPNS_5MoverESaIS2_EE$$LSDA [0x00534c5c-0x00534c75]
+34 _ZNSt6vectorIPN11qmcplusplus10NonLocalPPIdEESaIS3_EED1Ev$$LSDA [0x00534c78-0x00534c89]
+35 _ZN17_INTERNAL654dd4b7St8__ioinitE [0x0075594c-0x0075594c]
+36 __sti__$E$$LSDA [0x00534c8c-0x00534cd0]
+37 _ZN11qmcplusplus13TimerIDName_tI13MiniQMCTimersED1Ev$$LSDA [0x00534cd4-0x00534ce3]
+38 _ZN11qmcplusplus8NewTimer4stopEv$$LSDA [0x00534ce4-0x00534cfc]
+39 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_dESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x00534d00-0x00534d17]
+40 _ZNSt3mapIN11qmcplusplus13StackKeyParamILi2EEEdSt4lessIS2_ESaISt4pairIKS2_dEEEixERS6_$$LSDA [0x00534d18-0x00534d30]
+41 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_lESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x00534d34-0x00534d4b]
+42 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00534d4c-0x00534d58]
+43 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJdEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00534d5c-0x00534d68]
+44 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIiLm64EEEE12_S_constructIiJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00534d6c-0x00534d78]
+45 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIiLm64EEEE12_S_constructIiJiEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00534d7c-0x00534d88]
+46 _ZNSt12_Destroy_auxILb0EE9__destroyIPN11qmcplusplus18TimerIDNameLevel_tINS2_18WaveFunctionTimersEEEEEvT_S7_$$LSDA [0x00534d8c-0x00534d9b]
+47 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00534d9c-0x00534da8]
+48 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED0Ev$$LSDA [0x00534dac-0x00534db8]
+49 _ZN11qmcplusplus14ParticleAttribIdSaIdEED1Ev$$LSDA [0x00534dbc-0x00534dc8]
+50 _ZN11qmcplusplus14ParticleAttribIdSaIdEED0Ev$$LSDA [0x00534dcc-0x00534dd8]
+51 _ZN11qmcplusplus21WaveFunctionComponentD0Ev$$LSDA [0x00534ddc-0x00534deb]
+52 _ZN11qmcplusplus21WaveFunctionComponent14multi_evalGradERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EEiRS1_INS_10TinyVectorIdLj3EEESaISE_EE$$LSDA [0x00534dec-0x00534dfc]
+53 _ZN11qmcplusplus12WaveFunctionC1Ev$$LSDA [0x00534e00-0x00534e0c]
+54 _ZN11qmcplusplus12WaveFunctionC2Ev$$LSDA [0x00534e10-0x00534e1c]
+55 _ZN11qmcplusplus12WaveFunctionD1Ev$$LSDA [0x00534e20-0x00534e3b]
+56 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EED1Ev$$LSDA [0x00534e3c-0x00534e4d]
+57 _ZN11qmcplusplus12WaveFunctionD2Ev$$LSDA [0x00534e50-0x00534e6b]
+58 _ZN11qmcplusplus12WaveFunction5ratioERNS_11ParticleSetEi$$LSDA [0x00534e6c-0x00534e84]
+59 _ZN11qmcplusplus12WaveFunction10acceptMoveERNS_11ParticleSetEi$$LSDA [0x00534e88-0x00534ea0]
+60 _ZN11qmcplusplus12WaveFunction15completeUpdatesEv$$LSDA [0x00534ea4-0x00534ed0]
+61 _ZN11qmcplusplus12WaveFunction14evaluateRatiosERNS_18VirtualParticleSetERSt6vectorIdSaIdEE$$LSDA [0x00534ed4-0x00534f06]
+62 _ZN17_INTERNAL61764e7fSt19piecewise_constructE [0x004f8240-0x004f8240]
+63 _ZNK11qmcplusplus12WaveFunction16flex_evaluateLogERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EE$$LSDA [0x00534f08-0x00534f64]
+64 _ZNSt6vectorIPN11qmcplusplus21WaveFunctionComponentESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x00534f68-0x00534f7b]
+65 _ZNSt6vectorIPN11qmcplusplus21WaveFunctionComponentESaIS2_EED1Ev$$LSDA [0x00534f7c-0x00534f8d]
+66 _ZN11qmcplusplus12WaveFunction11evaluateLogERNS_11ParticleSetE$$LSDA [0x00534f90-0x00534fa9]
+67 _ZNSt6vectorIPN11qmcplusplus14ParticleAttribINS0_10TinyVectorIdLj3EEESaIS3_EEESaIS6_EED1Ev$$LSDA [0x00534fac-0x00534fbd]
+68 _ZNSt6vectorIPN11qmcplusplus14ParticleAttribIdSaIdEEESaIS4_EED1Ev$$LSDA [0x00534fc0-0x00534fd1]
+69 _ZNK11qmcplusplus12WaveFunction13flex_evalGradERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EEiRS1_INS_10TinyVectorIdLj3EEESaISE_EE$$LSDA [0x00534fd4-0x0053502d]
+70 _ZN11qmcplusplus12WaveFunction8evalGradERNS_11ParticleSetEi$$LSDA [0x00535030-0x00535059]
+71 _ZNK11qmcplusplus12WaveFunction14flex_ratioGradERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EEiRS1_IdSaIdEERS1_INS_10TinyVectorIdLj3EEESaISH_EE$$LSDA [0x0053505c-0x005350b1]
+72 _ZN11qmcplusplus12WaveFunction9ratioGradERNS_11ParticleSetEiRNS_10TinyVectorIdLj3EEE$$LSDA [0x005350b4-0x005350cc]
+73 _ZNK11qmcplusplus12WaveFunction22flex_acceptrestoreMoveERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EERKS1_IbSaIbEEi$$LSDA [0x005350d0-0x0053511d]
+74 _ZN11qmcplusplus8NewTimer5startEv$$LSDA [0x00535120-0x00535133]
+75 _ZNK11qmcplusplus12WaveFunction15flex_evaluateGLERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EE$$LSDA [0x00535134-0x0053518a]
+76 _ZN11qmcplusplus12WaveFunction10evaluateGLERNS_11ParticleSetE$$LSDA [0x0053518c-0x005351c0]
+77 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x005351c4-0x005351d7]
+78 _ZNK11qmcplusplus12WaveFunction20flex_completeUpdatesERKSt6vectorIPS0_SaIS2_EE$$LSDA [0x005351d8-0x00535224]
+79 _ZN11qmcplusplus11ScopedTimerD1Ev$$LSDA [0x00535228-0x00535248]
+80 _ZNK11qmcplusplus12WaveFunction15extract_up_listERKSt6vectorIPS0_SaIS2_EE$$LSDA [0x0053524c-0x00535265]
+81 _ZNK11qmcplusplus12WaveFunction15extract_dn_listERKSt6vectorIPS0_SaIS2_EE$$LSDA [0x00535268-0x00535281]
+82 _ZNK11qmcplusplus12WaveFunction16extract_jas_listERKSt6vectorIPS0_SaIS2_EEi$$LSDA [0x00535284-0x0053529d]
+83 _ZN11qmcplusplus19PolynomialFunctor3DD1Ev$$LSDA [0x005352a0-0x005352b1]
+84 _ZN11qmcplusplus19PolynomialFunctor3DD0Ev$$LSDA [0x005352b4-0x005352c5]
+85 _ZN11qmcplusplus14BsplineFunctorIdED1Ev$$LSDA [0x005352c8-0x005352d9]
+86 _ZN11qmcplusplus14BsplineFunctorIdED0Ev$$LSDA [0x005352dc-0x005352ed]
+87 _ZN11qmcplusplus14OneBodyJastrowINS_14BsplineFunctorIdEEED1Ev$$LSDA [0x005352f0-0x0053530c]
+88 _ZNSt6vectorIPN11qmcplusplus14BsplineFunctorIdEESaIS3_EED1Ev$$LSDA [0x00535310-0x00535321]
+89 _ZNSt6vectorIiN11qmcplusplus10MallocatorIiLm64EEEED1Ev$$LSDA [0x00535324-0x00535335]
+90 _ZN11qmcplusplus21WaveFunctionComponentD1Ev$$LSDA [0x00535338-0x00535347]
+91 _ZN11qmcplusplus14OneBodyJastrowINS_14BsplineFunctorIdEEED0Ev$$LSDA [0x00535348-0x00535364]
+92 _ZN11qmcplusplus14TwoBodyJastrowINS_14BsplineFunctorIdEEED1Ev$$LSDA [0x00535368-0x00535389]
+93 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEED1Ev$$LSDA [0x0053538c-0x0053539d]
+94 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN11qmcplusplus14BsplineFunctorIdEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE8_M_eraseEPSt13_Rb_tree_nodeISC_E$$LSDA [0x005353a0-0x005353b3]
+95 _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPN11qmcplusplus14BsplineFunctorIdEESt4lessIS5_ESaISt4pairIKS5_S9_EEED1Ev$$LSDA [0x005353b4-0x005353c7]
+96 _ZN11qmcplusplus14TwoBodyJastrowINS_14BsplineFunctorIdEEED0Ev$$LSDA [0x005353c8-0x005353e9]
+97 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEED1Ev$$LSDA [0x005353ec-0x005353fd]
+98 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEED0Ev$$LSDA [0x00535400-0x00535411]
+99 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEE18build_compact_listERNS_11ParticleSetE$$LSDA [0x00535414-0x0053542d]
+100 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEE5ratioERNS_11ParticleSetEi$$LSDA [0x00535430-0x00535446]
+101 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEE14evaluateRatiosERNS_18VirtualParticleSetERSt6vectorIdSaIdEE$$LSDA [0x00535448-0x0053545e]
+102 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEE10acceptMoveERNS_11ParticleSetEi$$LSDA [0x00535460-0x00535477]
+103 _ZNSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x00535478-0x0053548d]
+104 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEE9computeU3ERKNS_11ParticleSetEiPKdRKNS_18VectorSoAContainerIdLj3ELm64ENS_10MallocatorIdLm64EEEEES7_SD_RdRNS_10TinyVectorIdLj3EEESE_RNS_6VectorIdSaIdEEERSB_SL_b$$LSDA [0x00535490-0x005354a7]
+105 _ZN16miniqmcreference17OneBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEED1Ev$$LSDA [0x005354a8-0x005354c4]
+106 _ZN16miniqmcreference17OneBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEED0Ev$$LSDA [0x005354c8-0x005354e4]
+107 _ZN16miniqmcreference17TwoBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEED1Ev$$LSDA [0x005354e8-0x00535509]
+108 _ZN16miniqmcreference17TwoBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEED0Ev$$LSDA [0x0053550c-0x0053552d]
+109 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEED1Ev$$LSDA [0x00535530-0x00535541]
+110 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEED0Ev$$LSDA [0x00535544-0x00535555]
+111 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEE18build_compact_listERNS1_11ParticleSetE$$LSDA [0x00535558-0x00535571]
+112 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEE5ratioERNS1_11ParticleSetEi$$LSDA [0x00535574-0x0053558a]
+113 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEE14evaluateRatiosERNS1_18VirtualParticleSetERSt6vectorIdSaIdEE$$LSDA [0x0053558c-0x005355a2]
+114 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEE10acceptMoveERNS1_11ParticleSetEi$$LSDA [0x005355a4-0x005355bb]
+115 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEE9computeU3ERKNS1_11ParticleSetEiPKdRKNS1_18VectorSoAContainerIdLj3ELm64ENS1_10MallocatorIdLm64EEEEES8_SE_RdRNS1_10TinyVectorIdLj3EEESF_RNS1_6VectorIdSaIdEEERSC_SM_b$$LSDA [0x005355bc-0x005355d3]
+116 _ZSt8__fill_aIPSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS3_EES5_EN9__gnu_cxx11__enable_ifIXntsr3std11__is_scalarIT0_EE7__valueEvE6__typeET_SC_RKS9_$$LSDA [0x005355d4-0x005355e9]
+117 _ZN11qmcplusplus18build_WaveFunctionEbPKNS_6SPOSetERNS_12WaveFunctionERNS_11ParticleSetES6_RK9StdRandomIdSt23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615ELm11ELm4294967295ELm7ELm2636928640ELm15ELm4022730752ELm18ELm1812433253EEEib$$LSDA [0x005355ec-0x005356b5]
+118 _ZNSt6vectorIPN11qmcplusplus21WaveFunctionComponentESaIS2_EE17_M_realloc_insertIJS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x005356b8-0x005356cb]
+119 _ZN18OutputManagerClass9getStreamE7LogType$$LSDA [0x005356cc-0x005356db]
+120 _ZN11qmcplusplus14OneBodyJastrowINS_14BsplineFunctorIdEEEC1ERKNS_11ParticleSetERS4_$$LSDA [0x005356dc-0x005356fc]
+121 _ZN11qmcplusplus7buildJ1INS_14OneBodyJastrowINS_14BsplineFunctorIdEEEEEEvRT_d$$LSDA [0x00535700-0x0053572c]
+122 _ZN11qmcplusplus14BsplineFunctorIdEC1Ed$$LSDA [0x00535730-0x0053573f]
+123 _ZN11qmcplusplus14TwoBodyJastrowINS_14BsplineFunctorIdEEEC1ERNS_11ParticleSetE$$LSDA [0x00535740-0x00535760]
+124 _ZN11qmcplusplus7buildJ2INS_14TwoBodyJastrowINS_14BsplineFunctorIdEEEEEEvRT_d$$LSDA [0x00535764-0x005357a4]
+125 _ZN11qmcplusplus14TwoBodyJastrowINS_14BsplineFunctorIdEEE7addFuncEiiPS2_$$LSDA [0x005357a8-0x0053583a]
+126 _ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev$$LSDA [0x0053583c-0x0053584b]
+127 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_PN11qmcplusplus14BsplineFunctorIdEEESt10_Select1stISC_ESt4lessIS5_ESaISC_EE12_M_drop_nodeEPSt13_Rb_tree_nodeISC_E$$LSDA [0x0053584c-0x0053585b]
+128 _ZN11qmcplusplus12WaveFunction11setupTimersEv$$LSDA [0x0053585c-0x00535885]
+129 _ZNSt6vectorIN11qmcplusplus18TimerIDNameLevel_tINS0_18WaveFunctionTimersEEESaIS3_EEC1ERKS5_$$LSDA [0x00535888-0x005358bb]
+130 _ZNSt6vectorIN11qmcplusplus18TimerIDNameLevel_tINS0_18WaveFunctionTimersEEESaIS3_EED1Ev$$LSDA [0x005358bc-0x005358cd]
+131 _ZN11qmcplusplus9buildJeeIINS_16ThreeBodyJastrowINS_19PolynomialFunctor3DEEEEEvRT_d$$LSDA [0x005358d0-0x00535946]
+132 _ZN11qmcplusplus19PolynomialFunctor3DC1Edd$$LSDA [0x00535948-0x00535962]
+133 _ZN11qmcplusplus6MatrixIdSaIdEED1Ev$$LSDA [0x00535964-0x00535970]
+134 _ZNSt6vectorIN11qmcplusplus6TensorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00535974-0x00535985]
+135 _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev$$LSDA [0x00535988-0x00535999]
+136 _ZN5ArrayIiLj3EED1Ev$$LSDA [0x0053599c-0x005359ad]
+137 _ZN5ArrayIdLj3EED1Ev$$LSDA [0x005359b0-0x005359c1]
+138 _ZN11qmcplusplus19PolynomialFunctor3D11reset_gammaEv$$LSDA [0x005359c4-0x005359d9]
+139 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEEC1ERKNS_11ParticleSetERS3_b$$LSDA [0x005359dc-0x005359fc]
+140 _ZN5ArrayIPN11qmcplusplus19PolynomialFunctor3DELj3EED1Ev$$LSDA [0x00535a00-0x00535a11]
+141 _ZN5ArrayISt6vectorIiSaIiEELj2EED1Ev$$LSDA [0x00535a14-0x00535a25]
+142 _ZN5ArrayISt6vectorIdSaIdEELj2EED1Ev$$LSDA [0x00535a28-0x00535a39]
+143 _ZN5ArrayISt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS3_EELj2EED1Ev$$LSDA [0x00535a3c-0x00535a4d]
+144 _ZN11qmcplusplus7buildJ2IN16miniqmcreference17TwoBodyJastrowRefINS_14BsplineFunctorIdEEEEEEvRT_d$$LSDA [0x00535a50-0x00535a90]
+145 _ZN16miniqmcreference17TwoBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEE7addFuncEiiPS3_$$LSDA [0x00535a94-0x00535b26]
+146 _ZN16miniqmcreference17TwoBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEEC1ERNS1_11ParticleSetE$$LSDA [0x00535b28-0x00535b48]
+147 _ZN11qmcplusplus7buildJ1IN16miniqmcreference17OneBodyJastrowRefINS_14BsplineFunctorIdEEEEEEvRT_d$$LSDA [0x00535b4c-0x00535b78]
+148 _ZN16miniqmcreference17OneBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEEC1ERKNS1_11ParticleSetERS5_$$LSDA [0x00535b7c-0x00535b9c]
+149 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEEC1ERKNS1_11ParticleSetERS4_b$$LSDA [0x00535ba0-0x00535bc0]
+150 _ZN11qmcplusplus9buildJeeIIN16miniqmcreference19ThreeBodyJastrowRefINS_19PolynomialFunctor3DEEEEEvRT_d$$LSDA [0x00535bc4-0x00535c3a]
+151 _ZN17_INTERNAL61764e7fSt8__ioinitE [0x00755968-0x00755968]
+152 __sti__$E$$LSDA [0x00535c3c-0x00535c80]
+153 _ZN11qmcplusplus18TimerIDNameLevel_tINS_18WaveFunctionTimersEED1Ev$$LSDA [0x00535c84-0x00535c93]
+154 _ZNSt6vectorIdSaIdEEC1ERKS1_$$LSDA [0x00535c94-0x00535ca8]
+155 _ZNSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EEC1ERKS4_$$LSDA [0x00535cac-0x00535cc4]
+156 _ZNSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EEaSERKS4_$$LSDA [0x00535cc8-0x00535cdd]
+157 _ZNSt6vectorIiSaIiEEC1ERKS1_$$LSDA [0x00535ce0-0x00535cf4]
+158 _ZNSt6vectorIS_IiSaIiEESaIS1_EE16_Temporary_valueD1Ev$$LSDA [0x00535cf8-0x00535d09]
+159 _ZNSt6vectorIS_IdSaIdEESaIS1_EE16_Temporary_valueD1Ev$$LSDA [0x00535d0c-0x00535d1d]
+160 _ZNSt6vectorIS_IN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EESaIS4_EE16_Temporary_valueD1Ev$$LSDA [0x00535d20-0x00535d31]
+161 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt6vectorIiSaIiEEEEvT_S6_$$LSDA [0x00535d34-0x00535d45]
+162 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt6vectorIdSaIdEEEEvT_S6_$$LSDA [0x00535d48-0x00535d59]
+163 _ZNSt12_Destroy_auxILb0EE9__destroyIPSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS5_EEEEvT_S9_$$LSDA [0x00535d5c-0x00535d6d]
+164 _ZNSt6vectorIdSaIdEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPdS1_EEmRKd$$LSDA [0x00535d70-0x00535d86]
+165 _ZNSt6vectorIS_IiSaIiEESaIS1_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEmRKS1_$$LSDA [0x00535d88-0x00535dd6]
+166 _ZNSt6vectorIiSaIiEED1Ev$$LSDA [0x00535dd8-0x00535de9]
+167 _ZNSt6vectorIS_IdSaIdEESaIS1_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS1_S3_EEmRKS1_$$LSDA [0x00535dec-0x00535e3a]
+168 _ZNSt6vectorIdSaIdEED1Ev$$LSDA [0x00535e3c-0x00535e4d]
+169 _ZNSt6vectorIS_IN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EESaIS4_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS4_S6_EEmRKS4_$$LSDA [0x00535e50-0x00535e9e]
+170 _ZNSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00535ea0-0x00535eb1]
+171 _ZNSt6vectorIPN11qmcplusplus14BsplineFunctorIdEESaIS3_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS3_S5_EEmRKS3_$$LSDA [0x00535eb4-0x00535eca]
+172 _ZN16miniqmcreference19ThreeBodyJastrowRefIN11qmcplusplus19PolynomialFunctor3DEE4initERNS1_11ParticleSetE$$LSDA [0x00535ecc-0x00535f70]
+173 _ZN16miniqmcreference17TwoBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEE4initERNS1_11ParticleSetE$$LSDA [0x00535f74-0x00535fbc]
+174 _ZN16miniqmcreference17OneBodyJastrowRefIN11qmcplusplus14BsplineFunctorIdEEE9initalizeERNS1_11ParticleSetE$$LSDA [0x00535fc0-0x00536012]
+175 _ZN11qmcplusplus16ThreeBodyJastrowINS_19PolynomialFunctor3DEE4initERNS_11ParticleSetE$$LSDA [0x00536014-0x005360b8]
+176 _ZN11qmcplusplus14TwoBodyJastrowINS_14BsplineFunctorIdEEE4initERNS_11ParticleSetE$$LSDA [0x005360bc-0x00536104]
+177 _ZN11qmcplusplus14OneBodyJastrowINS_14BsplineFunctorIdEEE9initalizeERNS_11ParticleSetE$$LSDA [0x00536108-0x0053615a]
+178 _ZNSt6vectorIN11qmcplusplus6TensorIdLj3EEESaIS2_EE17_M_default_appendEm$$LSDA [0x0053615c-0x00536171]
+179 _ZNSt6vectorIN11qmcplusplus10TinyVectorIdLj3EEESaIS2_EE17_M_default_appendEm$$LSDA [0x00536174-0x00536189]
+180 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEE17_M_default_appendEm$$LSDA [0x0053618c-0x005361b5]
+181 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_dESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x005361b8-0x005361cf]
+182 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIP19multi_UBspline_3d_dLm64EEEE12_S_constructIS3_JEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS5_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISB_JSD_EEEEEEE5valueEvE4typeERS4_PSB_DpOSC_$$LSDA [0x005361d0-0x005361dc]
+183 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIP19multi_UBspline_3d_dLm64EEEE12_S_constructIS3_JS3_EEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS5_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISB_JSD_EEEEEEE5valueEvE4typeERS4_PSB_DpOSC_$$LSDA [0x005361e0-0x005361ec]
+184 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorISt6vectorIdNS1_IdLm64EEEELm64EEEE12_S_constructIS4_JEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS6_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISC_JSE_EEEEEEE5valueEvE4typeERS5_PSC_DpOSD_$$LSDA [0x005361f0-0x005361fc]
+185 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorISt6vectorIdNS1_IdLm64EEEELm64EEEE12_S_constructIS4_JS4_EEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS6_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISC_JSE_EEEEEEE5valueEvE4typeERS5_PSC_DpOSD_$$LSDA [0x00536200-0x0053620c]
+186 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorINS0_18VectorSoAContainerIdLj3ELm64ENS1_IdLm64EEEEELm64EEEE12_S_constructIS4_JEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS6_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISC_JSE_EEEEEEE5valueEvE4typeERS5_PSC_DpOSD_$$LSDA [0x00536210-0x0053621c]
+187 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorINS0_18VectorSoAContainerIdLj3ELm64ENS1_IdLm64EEEEELm64EEEE12_S_constructIS4_JRKS4_EEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS6_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISE_JSG_EEEEEEE5valueEvE4typeERS5_PSE_DpOSF_$$LSDA [0x00536220-0x00536246]
+188 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorINS0_18VectorSoAContainerIdLj6ELm64ENS1_IdLm64EEEEELm64EEEE12_S_constructIS4_JEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS6_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISC_JSE_EEEEEEE5valueEvE4typeERS5_PSC_DpOSD_$$LSDA [0x00536248-0x00536254]
+189 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorINS0_18VectorSoAContainerIdLj6ELm64ENS1_IdLm64EEEEELm64EEEE12_S_constructIS4_JRKS4_EEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS6_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleISE_JSG_EEEEEEE5valueEvE4typeERS5_PSE_DpOSF_$$LSDA [0x00536258-0x0053627e]
+190 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00536280-0x0053628c]
+191 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJdEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00536290-0x0053629c]
+192 _ZN11qmcplusplus6SPOSetD0Ev$$LSDA [0x005362a0-0x005362af]
+193 _ZN11qmcplusplus6SPOSet20evaluate_notransposeERKNS_11ParticleSetEiiRNS_6MatrixIdSaIdEEERNS4_INS_10TinyVectorIdLj3EEESaIS9_EEES7_$$LSDA [0x005362b0-0x005362ca]
+194 _ZN11qmcplusplus13einspline_spoIdED1Ev$$LSDA [0x005362cc-0x005362e3]
+195 _ZN11qmcplusplus13einspline_spoIdED0Ev$$LSDA [0x005362e4-0x005362fb]
+196 _ZN17_INTERNALd64beb85St19piecewise_constructE [0x004f851c-0x004f851c]
+197 _ZN11qmcplusplus13einspline_spoIdE8evaluateERKNS_11ParticleSetEiRNS_6VectorIdSaIdEEE$$LSDA [0x005362fc-0x0053631e]
+198 _ZN11qmcplusplus11ScopedTimerD1Ev$$LSDA [0x00536320-0x00536340]
+199 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x00536344-0x00536357]
+200 _ZN11qmcplusplus13einspline_spoIdE12evaluate_vghERKNS_11ParticleSetEi$$LSDA [0x00536358-0x0053637f]
+201 _ZN16miniqmcreference17einspline_spo_refIdED1Ev$$LSDA [0x00536380-0x00536397]
+202 _ZN16miniqmcreference17einspline_spo_refIdED0Ev$$LSDA [0x00536398-0x005363af]
+203 _ZN16miniqmcreference17einspline_spo_refIdE8evaluateERKN11qmcplusplus11ParticleSetEiRNS2_6VectorIdSaIdEEE$$LSDA [0x005363b0-0x005363d2]
+204 _ZN16miniqmcreference17einspline_spo_refIdE12evaluate_vghERKN11qmcplusplus11ParticleSetEi$$LSDA [0x005363d4-0x005363fb]
+205 _ZN11qmcplusplus12build_SPOSetEbiiiiiRKNS_6TensorIdLj3EEEb$$LSDA [0x005363fc-0x00536438]
+206 _ZN11qmcplusplus13einspline_spoIdE3setEiiiiib$$LSDA [0x0053643c-0x00536491]
+207 _ZNSt6vectorIdSaIdEED1Ev$$LSDA [0x00536494-0x005364a5]
+208 _ZN5ArrayIdLj3EED1Ev$$LSDA [0x005364a8-0x005364b9]
+209 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj6ELm64ENS0_10MallocatorIdLm64EEEEENS2_IS4_Lm64EEEED1Ev$$LSDA [0x005364bc-0x005364d1]
+210 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj3ELm64ENS0_10MallocatorIdLm64EEEEENS2_IS4_Lm64EEEED1Ev$$LSDA [0x005364d4-0x005364e9]
+211 _ZNSt6vectorIS_IdN11qmcplusplus10MallocatorIdLm64EEEENS1_IS3_Lm64EEEED1Ev$$LSDA [0x005364ec-0x00536501]
+212 _ZNSt6vectorIP19multi_UBspline_3d_dN11qmcplusplus10MallocatorIS1_Lm64EEEED1Ev$$LSDA [0x00536504-0x00536515]
+213 _ZN11qmcplusplus6SPOSetD1Ev$$LSDA [0x00536518-0x00536527]
+214 _ZN16miniqmcreference17einspline_spo_refIdE3setEiiiiib$$LSDA [0x00536528-0x0053657d]
+215 _ZN11qmcplusplus15LatticeAnalyzerIdLj3EE15calcSolidAnglesERKNS_10TinyVectorINS2_IdLj3EEELj3EEERKS3_$$LSDA [0x00536580-0x0053658c]
+216 _ZN11qmcplusplus17build_SPOSet_viewEbPKNS_6SPOSetEii$$LSDA [0x00536590-0x0053662b]
+217 _ZN17_INTERNALd64beb85St8__ioinitE [0x00755970-0x00755970]
+218 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorISt6vectorIdNS1_IdLm64EEEELm64EEEE10_S_destroyIS5_S4_EEvRT_PT0_z$$LSDA [0x0053662c-0x0053663d]
+219 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEE17_M_default_appendEm$$LSDA [0x00536640-0x00536669]
+220 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj6ELm64ENS0_10MallocatorIdLm64EEEEENS2_IS4_Lm64EEEE17_M_default_appendEm$$LSDA [0x0053666c-0x005366b8]
+221 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj3ELm64ENS0_10MallocatorIdLm64EEEEENS2_IS4_Lm64EEEE17_M_default_appendEm$$LSDA [0x005366bc-0x00536708]
+222 _ZNSt6vectorIS_IdN11qmcplusplus10MallocatorIdLm64EEEENS1_IS3_Lm64EEEE17_M_default_appendEm$$LSDA [0x0053670c-0x00536736]
+223 _ZNSt6vectorIP19multi_UBspline_3d_dN11qmcplusplus10MallocatorIS1_Lm64EEEE17_M_default_appendEm$$LSDA [0x00536738-0x00536761]
+224 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_dESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x00536764-0x0053677b]
+225 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_lESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x0053677c-0x00536793]
+226 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00536794-0x005367a0]
+227 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJdEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x005367a4-0x005367b0]
+228 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIiLm64EEEE12_S_constructIiJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x005367b4-0x005367c0]
+229 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIiLm64EEEE12_S_constructIiJiEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x005367c4-0x005367d0]
+230 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x005367d4-0x005367e0]
+231 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED0Ev$$LSDA [0x005367e4-0x005367f0]
+232 _ZN11qmcplusplus14ParticleAttribIdSaIdEED1Ev$$LSDA [0x005367f4-0x00536800]
+233 _ZN11qmcplusplus14ParticleAttribIdSaIdEED0Ev$$LSDA [0x00536804-0x00536810]
+234 _ZN11qmcplusplus21WaveFunctionComponentD0Ev$$LSDA [0x00536814-0x00536823]
+235 _ZN17_INTERNAL5ae6e7e5St19piecewise_constructE [0x004f8848-0x004f8848]
+236 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE11evaluateLogERNS_11ParticleSetERNS_14ParticleAttribINS_10TinyVectorIdLj3EEESaIS8_EEERNS6_IdSaIdEEE$$LSDA [0x00536824-0x00536838]
+237 _ZN11qmcplusplus11DiracMatrixIddE16invert_transposeERKNS_6MatrixIdSaIdEEERS4_RdS8_$$LSDA [0x0053683c-0x005368a7]
+238 _ZN11qmcplusplus16BlasThreadingEnvD1Ev$$LSDA [0x005368a8-0x005368bf]
+239 _ZN11qmcplusplus8NewTimer5startEv$$LSDA [0x005368c0-0x005368d3]
+240 _ZN11qmcplusplus21WaveFunctionComponent14multi_evalGradERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EEiRS1_INS_10TinyVectorIdLj3EEESaISE_EE$$LSDA [0x005368d4-0x005368ed]
+241 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x005368f0-0x00536903]
+242 _ZN11qmcplusplus21WaveFunctionComponent15multi_ratioGradERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EEiRS1_IdSaIdEERS1_INS_10TinyVectorIdLj3EEESaISH_EE$$LSDA [0x00536904-0x0053691d]
+243 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE17ratioGrad_computeEiRNS_10TinyVectorIdLj3EEE$$LSDA [0x00536920-0x00536939]
+244 _ZN11qmcplusplus21WaveFunctionComponent23multi_acceptrestoreMoveERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EERKS1_IbSaIbEEi$$LSDA [0x0053693c-0x00536955]
+245 _ZN11qmcplusplus13DelayedUpdateIddE9acceptRowINS_6VectorIdSaIdEEEEEvRNS_6MatrixIdS4_EEiRKT_$$LSDA [0x00536958-0x00536985]
+246 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE10evaluateGLERNS_11ParticleSetERNS_14ParticleAttribINS_10TinyVectorIdLj3EEESaIS8_EEERNS6_IdSaIdEEEb$$LSDA [0x00536988-0x005369a1]
+247 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEEC1EPNS_6SPOSetEii$$LSDA [0x005369a4-0x00536a12]
+248 _ZN11qmcplusplus21WaveFunctionComponentD1Ev$$LSDA [0x00536a14-0x00536a23]
+249 _ZN11qmcplusplus6MatrixINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00536a24-0x00536a30]
+250 _ZN11qmcplusplus13DelayedUpdateIddEC1Ev$$LSDA [0x00536a34-0x00536a43]
+251 _ZN11qmcplusplus6MatrixIdSaIdEED1Ev$$LSDA [0x00536a44-0x00536a50]
+252 _ZNSt6vectorIiSaIiEED1Ev$$LSDA [0x00536a54-0x00536a65]
+253 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEED1Ev$$LSDA [0x00536a68-0x00536a79]
+254 _ZNSt6vectorIiN11qmcplusplus10MallocatorIiLm64EEEED1Ev$$LSDA [0x00536a7c-0x00536a8d]
+255 _ZN11qmcplusplus13DelayedUpdateIddED1Ev$$LSDA [0x00536a90-0x00536aa1]
+256 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE6resizeEii$$LSDA [0x00536aa4-0x00536adc]
+257 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEEC2EPNS_6SPOSetEii$$LSDA [0x00536ae0-0x00536b4d]
+258 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE10invertPsiMERKNS_6MatrixIdSaIdEEERS6_$$LSDA [0x00536b50-0x00536b68]
+259 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE5ratioERNS_11ParticleSetEi$$LSDA [0x00536b6c-0x00536b80]
+260 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE14evaluateRatiosERNS_18VirtualParticleSetERSt6vectorIdSaIdEE$$LSDA [0x00536b84-0x00536b9d]
+261 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE9ratioGradERNS_11ParticleSetEiRNS_10TinyVectorIdLj3EEE$$LSDA [0x00536ba0-0x00536bb8]
+262 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE8evalGradERNS_11ParticleSetEi$$LSDA [0x00536bbc-0x00536bd5]
+263 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE10acceptMoveERNS_11ParticleSetEi$$LSDA [0x00536bd8-0x00536bf1]
+264 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE15completeUpdatesEv$$LSDA [0x00536bf4-0x00536c0c]
+265 _ZN11qmcplusplus13DelayedUpdateIddE12updateInvMatERNS_6MatrixIdSaIdEEE$$LSDA [0x00536c10-0x00536c3b]
+266 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE9recomputeERNS_11ParticleSetE$$LSDA [0x00536c3c-0x00536c50]
+267 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE15multi_ratioGradERKSt6vectorIPNS_21WaveFunctionComponentESaIS6_EERKS4_IPNS_11ParticleSetESaISC_EEiRS4_IdSaIdEERS4_INS_10TinyVectorIdLj3EEESaISL_EE$$LSDA [0x00536c54-0x00536c91]
+268 _ZNSt6vectorIPN11qmcplusplus6VectorINS0_10TinyVectorIdLj3EEESaIS3_EEESaIS6_EE17_M_realloc_insertIJS6_EEEvN9__gnu_cxx17__normal_iteratorIPS6_S8_EEDpOT_$$LSDA [0x00536c94-0x00536ca7]
+269 _ZNSt6vectorIPN11qmcplusplus6VectorIdSaIdEEESaIS4_EE17_M_realloc_insertIJS4_EEEvN9__gnu_cxx17__normal_iteratorIPS4_S6_EEDpOT_$$LSDA [0x00536ca8-0x00536cbb]
+270 _ZNSt6vectorIPN11qmcplusplus6SPOSetESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x00536cbc-0x00536ccf]
+271 _ZNSt6vectorIPN11qmcplusplus6SPOSetESaIS2_EED1Ev$$LSDA [0x00536cd0-0x00536ce1]
+272 _ZNSt6vectorIPN11qmcplusplus6VectorINS0_10TinyVectorIdLj3EEESaIS3_EEESaIS6_EED1Ev$$LSDA [0x00536ce4-0x00536cf5]
+273 _ZNSt6vectorIPN11qmcplusplus6VectorIdSaIdEEESaIS4_EED1Ev$$LSDA [0x00536cf8-0x00536d09]
+274 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEE23multi_acceptrestoreMoveERKSt6vectorIPNS_21WaveFunctionComponentESaIS6_EERKS4_IPNS_11ParticleSetESaISC_EERKS4_IbSaIbEEi$$LSDA [0x00536d0c-0x00536d25]
+275 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEED1Ev$$LSDA [0x00536d28-0x00536d39]
+276 _ZN11qmcplusplus16DiracDeterminantINS_13DelayedUpdateIddEEED0Ev$$LSDA [0x00536d3c-0x00536d4d]
+277 _ZN17_INTERNAL5ae6e7e5St8__ioinitE [0x00755974-0x00755974]
+278 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_dESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x00536d50-0x00536d67]
+279 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_lESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x00536d68-0x00536d7f]
+280 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00536d80-0x00536d8c]
+281 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJdEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00536d90-0x00536d9c]
+282 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIiLm64EEEE12_S_constructIiJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00536da0-0x00536dac]
+283 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIiLm64EEEE12_S_constructIiJiEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00536db0-0x00536dbc]
+284 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00536dc0-0x00536dcc]
+285 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED0Ev$$LSDA [0x00536dd0-0x00536ddc]
+286 _ZN11qmcplusplus14ParticleAttribIdSaIdEED1Ev$$LSDA [0x00536de0-0x00536dec]
+287 _ZN11qmcplusplus14ParticleAttribIdSaIdEED0Ev$$LSDA [0x00536df0-0x00536dfc]
+288 _ZN11qmcplusplus21WaveFunctionComponentD0Ev$$LSDA [0x00536e00-0x00536e0f]
+289 _ZN17_INTERNAL29382e46St19piecewise_constructE [0x004f8ba8-0x004f8ba8]
+290 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE11evaluateLogERNS1_11ParticleSetERNS1_14ParticleAttribINS1_10TinyVectorIdLj3EEESaIS9_EEERNS7_IdSaIdEEE$$LSDA [0x00536e10-0x00536e24]
+291 _ZN11qmcplusplus11DiracMatrixIddE16invert_transposeERKNS_6MatrixIdSaIdEEERS4_RdS8_$$LSDA [0x00536e28-0x00536e93]
+292 _ZN11qmcplusplus16BlasThreadingEnvD1Ev$$LSDA [0x00536e94-0x00536eab]
+293 _ZN11qmcplusplus8NewTimer5startEv$$LSDA [0x00536eac-0x00536ebf]
+294 _ZN11qmcplusplus21WaveFunctionComponent14multi_evalGradERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EEiRS1_INS_10TinyVectorIdLj3EEESaISE_EE$$LSDA [0x00536ec0-0x00536ed9]
+295 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x00536edc-0x00536eef]
+296 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE9ratioGradERNS1_11ParticleSetEiRNS1_10TinyVectorIdLj3EEE$$LSDA [0x00536ef0-0x00536f04]
+297 _ZN11qmcplusplus21WaveFunctionComponent23multi_acceptrestoreMoveERKSt6vectorIPS0_SaIS2_EERKS1_IPNS_11ParticleSetESaIS8_EERKS1_IbSaIbEEi$$LSDA [0x00536f08-0x00536f21]
+298 _ZN11qmcplusplus13DelayedUpdateIddE9acceptRowINS_6VectorIdSaIdEEEEEvRNS_6MatrixIdS4_EEiRKT_$$LSDA [0x00536f24-0x00536f51]
+299 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE10evaluateGLERNS1_11ParticleSetERNS1_14ParticleAttribINS1_10TinyVectorIdLj3EEESaIS9_EEERNS7_IdSaIdEEEb$$LSDA [0x00536f54-0x00536f6d]
+300 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEEC1EPNS1_6SPOSetEii$$LSDA [0x00536f70-0x00536fde]
+301 _ZN11qmcplusplus21WaveFunctionComponentD1Ev$$LSDA [0x00536fe0-0x00536fef]
+302 _ZN11qmcplusplus6MatrixINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00536ff0-0x00536ffc]
+303 _ZN11qmcplusplus13DelayedUpdateIddEC1Ev$$LSDA [0x00537000-0x0053700f]
+304 _ZN11qmcplusplus6MatrixIdSaIdEED1Ev$$LSDA [0x00537010-0x0053701c]
+305 _ZNSt6vectorIiSaIiEED1Ev$$LSDA [0x00537020-0x00537031]
+306 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEED1Ev$$LSDA [0x00537034-0x00537045]
+307 _ZNSt6vectorIiN11qmcplusplus10MallocatorIiLm64EEEED1Ev$$LSDA [0x00537048-0x00537059]
+308 _ZN11qmcplusplus13DelayedUpdateIddED1Ev$$LSDA [0x0053705c-0x0053706d]
+309 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE6resizeEii$$LSDA [0x00537070-0x005370a8]
+310 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEEC2EPNS1_6SPOSetEii$$LSDA [0x005370ac-0x00537119]
+311 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE10invertPsiMERKNS1_6MatrixIdSaIdEEERS7_$$LSDA [0x0053711c-0x00537134]
+312 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE5ratioERNS1_11ParticleSetEi$$LSDA [0x00537138-0x0053714c]
+313 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE14evaluateRatiosERNS1_18VirtualParticleSetERSt6vectorIdSaIdEE$$LSDA [0x00537150-0x00537169]
+314 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE8evalGradERNS1_11ParticleSetEi$$LSDA [0x0053716c-0x00537185]
+315 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE10acceptMoveERNS1_11ParticleSetEi$$LSDA [0x00537188-0x005371a1]
+316 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE15completeUpdatesEv$$LSDA [0x005371a4-0x005371bc]
+317 _ZN11qmcplusplus13DelayedUpdateIddE12updateInvMatERNS_6MatrixIdSaIdEEE$$LSDA [0x005371c0-0x005371eb]
+318 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEE9recomputeERNS1_11ParticleSetE$$LSDA [0x005371ec-0x00537200]
+319 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEED1Ev$$LSDA [0x00537204-0x00537215]
+320 _ZN16miniqmcreference19DiracDeterminantRefIN11qmcplusplus13DelayedUpdateIddEEED0Ev$$LSDA [0x00537218-0x00537229]
+321 _ZN17_INTERNAL29382e46St8__ioinitE [0x00755978-0x00755978]
+322 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_dESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x0053722c-0x00537243]
+323 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_lESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x00537244-0x0053725b]
+324 _ZNSt12_Destroy_auxILb0EE9__destroyIPN11qmcplusplus13TimerIDName_tINS2_14DistanceTimersEEEEEvT_S7_$$LSDA [0x0053725c-0x0053726b]
+325 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x0053726c-0x00537278]
+326 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED0Ev$$LSDA [0x0053727c-0x00537288]
+327 _ZN11qmcplusplus14ParticleAttribIiSaIiEED1Ev$$LSDA [0x0053728c-0x00537298]
+328 _ZN11qmcplusplus14ParticleAttribIiSaIiEED0Ev$$LSDA [0x0053729c-0x005372a8]
+329 _ZN11qmcplusplus14ParticleAttribIdSaIdEED1Ev$$LSDA [0x005372ac-0x005372b8]
+330 _ZN11qmcplusplus14ParticleAttribIdSaIdEED0Ev$$LSDA [0x005372bc-0x005372c8]
+331 _ZN11qmcplusplus11ParticleSetC1Ev$$LSDA [0x005372cc-0x00537301]
+332 _ZN11qmcplusplus15LatticeAnalyzerIdLj3EE15calcSolidAnglesERKNS_10TinyVectorINS2_IdLj3EEELj3EEERKS3_$$LSDA [0x00537304-0x00537310]
+333 _ZNSt6vectorIPN11qmcplusplus17DistanceTableDataESaIS2_EED1Ev$$LSDA [0x00537314-0x00537325]
+334 _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiSt4lessIS5_ESaISt4pairIKS5_iEEED1Ev$$LSDA [0x00537328-0x0053733d]
+335 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x00537340-0x00537353]
+336 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EED1Ev$$LSDA [0x00537354-0x00537365]
+337 _ZNSt6vectorIN11qmcplusplus13TimerIDName_tINS0_14DistanceTimersEEESaIS3_EEC1ERKS5_$$LSDA [0x00537368-0x0053739b]
+338 _ZNSt6vectorIN11qmcplusplus13TimerIDName_tINS0_14DistanceTimersEEESaIS3_EED1Ev$$LSDA [0x0053739c-0x005373ad]
+339 _ZN11qmcplusplus11ParticleSetC2Ev$$LSDA [0x005373b0-0x005373e5]
+340 _ZN11qmcplusplus11ParticleSetC1ERKS0_$$LSDA [0x005373e8-0x00537434]
+341 _ZN17_INTERNAL7d13fd77St19piecewise_constructE [0x004f8e10-0x004f8e10]
+342 _ZN11qmcplusplus11ParticleSet8addTableERKS0_i$$LSDA [0x00537438-0x0053744e]
+343 _ZN18OutputManagerClass9getStreamE7LogType$$LSDA [0x00537450-0x0053745f]
+344 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_$$LSDA [0x00537460-0x00537488]
+345 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x0053748c-0x0053749b]
+346 _ZN11qmcplusplus11ParticleSet6assignERKS0_$$LSDA [0x0053749c-0x005374be]
+347 _ZN11qmcplusplus11ParticleSet6resizeEi$$LSDA [0x005374c0-0x0053750a]
+348 _ZN11qmcplusplus11ParticleSetD1Ev$$LSDA [0x0053750c-0x0053752c]
+349 _ZN11qmcplusplus11ParticleSetD0Ev$$LSDA [0x00537530-0x00537550]
+350 _ZN11qmcplusplus11ParticleSetD2Ev$$LSDA [0x00537554-0x00537574]
+351 _ZN11qmcplusplus11ParticleSet5resetEv$$LSDA [0x00537578-0x0053758b]
+352 _ZN11qmcplusplus11ParticleSet11resetGroupsEv$$LSDA [0x0053758c-0x005375da]
+353 _ZNSt6vectorIiSaIiEEC1EmRKiRKS0_$$LSDA [0x005375dc-0x005375f0]
+354 _ZNSt6vectorIiSaIiEED1Ev$$LSDA [0x005375f4-0x00537605]
+355 _ZN11qmcplusplus11ParticleSet9setActiveEi$$LSDA [0x00537608-0x00537633]
+356 _ZNK11qmcplusplus11ParticleSet14flex_setActiveERKSt6vectorIPS0_SaIS2_EEi$$LSDA [0x00537634-0x0053766c]
+357 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x00537670-0x00537683]
+358 _ZN11qmcplusplus11ScopedTimerD1Ev$$LSDA [0x00537684-0x005376a4]
+359 _ZNK11qmcplusplus11ParticleSet13flex_makeMoveERKSt6vectorIPS0_SaIS2_EEiRKS1_INS_10TinyVectorIdLj3EEESaIS8_EE$$LSDA [0x005376a8-0x005376d9]
+360 _ZN11qmcplusplus11ParticleSet8makeMoveEiRKNS_10TinyVectorIdLj3EEE$$LSDA [0x005376dc-0x00537708]
+361 _ZN11qmcplusplus11ParticleSet10acceptMoveEi$$LSDA [0x0053770c-0x00537787]
+362 _ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev$$LSDA [0x00537788-0x00537797]
+363 _ZN11qmcplusplus11ParticleSet10loadWalkerERNS_6WalkerINS_9QMCTraitsENS_19PtclOnLatticeTraitsEEEb$$LSDA [0x00537798-0x005377b5]
+364 _ZN11qmcplusplus11ParticleSet10saveWalkerERNS_6WalkerINS_9QMCTraitsENS_19PtclOnLatticeTraitsEEE$$LSDA [0x005377b8-0x005377d5]
+365 _ZN11qmcplusplus14extract_G_listERKSt6vectorIPNS_11ParticleSetESaIS2_EE$$LSDA [0x005377d8-0x005377f1]
+366 _ZNSt6vectorIPN11qmcplusplus14ParticleAttribINS0_10TinyVectorIdLj3EEESaIS3_EEESaIS6_EED1Ev$$LSDA [0x005377f4-0x00537805]
+367 _ZN11qmcplusplus14extract_L_listERKSt6vectorIPNS_11ParticleSetESaIS2_EE$$LSDA [0x00537808-0x00537821]
+368 _ZNSt6vectorIPN11qmcplusplus14ParticleAttribIdSaIdEEESaIS4_EED1Ev$$LSDA [0x00537824-0x00537835]
+369 _ZN17_INTERNAL7d13fd77St8__ioinitE [0x00755998-0x00755998]
+370 __sti__$E$$LSDA [0x00537838-0x00537876]
+371 _ZN11qmcplusplus13TimerIDName_tINS_14DistanceTimersEED1Ev$$LSDA [0x00537878-0x00537887]
+372 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00537888-0x00537894]
+373 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJdEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00537898-0x005378a4]
+374 _ZN11qmcplusplus17DistanceTableDataD0Ev$$LSDA [0x005378a8-0x005378b9]
+375 _ZN11qmcplusplus15DistanceTableAAIdLj3ELi39EED1Ev$$LSDA [0x005378bc-0x005378cd]
+376 _ZN11qmcplusplus15DistanceTableAAIdLj3ELi39EED0Ev$$LSDA [0x005378d0-0x005378e1]
+377 _ZN11qmcplusplus19createDistanceTableERNS_11ParticleSetEi$$LSDA [0x005378e4-0x005379d2]
+378 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEED1Ev$$LSDA [0x005379d4-0x005379e5]
+379 _ZN11qmcplusplus15DistanceTableAAIdLj3ELi39EE6resizeEi$$LSDA [0x005379e8-0x00537a47]
+380 _ZN11qmcplusplus17DistanceTableDataD1Ev$$LSDA [0x00537a48-0x00537a59]
+381 _ZN11qmcplusplus10DTD_BCondsIdLj3ELi39EED1Ev$$LSDA [0x00537a5c-0x00537a68]
+382 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj3ELm64ENS0_10MallocatorIdLm64EEEEESaIS4_EED1Ev$$LSDA [0x00537a6c-0x00537a7d]
+383 _ZN11qmcplusplus6MatrixIdNS_10MallocatorIdLm64EEEED1Ev$$LSDA [0x00537a80-0x00537a8c]
+384 _ZN11qmcplusplus10DTD_BCondsIdLj3ELi39EEC1ERKNS_14CrystalLatticeIdLj3ELb0EEE$$LSDA [0x00537a90-0x00537ab7]
+385 _ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev$$LSDA [0x00537ab8-0x00537ac7]
+386 _ZN17_INTERNAL1b911852St8__ioinitE [0x007559a0-0x007559a0]
+387 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj3ELm64ENS0_10MallocatorIdLm64EEEEESaIS4_EE17_M_default_appendEm$$LSDA [0x00537ac8-0x00537afe]
+388 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00537b00-0x00537b0c]
+389 _ZNSt16allocator_traitsIN11qmcplusplus10MallocatorIdLm64EEEE12_S_constructIdJdEEENSt9enable_ifIXsr3std6__and_IJSt6__and_IJSt6__not_INS3_18__construct_helperIT_JDpT0_EE4typeEESt16is_constructibleIS9_JSB_EEEEEEE5valueEvE4typeERS2_PS9_DpOSA_$$LSDA [0x00537b10-0x00537b1c]
+390 _ZN11qmcplusplus17DistanceTableDataD0Ev$$LSDA [0x00537b20-0x00537b31]
+391 _ZN11qmcplusplus15DistanceTableBAIdLj3ELi39EED1Ev$$LSDA [0x00537b34-0x00537b45]
+392 _ZN11qmcplusplus15DistanceTableBAIdLj3ELi39EED0Ev$$LSDA [0x00537b48-0x00537b59]
+393 _ZN11qmcplusplus19createDistanceTableERKNS_11ParticleSetERS0_i$$LSDA [0x00537b5c-0x00537c4a]
+394 _ZNSt6vectorIdN11qmcplusplus10MallocatorIdLm64EEEED1Ev$$LSDA [0x00537c4c-0x00537c5d]
+395 _ZN11qmcplusplus15DistanceTableBAIdLj3ELi39EE6resizeEii$$LSDA [0x00537c60-0x00537cbf]
+396 _ZN11qmcplusplus17DistanceTableDataD1Ev$$LSDA [0x00537cc0-0x00537cd1]
+397 _ZN11qmcplusplus10DTD_BCondsIdLj3ELi39EED1Ev$$LSDA [0x00537cd4-0x00537ce0]
+398 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj3ELm64ENS0_10MallocatorIdLm64EEEEESaIS4_EED1Ev$$LSDA [0x00537ce4-0x00537cf5]
+399 _ZN11qmcplusplus6MatrixIdNS_10MallocatorIdLm64EEEED1Ev$$LSDA [0x00537cf8-0x00537d04]
+400 _ZN11qmcplusplus10DTD_BCondsIdLj3ELi39EEC1ERKNS_14CrystalLatticeIdLj3ELb0EEE$$LSDA [0x00537d08-0x00537d2f]
+401 _ZNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEED1Ev$$LSDA [0x00537d30-0x00537d3f]
+402 _ZN17_INTERNAL1acc3e83St8__ioinitE [0x007559a4-0x007559a4]
+403 _ZNSt6vectorIN11qmcplusplus18VectorSoAContainerIdLj3ELm64ENS0_10MallocatorIdLm64EEEEESaIS4_EE17_M_default_appendEm$$LSDA [0x00537d40-0x00537d76]
+404 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED1Ev$$LSDA [0x00537d78-0x00537d84]
+405 _ZN11qmcplusplus14ParticleAttribINS_10TinyVectorIdLj3EEESaIS2_EED0Ev$$LSDA [0x00537d88-0x00537d94]
+406 _ZN11qmcplusplus14ParticleAttribIiSaIiEED1Ev$$LSDA [0x00537d98-0x00537da4]
+407 _ZN11qmcplusplus14ParticleAttribIiSaIiEED0Ev$$LSDA [0x00537da8-0x00537db4]
+408 _ZN11qmcplusplus10build_ionsERNS_11ParticleSetERKNS_6TensorIiLj3EEERNS2_IdLj3EEE$$LSDA [0x00537db8-0x00537de3]
+409 _ZN11qmcplusplus9tile_cellIdEENS_6TensorIT_Lj3EEERNS_11ParticleSetERKNS1_IiLj3EEES2_$$LSDA [0x00537de4-0x00537e1d]
+410 _ZN11qmcplusplus15LatticeAnalyzerIdLj3EE15calcSolidAnglesERKNS_10TinyVectorINS2_IdLj3EEELj3EEERKS3_$$LSDA [0x00537e20-0x00537e2c]
+411 _ZNSt6vectorIiSaIiEED1Ev$$LSDA [0x00537e30-0x00537e41]
+412 _ZN11qmcplusplus15expandSuperCellINS_11ParticleSetEEEvRT_RKNS_6TensorIiLj3EEE$$LSDA [0x00537e44-0x00537e75]
+413 _ZN18OutputManagerClass9getStreamE7LogType$$LSDA [0x00537e78-0x00537e87]
+414 _ZN11qmcplusplus11ParticleSet6resizeEi$$LSDA [0x00537e88-0x00537ed2]
+415 _ZN11qmcplusplus9build_elsERNS_11ParticleSetERKS0_R9StdRandomIdSt23mersenne_twister_engineImLm32ELm624ELm397ELm31ELm2567483615ELm11ELm4294967295ELm7ELm2636928640ELm15ELm4022730752ELm18ELm1812433253EEE$$LSDA [0x00537ed4-0x00537f0d]
+416 _ZN17_INTERNALb235e173St8__ioinitE [0x007559a8-0x007559a8]
+417 _ZN17_INTERNAL7f7e546bSt8__ioinitE [0x007559ac-0x007559ac]
+418 _ZN10SpeciesSetC1Ev$$LSDA [0x00537f10-0x00537f34]
+419 _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev$$LSDA [0x00537f38-0x00537f49]
+420 _ZNSt6vectorIPS_IdSaIdEESaIS2_EED1Ev$$LSDA [0x00537f4c-0x00537f5d]
+421 _ZN10SpeciesSetC2Ev$$LSDA [0x00537f60-0x00537f84]
+422 _ZN10SpeciesSetC1ERKS_$$LSDA [0x00537f88-0x00537fb4]
+423 _ZNSt6vectorIdSaIdEEC1ERKS1_$$LSDA [0x00537fb8-0x00537fcc]
+424 _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EEC1ERKS7_$$LSDA [0x00537fd0-0x00537fff]
+425 _ZN10SpeciesSetC2ERKS_$$LSDA [0x00538000-0x0053802d]
+426 _ZN10SpeciesSetaSERKS_$$LSDA [0x00538030-0x005380bb]
+427 _ZN10SpeciesSetD1Ev$$LSDA [0x005380bc-0x005380cd]
+428 _ZN10SpeciesSetD0Ev$$LSDA [0x005380d0-0x005380e1]
+429 _ZN10SpeciesSetD2Ev$$LSDA [0x005380e4-0x005380f5]
+430 _ZN10SpeciesSet6createEj$$LSDA [0x005380f8-0x00538118]
+431 _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPS5_S7_EEmRKS5_$$LSDA [0x0053811c-0x00538182]
+432 _ZN10SpeciesSet12addAttributeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE$$LSDA [0x00538184-0x005381d1]
+433 _ZN17_INTERNALaefff506St8__ioinitE [0x00755a34-0x00755a34]
+434 __sti__$E$$LSDA [0x005381d4-0x00538230]
+435 _ZN17_INTERNAL0426bd38St8__ioinitE [0x00755a38-0x00755a38]
+436 _ZN11qmcplusplus17TimerManagerClass11createTimerERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_12timer_levelsE$$LSDA [0x00538234-0x0053825c]
+437 _ZNSt3mapIN11qmcplusplus13StackKeyParamILi2EEEdSt4lessIS2_ESaISt4pairIKS2_dEEED1Ev$$LSDA [0x00538260-0x00538275]
+438 _ZN17_INTERNAL4f3cf608St19piecewise_constructE [0x004fa0c0-0x004fa0c0]
+439 _ZN11qmcplusplus17TimerManagerClass8addTimerEPNS_8NewTimerE$$LSDA [0x00538278-0x005382c3]
+440 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_hESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOS5_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_$$LSDA [0x005382c4-0x005382db]
+441 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_hESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x005382dc-0x005382eb]
+442 _ZN18OutputManagerClass9getStreamE7LogType$$LSDA [0x005382ec-0x005382fb]
+443 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x005382fc-0x0053830f]
+444 _ZN11qmcplusplus17TimerManagerClass5printEv$$LSDA [0x00538310-0x005383c7]
+445 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x005383c8-0x005383db]
+446 _ZN11qmcplusplus17TimerManagerClass16StackProfileDataD1Ev$$LSDA [0x005383dc-0x005383f1]
+447 _ZN11qmcplusplus17TimerManagerClass21collate_stack_profileERNS0_16StackProfileDataE$$LSDA [0x005383f4-0x0053843b]
+448 _ZNSt8_Rb_treeIhSt4pairIKhNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIhESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOhEESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_$$LSDA [0x0053843c-0x00538453]
+449 _ZNSt6vectorIdSaIdEE17_M_realloc_insertIJRKdEEEvN9__gnu_cxx17__normal_iteratorIPdS1_EEDpOT_$$LSDA [0x00538454-0x00538467]
+450 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_dESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x00538468-0x0053847f]
+451 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N11qmcplusplus11ProfileDataEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESL_IJEEEEESt17_Rb_tree_iteratorISA_ESt23_Rb_tree_const_iteratorISA_EDpOT_$$LSDA [0x00538480-0x005384a8]
+452 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N11qmcplusplus11ProfileDataEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE12_M_drop_nodeEPSt13_Rb_tree_nodeISA_E$$LSDA [0x005384ac-0x005384bb]
+453 _ZNSt8_Rb_treeIN11qmcplusplus13StackKeyParamILi2EEESt4pairIKS2_lESt10_Select1stIS5_ESt4lessIS2_ESaIS5_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS4_EESG_IJEEEEESt17_Rb_tree_iteratorIS5_ESt23_Rb_tree_const_iteratorIS5_EDpOT_$$LSDA [0x005384bc-0x005384d3]
+454 _ZNSt6vectorIlSaIlEE17_M_realloc_insertIJlEEEvN9__gnu_cxx17__normal_iteratorIPlS1_EEDpOT_$$LSDA [0x005384d4-0x005384e7]
+455 _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_insertIJRKS5_EEEvN9__gnu_cxx17__normal_iteratorIPS5_S7_EEDpOT_$$LSDA [0x005384e8-0x00538518]
+456 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESJ_IJEEEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EDpOT_$$LSDA [0x0053851c-0x00538544]
+457 _ZNSt3mapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEN11qmcplusplus11ProfileDataESt4lessIS5_ESaISt4pairIKS5_S7_EEED1Ev$$LSDA [0x00538548-0x0053855d]
+458 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N11qmcplusplus11ProfileDataEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E$$LSDA [0x00538560-0x00538573]
+459 _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED1Ev$$LSDA [0x00538574-0x00538585]
+460 _ZN11qmcplusplus17TimerManagerClass10print_flatEv$$LSDA [0x00538588-0x005385ae]
+461 _ZN11qmcplusplus17TimerManagerClass20collate_flat_profileERNS0_15FlatProfileDataE$$LSDA [0x005385b0-0x005385db]
+462 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x005385dc-0x005385eb]
+463 _ZN11qmcplusplus17TimerManagerClass15FlatProfileDataD1Ev$$LSDA [0x005385ec-0x00538601]
+464 _ZN11qmcplusplus17TimerManagerClass11print_stackEv$$LSDA [0x00538604-0x005386ba]
+465 _ZN11qmcplusplus17TimerManagerClass13output_timingERN8tinyxml211XMLDocumentE$$LSDA [0x005386bc-0x00538771]
+466 _ZNSt6vectorIPN8tinyxml27XMLNodeESaIS2_EE17_M_realloc_insertIJRKS2_EEEvN9__gnu_cxx17__normal_iteratorIPS2_S4_EEDpOT_$$LSDA [0x00538774-0x00538787]
+467 _ZNSt6vectorIPN8tinyxml27XMLNodeESaIS2_EED1Ev$$LSDA [0x00538788-0x00538799]
+468 _ZN11qmcplusplus17TimerManagerClass22get_stack_name_from_idERKNS_13StackKeyParamILi2EEERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE$$LSDA [0x0053879c-0x005387b5]
+469 _ZNSt8_Rb_treeIhSt4pairIKhNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIhESaIS8_EE12_M_drop_nodeEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x005387b8-0x005387c7]
+470 _ZN11qmcplusplus17TimerManagerClassD1Ev$$LSDA [0x005387c8-0x005387dd]
+471 _ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_hESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x005387e0-0x005387f3]
+472 _ZNSt8_Rb_treeIhSt4pairIKhNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIhESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E$$LSDA [0x005387f4-0x00538807]
+473 _ZN11qmcplusplus10pad_stringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS5_i$$LSDA [0x00538808-0x0053883e]
+474 _ZN17_INTERNAL4f3cf608St8__ioinitE [0x00755ad8-0x00755ad8]
+475 __sti__$E$$LSDA [0x00538840-0x00538853]
+476 _ZNSt3mapIhNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4lessIhESaISt4pairIKhS5_EEED1Ev$$LSDA [0x00538854-0x00538869]
+477 _ZNSt6vectorIPN11qmcplusplus8NewTimerESaIS2_EED1Ev$$LSDA [0x0053886c-0x0053887d]
+478 _ZN17_INTERNAL47940cf78tinyxml28entitiesE [0x004fa140-0x004fa18f]
+479 FIRST_BYTE_MARK.3336.0.0.183 [0x004fa1a0-0x004fa1d7]
+480 _ZN8tinyxml27XMLNodeD0Ev$$LSDA [0x00538880-0x0053889b]
+481 _ZN8tinyxml27XMLNodeD2Ev$$LSDA [0x0053889c-0x005388b7]
+482 _ZNK8tinyxml27XMLText12ShallowCloneEPNS_11XMLDocumentE$$LSDA [0x005388b8-0x005388c9]
+483 _ZN8tinyxml27XMLTextD1Ev$$LSDA [0x005388cc-0x005388ed]
+484 _ZN8tinyxml27XMLTextD0Ev$$LSDA [0x005388f0-0x00538911]
+485 _ZNK8tinyxml210XMLComment12ShallowCloneEPNS_11XMLDocumentE$$LSDA [0x00538914-0x00538925]
+486 _ZN8tinyxml210XMLCommentD1Ev$$LSDA [0x00538928-0x00538943]
+487 _ZN8tinyxml210XMLCommentD0Ev$$LSDA [0x00538944-0x0053895f]
+488 _ZN8tinyxml210XMLCommentD2Ev$$LSDA [0x00538960-0x0053897b]
+489 _ZNK8tinyxml214XMLDeclaration12ShallowCloneEPNS_11XMLDocumentE$$LSDA [0x0053897c-0x0053898d]
+490 _ZN8tinyxml214XMLDeclarationD1Ev$$LSDA [0x00538990-0x005389ab]
+491 _ZN8tinyxml214XMLDeclarationD0Ev$$LSDA [0x005389ac-0x005389c7]
+492 _ZN8tinyxml214XMLDeclarationD2Ev$$LSDA [0x005389c8-0x005389e3]
+493 _ZNK8tinyxml210XMLUnknown12ShallowCloneEPNS_11XMLDocumentE$$LSDA [0x005389e4-0x005389f5]
+494 _ZN8tinyxml210XMLUnknownD1Ev$$LSDA [0x005389f8-0x00538a13]
+495 _ZN8tinyxml210XMLUnknownD0Ev$$LSDA [0x00538a14-0x00538a2f]
+496 _ZN8tinyxml210XMLUnknownD2Ev$$LSDA [0x00538a30-0x00538a4b]
+497 _ZN8tinyxml212XMLAttributeD1Ev$$LSDA [0x00538a4c-0x00538a5b]
+498 _ZN8tinyxml212XMLAttributeD0Ev$$LSDA [0x00538a5c-0x00538a6b]
+499 _ZN8tinyxml210XMLElement15DeleteAttributeEPKc$$LSDA [0x00538a6c-0x00538a81]
+500 _ZN8tinyxml210XMLElement7SetTextEPKc$$LSDA [0x00538a84-0x00538a95]
+501 _ZNK8tinyxml210XMLElement12ShallowCloneEPNS_11XMLDocumentE$$LSDA [0x00538a98-0x00538aa9]
+502 _ZN8tinyxml210XMLElement21FindOrCreateAttributeEPKc$$LSDA [0x00538aac-0x00538abe]
+503 _ZN8tinyxml210XMLElement15ParseAttributesEPcPi$$LSDA [0x00538ac0-0x00538ad5]
+504 _ZN8tinyxml27XMLNode9ParseDeepEPcPNS_7StrPairEPi$$LSDA [0x00538ad8-0x00538afe]
+505 _ZN8tinyxml211XMLDocument8IdentifyEPcPPNS_7XMLNodeE$$LSDA [0x00538b00-0x00538b12]
+506 _ZN8tinyxml210XMLElementD1Ev$$LSDA [0x00538b14-0x00538b3c]
+507 _ZN8tinyxml27XMLNodeD1Ev$$LSDA [0x00538b40-0x00538b5b]
+508 _ZN8tinyxml210XMLElementD0Ev$$LSDA [0x00538b5c-0x00538b84]
+509 _ZN8tinyxml210XMLElementD2Ev$$LSDA [0x00538b88-0x00538bb0]
+510 _ZN8tinyxml210XMLElement15DeleteAttributeEPNS_12XMLAttributeE$$LSDA [0x00538bb4-0x00538bc8]
+511 _ZN8tinyxml210XMLElement15CreateAttributeEv$$LSDA [0x00538bcc-0x00538bde]
+512 _ZN8tinyxml28MemPoolTILi120EED0Ev$$LSDA [0x00538be0-0x00538bf1]
+513 _ZN8tinyxml28MemPoolTILi80EED0Ev$$LSDA [0x00538bf4-0x00538c05]
+514 _ZN8tinyxml28MemPoolTILi112EED0Ev$$LSDA [0x00538c08-0x00538c19]
+515 _ZN8tinyxml28MemPoolTILi104EED0Ev$$LSDA [0x00538c1c-0x00538c2d]
+516 _ZN8tinyxml211XMLDocumentD1Ev$$LSDA [0x00538c30-0x00538c57]
+517 _ZN8tinyxml28MemPoolTILi104EED1Ev$$LSDA [0x00538c58-0x00538c69]
+518 _ZN8tinyxml28MemPoolTILi112EED1Ev$$LSDA [0x00538c6c-0x00538c7d]
+519 _ZN8tinyxml28MemPoolTILi80EED1Ev$$LSDA [0x00538c80-0x00538c91]
+520 _ZN8tinyxml28MemPoolTILi120EED1Ev$$LSDA [0x00538c94-0x00538ca5]
+521 _ZN8tinyxml211XMLDocumentD0Ev$$LSDA [0x00538ca8-0x00538ccf]
+522 _ZN8tinyxml211XMLDocumentD2Ev$$LSDA [0x00538cd0-0x00538cf7]
+523 _ZN8tinyxml211XMLDocument8SaveFileEPKcb$$LSDA [0x00538cf8-0x00538d13]
+524 _ZN8tinyxml210XMLPrinterD1Ev$$LSDA [0x00538d14-0x00538d20]
+525 _ZNK8tinyxml211XMLDocument5PrintEPNS_10XMLPrinterE$$LSDA [0x00538d24-0x00538d3f]
+526 _ZN8tinyxml211XMLDocument8SaveFileEP8_IO_FILEb$$LSDA [0x00538d40-0x00538d5b]
+527 _ZN8tinyxml211XMLDocument10NewElementEPKc$$LSDA [0x00538d5c-0x00538d6d]
+528 _ZN8tinyxml211XMLDocument10NewCommentEPKc$$LSDA [0x00538d70-0x00538d82]
+529 _ZN8tinyxml211XMLDocument7NewTextEPKc$$LSDA [0x00538d84-0x00538d96]
+530 _ZN8tinyxml211XMLDocument14NewDeclarationEPKc$$LSDA [0x00538d98-0x00538daa]
+531 _ZN8tinyxml211XMLDocument10NewUnknownEPKc$$LSDA [0x00538dac-0x00538dbe]
+532 _ZN8tinyxml210XMLPrinterD0Ev$$LSDA [0x00538dc0-0x00538dcc]
+533 bom.3893.0.339 [0x004fa290-0x004fa293]
+534 _Z13print_versionb$$LSDA [0x00538dd0-0x00538de3]
+535 _ZN17_INTERNAL001b8d34St8__ioinitE [0x00755ae0-0x00755ae0]
+536 _ZN10InfoStreamD1Ev$$LSDA [0x00538de4-0x00538dfb]
+537 _ZN10InfoStreamD2Ev$$LSDA [0x00538dfc-0x00538e13]
+538 _ZN10InfoStream14redirectToFileERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE$$LSDA [0x00538e14-0x00538e5e]
+539 _ZN10InfoStream20redirectToSameStreamERS_$$LSDA [0x00538e60-0x00538e6f]
+540 _ZN17_INTERNALd4b34d24St8__ioinitE [0x00755ae4-0x00755ae4]
+541 MASK [0x004fa650-0x004fa657]
+542 ONE [0x004fa660-0x004fa667]
+543 PI32INV [0x004fa670-0x004fa67f]
+544 SHIFTER [0x004fa680-0x004fa68f]
+545 P_1 [0x004fa690-0x004fa69f]
+546 P_2 [0x004fa6a0-0x004fa6af]
+547 SC_4 [0x004fa6b0-0x004fa6bf]
+548 Ctable [0x004fa6c0-0x004fb6bf]
+549 P_3 [0x004fb8c0-0x004fb8cf]
+550 SC_2 [0x004fb8d0-0x004fb8df]
+551 SC_3 [0x004fb8e0-0x004fb8ef]
+552 SC_1 [0x004fb8f0-0x004fb8ff]
+553 ONE [0x004fb908-0x004fb90f]
+554 ALL_ONES [0x004fb910-0x004fb917]
+555 TWO_POW_55 [0x004fb900-0x004fb907]
+556 TWO_POW_M55 [0x004fb918-0x004fb91f]
+557 _ones [0x004fb940-0x004fb94f]
+558 _Q1 [0x004fb990-0x004fb9cf]
+559 _TWO_52H [0x004fb950-0x004fb957]
+560 _Q2 [0x004fb9d0-0x004fbacf]
+561 _TWO_75 [0x004fb958-0x004fb967]
+562 _zeros [0x004fb968-0x004fb977]
+563 _TWO_32H [0x004fb978-0x004fb97f]
+564 _P [0x004fbad0-0x004fbb2f]
+565 _infs [0x004fb980-0x004fb98f]
+566 ABSVALMASK [0x004fd740-0x004fd74f]
+567 ONEMASK [0x004ff1f0-0x004ff1f7]
+568 TMASK [0x004ff1f8-0x004ff1ff]
+569 T_table [0x004fd750-0x004fdf4f]
+570 Tbl_addr [0x004fdf50-0x004fee4f]
+571 cv [0x004ff150-0x004ff16f]
+572 PI_BY_2 [0x004ff170-0x004ff17f]
+573 NEG_PI [0x004ff180-0x004ff18f]
+574 cv2 [0x004ff190-0x004ff1cf]
+575 ONE_BY_2 [0x004ff200-0x004ff207]
+576 HALFMASK [0x004ff1d0-0x004ff1df]
+577 PI [0x004ff1e0-0x004ff1ef]
+578 a2 [0x004ff210-0x004ff21f]
+579 b2 [0x004ff220-0x004ff22f]
+580 P_TBL [0x004ff230-0x004ff26f]
+581 SGN_TBL [0x004ff270-0x004ff2af]
+582 ATAN_TBL [0x004ff2b0-0x004ffcef]
+583 P_TBL2 [0x004ffcf0-0x004ffd2f]
+584 SELECT_B [0x004ffd30-0x004ffd6f]
+585 SGNMASK [0x004ffd70-0x004ffd7f]
+586 pi_table [0x004ffd80-0x004ffd8f]
+587 pi2_table [0x004ffd90-0x004ffd9f]
+588 POW55 [0x004ffdb0-0x004ffdb7]
+589 INVEXPMASK [0x004ffdb8-0x004ffdbf]
+590 EXPMASK [0x004ffdc0-0x004ffdc7]
+591 pi4_table [0x004ffda0-0x004ffdaf]
+592 PI32INV [0x005006f0-0x005006f7]
+593 ONEHALF [0x004ffdd0-0x004ffddf]
+594 SIGN_MASK [0x005006f8-0x005006ff]
+595 P_2 [0x004ffde0-0x004ffdef]
+596 P_1 [0x00500700-0x00500707]
+597 SC_4 [0x004ffdf0-0x004ffdff]
+598 Ctable [0x004ffe00-0x005005ff]
+599 P_3 [0x00500708-0x0050070f]
+600 SC_2 [0x00500600-0x0050060f]
+601 SC_3 [0x00500610-0x0050061f]
+602 SC_1 [0x00500620-0x0050062f]
+603 ONE [0x00500710-0x00500717]
+604 PI_INV_TABLE [0x00500630-0x005006d3]
+605 PI_4 [0x005006e0-0x005006ef]
+606 NEG_ZERO [0x00500718-0x0050071f]
+607 PI32INV [0x00501040-0x00501047]
+608 ONEHALF [0x00500720-0x0050072f]
+609 SIGN_MASK [0x00501048-0x0050104f]
+610 P_2 [0x00500730-0x0050073f]
+611 P_1 [0x00501050-0x00501057]
+612 SC_4 [0x00500740-0x0050074f]
+613 Ctable [0x00500750-0x00500f4f]
+614 P_3 [0x00501058-0x0050105f]
+615 SC_2 [0x00500f50-0x00500f5f]
+616 SC_3 [0x00500f60-0x00500f6f]
+617 SC_1 [0x00500f70-0x00500f7f]
+618 ONE [0x00501060-0x00501067]
+619 PI_INV_TABLE [0x00500f80-0x00501023]
+620 PI_4 [0x00501030-0x0050103f]
+621 NEG_ZERO [0x00501068-0x0050106f]
+622 PI32INV [0x00501980-0x00501987]
+623 P_2 [0x00501070-0x0050107f]
+624 P_1 [0x00501988-0x0050198f]
+625 SC_4 [0x00501080-0x0050108f]
+626 Ctable [0x00501090-0x0050188f]
+627 P_3 [0x00501990-0x00501997]
+628 SC_2 [0x00501890-0x0050189f]
+629 SC_3 [0x005018a0-0x005018af]
+630 SC_1 [0x005018b0-0x005018bf]
+631 ONE [0x00501998-0x0050199f]
+632 PI_INV_TABLE [0x005018c0-0x00501963]
+633 PI_4 [0x00501970-0x0050197f]
+634 SHIFTER [0x005019a0-0x005019a7]
+635 NEG_ZERO [0x005019a8-0x005019af]
+636 cv [0x005019b0-0x00501a0f]
+637 Shifter [0x00501a10-0x00501a1f]
+638 Tbl_addr [0x00501a20-0x00501e1f]
+639 mmask [0x00501e20-0x00501e2f]
+640 bias [0x00501e30-0x00501e3f]
+641 ALLONES [0x00501e40-0x00501e4f]
+642 ebias [0x00501e50-0x00501e5f]
+643 XMAX [0x00501e60-0x00501e67]
+644 XMIN [0x00501e68-0x00501e6f]
+645 INF [0x00501e70-0x00501e77]
+646 ZERO [0x00501e78-0x00501e7f]
+647 ONE_val [0x00501e80-0x00501e87]
+648 cv [0x00501e90-0x00501eef]
+649 Shifter [0x00501ef0-0x00501eff]
+650 mmask [0x00501f00-0x00501f0f]
+651 bias [0x00501f10-0x00501f1f]
+652 Tbl_addr [0x00501f20-0x0050231f]
+653 ALLONES [0x00502320-0x0050232f]
+654 ebias [0x00502330-0x0050233f]
+655 XMAX [0x00502340-0x00502347]
+656 XMIN [0x00502348-0x0050234f]
+657 INF [0x00502350-0x00502357]
+658 ZERO [0x00502358-0x0050235f]
+659 ONE_val [0x00502360-0x00502367]
+660 LOW_FLOAT_MASK [0x00502370-0x00502373]
+661 log2e [0x00502378-0x0050237f]
+662 c2 [0x00502380-0x0050238f]
+663 Th [0x00502390-0x00502b8f]
+664 LOW_FLOAT_MASK [0x00502b90-0x00502b93]
+665 log2e [0x00502b98-0x00502b9f]
+666 c2 [0x00502ba0-0x00502baf]
+667 Th [0x00502bb0-0x005033af]
+668 _PI04_INV [0x005033b0-0x005033b7]
+669 _PI04_29x4 [0x005033c0-0x005033df]
+670 _PI04_21x5 [0x005033e0-0x00503407]
+671 _ones [0x00503410-0x0050341f]
+672 _zero_none [0x00503420-0x0050342f]
+673 _DP [0x00503430-0x005035bf]
+674 _TWO_26H [0x005035c0-0x005035c7]
+675 _PI04_25x2 [0x005035d0-0x005035df]
+676 HIGHSIGMASK [0x005035e0-0x005035ef]
+677 LOG10_E [0x005035f0-0x005035ff]
+678 L_tbl [0x00503600-0x00503e0f]
+679 log2 [0x00503e10-0x00503e1f]
+680 coeff [0x00503e20-0x00503e4f]
+681 HIGHSIGMASK [0x00503e50-0x00503e5f]
+682 LOG10_E [0x00503e60-0x00503e6f]
+683 L_tbl [0x00503e70-0x0050467f]
+684 log2 [0x00504680-0x0050468f]
+685 coeff [0x00504690-0x005046bf]
+686 L_tbl [0x005046c0-0x00504ecf]
+687 log2 [0x00504ed0-0x00504edf]
+688 coeff [0x00504ee0-0x00504f0f]
+689 L_tbl [0x00504f10-0x0050571f]
+690 log2 [0x00505720-0x0050572f]
+691 coeff [0x00505730-0x0050575f]
+692 _Q [0x00505774-0x0050579b]
+693 _LN2 [0x0050579c-0x005057a3]
+694 _P [0x005057a4-0x005057b3]
+695 Lf_table [0x00505fc0-0x005067c7]
+696 _zeros [0x005067d0-0x005067df]
+697 shift_base [0x005067e0-0x005067e7]
+698 exponent_mask [0x005067e8-0x005067ef]
+699 sign_mask [0x005067f0-0x005067f7]
+700 _small_value_64 [0x005067f8-0x00506807]
+701 _large_value_64 [0x00506808-0x00506817]
+702 _smallest_value_64 [0x00506818-0x00506827]
+703 ZERO [0x00506850-0x00506857]
+704 INTEGER_ONE [0x00506830-0x0050683f]
+705 MIN_SUBNORMAL [0x00506858-0x0050685f]
+706 SIGN_MASK [0x00506840-0x0050684f]
+707 SMALL_VALUE [0x00506860-0x00506867]
+708 LARGE_VALUE [0x00506868-0x0050686f]
+709 PI32INV [0x00507190-0x00507197]
+710 ONEHALF [0x00506870-0x0050687f]
+711 SIGN_MASK [0x00507198-0x0050719f]
+712 P_2 [0x00506880-0x0050688f]
+713 SC_4 [0x00506890-0x0050689f]
+714 Ctable [0x005068a0-0x0050709f]
+715 P_3 [0x005071a0-0x005071a7]
+716 SC_2 [0x005070a0-0x005070af]
+717 SC_3 [0x005070b0-0x005070bf]
+718 SC_1 [0x005070c0-0x005070cf]
+719 ALL_ONES [0x005071a8-0x005071af]
+720 TWO_POW_55 [0x005071b0-0x005071b7]
+721 TWO_POW_M55 [0x005071b8-0x005071bf]
+722 PI_INV_TABLE [0x005070d0-0x00507173]
+723 PI_4 [0x00507180-0x0050718f]
+724 P_1 [0x005071c0-0x005071c7]
+725 NEG_ZERO [0x005071c8-0x005071cf]
+726 PI32INV [0x00507af0-0x00507af7]
+727 SHIFTER [0x00507af8-0x00507aff]
+728 ONEHALF [0x005071d0-0x005071df]
+729 SIGN_MASK [0x00507b00-0x00507b07]
+730 P_2 [0x005071e0-0x005071ef]
+731 SC_4 [0x005071f0-0x005071ff]
+732 Ctable [0x00507200-0x005079ff]
+733 P_3 [0x00507b08-0x00507b0f]
+734 SC_2 [0x00507a00-0x00507a0f]
+735 SC_3 [0x00507a10-0x00507a1f]
+736 SC_1 [0x00507a20-0x00507a2f]
+737 ALL_ONES [0x00507b10-0x00507b17]
+738 TWO_POW_55 [0x00507b18-0x00507b1f]
+739 TWO_POW_M55 [0x00507b20-0x00507b27]
+740 PI_INV_TABLE [0x00507a30-0x00507ad3]
+741 PI_4 [0x00507ae0-0x00507aef]
+742 P_1 [0x00507b28-0x00507b2f]
+743 NEG_ZERO [0x00507b30-0x00507b37]
+744 PI32INV [0x00508450-0x00508457]
+745 P_2 [0x00507b40-0x00507b4f]
+746 SC_4 [0x00507b50-0x00507b5f]
+747 Ctable [0x00507b60-0x0050835f]
+748 P_3 [0x00508458-0x0050845f]
+749 SC_2 [0x00508360-0x0050836f]
+750 SC_3 [0x00508370-0x0050837f]
+751 SC_1 [0x00508380-0x0050838f]
+752 ALL_ONES [0x00508460-0x00508467]
+753 TWO_POW_55 [0x00508468-0x0050846f]
+754 TWO_POW_M55 [0x00508470-0x00508477]
+755 PI_INV_TABLE [0x00508390-0x00508433]
+756 PI_4 [0x00508440-0x0050844f]
+757 SHIFTER [0x00508478-0x0050847f]
+758 P_1 [0x00508480-0x00508487]
+759 NEG_ZERO [0x00508488-0x0050848f]
+760 zeros [0x00508490-0x00508497]
+761 zero [0x00755ae8-0x00755aef]
+762 zero [0x00508690-0x00508697]
+763 c7 [0x00508698-0x0050869f]
+764 c5 [0x005086a0-0x005086a7]
+765 c3 [0x005086a8-0x005086af]
+766 c6 [0x005086b0-0x005086b7]
+767 c4 [0x005086b8-0x005086bf]
+768 c2 [0x005086c0-0x005086c7]
+769 c1_lo [0x005086c8-0x005086cf]
+770 bias_d [0x005086d0-0x005086d7]
+771 __Tbl_addr [0x00508750-0x00508b4f]
+772 ZERO [0x00509dc8-0x00509dcb]
+773 SCALE32 [0x00509dcc-0x00509dcf]
+774 c3 [0x00508bb0-0x00508bb7]
+775 __L_tbl [0x00508bb8-0x00509bb7]
+776 c2 [0x00509db8-0x00509dbf]
+777 NLOG2 [0x00509dc0-0x00509dc7]
+778 iNegBiggest [0x0050d840-0x0050d84f]
+779 flZero [0x0050d850-0x0050d863]
+780 flTwo [0x0050d870-0x0050d87f]
+781 dbC [0x0050d880-0x0050d88f]
+782 dbTwo [0x0050d890-0x0050d89f]
+783 dbNegOne [0x0050d8a0-0x0050d8af]
+784 __tbl2 [0x0050d8c0-0x0050d93f]
+785 __tbl [0x0050d940-0x0050da3f]
+786 __tbl2 [0x0050da40-0x0050da7f]
+787 __tbl [0x0050da80-0x0050daff]
+788 iLow31Mask [0x0050db00-0x0050db0f]
+789 flZero [0x0050db10-0x0050db23]
+790 flRS31 [0x0050db30-0x0050db3f]
+791 dbLow32Mask [0x0050db40-0x0050db4f]
+792 dbRS [0x0050db50-0x0050db5f]
+793 flTwo [0x0050db60-0x0050db6f]
+794 dbC [0x0050db70-0x0050db7f]
+795 dbTwo [0x0050db80-0x0050db8f]
+796 dbB [0x0050db90-0x0050db9f]
+797 __tbl2 [0x0050dba0-0x0050dc1f]
+798 __tbl [0x0050dc20-0x0050dd1f]
+799 __tbl2 [0x0050dd20-0x0050dd5f]
+800 __tbl [0x0050dd60-0x0050dddf]
+801 _imldLnHATab [0x0050dde0-0x0050e46f]
+802 prev_seed.103.0.2 [0x00755af4-0x00755af9]
+803 g_last_token [0x00755b10-0x00755b17]
+804 message_catalog [0x00755f20-0x00755f27]
+805 get_msg_buf [0x00755b20-0x00755d1f]
+806 print_buf [0x00755d20-0x00755f1f]
+807 __libirc_cache_tbl [0x00755f40-0x00755f7f]
+808 __libirc_tmp [0x00755f80-0x00755f83]
+809 __FRAME_END__ [0x00534830-0x0053482f]
+810 __GNU_EH_FRAME_HDR [0x00510320-0x0051031f]
+811 __intel_cpu_feature_indicator_x [0x00755b08-0x00755b0f]
+812 __intel_cpu_feature_indicator [0x00755b00-0x00755b07]
+813 __libirc_rep_move_threshold [0x00755f90-0x00755f93]
+814 _ZN11qmcplusplus12TimerManagerE [0x00755a40-0x00755ad7]
+815 optind@@GLIBC_2.2.5 [0x007553e0-0x007553e3]
+816 _ZN11qmcplusplus18DistanceTimerNamesE [0x00755980-0x00755997]
+817 MiniQMCTimerNames [0x00755928-0x0075593f]
+818 _ZN11qmcplusplus24timer_max_level_exceededE [0x00755ad9-0x00755ad9]
+819 __libirc_byte_factor_64 [0x0050e8b0-0x0050e8bf]
+820 __libirc_byte_factor [0x0050e8f0-0x0050e8ff]
+821 __svml_feature_flag [0x00755af0-0x00755af3]
+822 __libirc_word_factor [0x0050e900-0x0050e90f]
+823 main_kmpc_tree_reduct_lock_0 [0x00755fa0-0x00755fbf]
+824 __libm_double_rcp_table_256 [0x004fcf40-0x004fd73f]
+825 __libirc_factors_64 [0x0050e700-0x0050e73f]
+826 __bss_start [0x007553e0-0x007553df]
+827 __libirc_vector5b [0x0050e960-0x0050e96f]
+828 .gomp_critical_user_ [0x00755480-0x0075549f]
+829 __libirc_qword_factor_64 [0x0050e8e0-0x0050e8ef]
+830 infoLog [0x007559d0-0x007559ef]
+831 infoDebug [0x00755a10-0x00755a2f]
+832 __own_z0_dlogla_data [0x00509e00-0x0050a23f]
+833 __libirc_dword_factor_64 [0x0050e8d0-0x0050e8df]
+834 _end [0x00755fe8-0x00755fe7]
+835 __libirc_vector7b [0x0050e980-0x0050e98f]
+836 optarg@@GLIBC_2.2.5 [0x007554c0-0x007554c7]
+837 _ZSt4cout@@GLIBCXX_3.4 [0x007554e0-0x007555ef]
+838 __libirc_word_factor_64 [0x0050e8c0-0x0050e8cf]
+839 __libirc_factors [0x0050e740-0x0050e77f]
+840 __libirc_set_loop_threshold [0x00755f94-0x00755f97]
+841 __libirc_excess_vecs [0x0050e780-0x0050e87f]
+842 stdout@@GLIBC_2.2.5 [0x00755600-0x00755607]
+843 __libirc_dword_factor [0x0050e910-0x0050e91f]
+844 __libirc_vector60 [0x0050e970-0x0050e97f]
+845 __libirc_copy_loop_threshold [0x00755f8c-0x00755f8f]
+846 infoSummary [0x007559b0-0x007559cf]
+847 __libm_rcp_table_256 [0x004fcb40-0x004fcf3f]
+848 __drand48_seed [0x00755fe0-0x00755fe7]
+849 __libirc_vector5a41 [0x0050e920-0x0050e92f]
+850 _ZN11qmcplusplus22WaveFunctionTimerNamesE [0x00755950-0x00755967]
+851 __libirc_mem_ops_method [0x00755f84-0x00755f87]
+852 __svml_dlog_data [0x0050a240-0x0050d77f]
+853 __libirc_largest_cachelinesize [0x00755f88-0x00755f8b]
+854 infoError [0x007559f0-0x00755a0f]
+855 __libirc_vector20 [0x0050e940-0x0050e94f]
+856 __libm_logf_table_256 [0x005057c0-0x00505fbf]
+857 _ZSt4cerr@@GLIBCXX_3.4 [0x00755780-0x0075588f]
+858 __libirc_vector7a61 [0x0050e930-0x0050e93f]
+859 __drand48_const_index [0x00755afc-0x00755aff]
+860 __libirc_vector40 [0x0050e950-0x0050e95f]
+861 __libirc_zero_vec [0x0050e8a0-0x0050e8af]
+862 __libirc_dig_range_vec [0x0050e890-0x0050e89f]
+863 __libirc_spaces_vec [0x0050e880-0x0050e88f]
+864 outputManager [0x00755a30-0x00755a33]
+865 __libm_logl_table_256 [0x004fbb30-0x004fcb2f]
+866 _IO_stdin_used [0x004f6100-0x004f6103]
+
+EVENT_TYPE
+9    40000018    Tracing mode:
+VALUES
+1      Detailed
+2      CPU Bursts
+
+
