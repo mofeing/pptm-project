@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=trace.omp.48
+#SBATCH --job-name=trace.base.omp.48
 #SBATCH --workdir=.
 #SBATCH --output=job.out
 #SBATCH --error=job.err
