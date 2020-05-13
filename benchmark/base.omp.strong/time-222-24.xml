@@ -5,162 +5,162 @@
         <max_timers_exceeded>no</max_timers_exceeded>
         <timer>
             <name>Setup</name>
-            <time_incl>2.044715</time_incl>
-            <time_excl>2.044715</time_excl>
+            <time_incl>1.511311</time_incl>
+            <time_excl>1.511311</time_excl>
             <calls>1</calls>
         </timer>
         <timer>
             <name>Total</name>
-            <time_incl>72.664386</time_incl>
-            <time_excl>0.000940</time_excl>
+            <time_incl>89.024590</time_incl>
+            <time_excl>0.566979</time_excl>
             <calls>1</calls>
             <includes>
                 <timer>
                     <name>Diffusion</name>
-                    <time_incl>31.973956</time_incl>
-                    <time_excl>0.085194</time_excl>
+                    <time_incl>34.897724</time_incl>
+                    <time_excl>0.098226</time_excl>
                     <calls>20</calls>
                     <includes>
                         <timer>
                             <name>Accept move</name>
-                            <time_incl>0.120984</time_incl>
-                            <time_excl>0.120984</time_excl>
+                            <time_incl>0.131560</time_incl>
+                            <time_excl>0.131560</time_excl>
                             <calls>30444</calls>
                         </timer>
                         <timer>
                             <name>Complete Updates</name>
-                            <time_incl>0.221526</time_incl>
-                            <time_excl>0.000064</time_excl>
+                            <time_incl>0.264983</time_incl>
+                            <time_excl>0.000108</time_excl>
                             <calls>20</calls>
                             <includes>
                                 <timer>
                                     <name>Determinant::update</name>
-                                    <time_incl>0.221462</time_incl>
-                                    <time_excl>0.221462</time_excl>
+                                    <time_incl>0.264874</time_incl>
+                                    <time_excl>0.264874</time_excl>
                                     <calls>40</calls>
                                 </timer>
                             </includes>
                         </timer>
                         <timer>
                             <name>Current Gradient</name>
-                            <time_incl>1.502969</time_incl>
-                            <time_excl>0.039267</time_excl>
+                            <time_incl>1.657085</time_incl>
+                            <time_excl>0.043210</time_excl>
                             <calls>61440</calls>
                             <includes>
                                 <timer>
                                     <name>Determinant::ratio</name>
-                                    <time_incl>1.440679</time_incl>
-                                    <time_excl>1.440679</time_excl>
+                                    <time_incl>1.590915</time_incl>
+                                    <time_excl>1.590915</time_excl>
                                     <calls>61440</calls>
                                 </timer>
                                 <timer>
                                     <name>OneBodyJastrow</name>
-                                    <time_incl>0.014376</time_incl>
-                                    <time_excl>0.014376</time_excl>
+                                    <time_incl>0.013906</time_incl>
+                                    <time_excl>0.013906</time_excl>
                                     <calls>61440</calls>
                                 </timer>
                                 <timer>
                                     <name>TwoBodyJastrow</name>
-                                    <time_incl>0.008647</time_incl>
-                                    <time_excl>0.008647</time_excl>
+                                    <time_incl>0.009054</time_incl>
+                                    <time_excl>0.009054</time_excl>
                                     <calls>61440</calls>
                                 </timer>
                             </includes>
                         </timer>
                         <timer>
                             <name>Kinetic Energy</name>
-                            <time_incl>0.306900</time_incl>
-                            <time_excl>0.306130</time_excl>
+                            <time_incl>0.394416</time_incl>
+                            <time_excl>0.393592</time_excl>
                             <calls>20</calls>
                             <includes>
                                 <timer>
                                     <name>OneBodyJastrow</name>
-                                    <time_incl>0.000468</time_incl>
-                                    <time_excl>0.000468</time_excl>
+                                    <time_incl>0.000498</time_incl>
+                                    <time_excl>0.000498</time_excl>
                                     <calls>20</calls>
                                 </timer>
                                 <timer>
                                     <name>TwoBodyJastrow</name>
-                                    <time_incl>0.000301</time_incl>
-                                    <time_excl>0.000301</time_excl>
+                                    <time_incl>0.000326</time_incl>
+                                    <time_excl>0.000326</time_excl>
                                     <calls>20</calls>
                                 </timer>
                             </includes>
                         </timer>
                         <timer>
                             <name>Make move</name>
-                            <time_incl>4.093658</time_incl>
-                            <time_excl>4.093658</time_excl>
+                            <time_incl>4.114546</time_incl>
+                            <time_excl>4.114546</time_excl>
                             <calls>61440</calls>
                         </timer>
                         <timer>
                             <name>New Gradient</name>
-                            <time_incl>13.052437</time_incl>
-                            <time_excl>0.065434</time_excl>
+                            <time_incl>14.122139</time_incl>
+                            <time_excl>0.069755</time_excl>
                             <calls>61440</calls>
                             <includes>
                                 <timer>
                                     <name>Determinant::ratio</name>
-                                    <time_incl>0.141719</time_incl>
-                                    <time_excl>0.141719</time_excl>
+                                    <time_incl>0.142924</time_incl>
+                                    <time_excl>0.142924</time_excl>
                                     <calls>61440</calls>
                                 </timer>
                                 <timer>
                                     <name>Determinant::spovgl</name>
-                                    <time_incl>11.900866</time_incl>
-                                    <time_excl>0.502536</time_excl>
+                                    <time_incl>12.932200</time_incl>
+                                    <time_excl>0.513541</time_excl>
                                     <calls>61440</calls>
                                     <includes>
                                         <timer>
                                             <name>Single-Particle Orbitals</name>
-                                            <time_incl>11.398330</time_incl>
-                                            <time_excl>11.398330</time_excl>
+                                            <time_incl>12.418660</time_incl>
+                                            <time_excl>12.418660</time_excl>
                                             <calls>61440</calls>
                                         </timer>
                                     </includes>
                                 </timer>
                                 <timer>
                                     <name>OneBodyJastrow</name>
-                                    <time_incl>0.104232</time_incl>
-                                    <time_excl>0.104232</time_excl>
+                                    <time_incl>0.108061</time_incl>
+                                    <time_excl>0.108061</time_excl>
                                     <calls>61440</calls>
                                 </timer>
                                 <timer>
                                     <name>TwoBodyJastrow</name>
-                                    <time_incl>0.840186</time_incl>
-                                    <time_excl>0.840186</time_excl>
+                                    <time_incl>0.869198</time_incl>
+                                    <time_excl>0.869198</time_excl>
                                     <calls>61440</calls>
                                 </timer>
                             </includes>
                         </timer>
                         <timer>
                             <name>Set active</name>
-                            <time_incl>4.144197</time_incl>
-                            <time_excl>4.144197</time_excl>
+                            <time_incl>4.181933</time_incl>
+                            <time_excl>4.181933</time_excl>
                             <calls>61440</calls>
                         </timer>
                         <timer>
                             <name>Update</name>
-                            <time_incl>8.446091</time_incl>
-                            <time_excl>0.025445</time_excl>
+                            <time_incl>9.932836</time_incl>
+                            <time_excl>0.035669</time_excl>
                             <calls>30444</calls>
                             <includes>
                                 <timer>
                                     <name>Determinant::update</name>
-                                    <time_incl>7.538319</time_incl>
-                                    <time_excl>7.538319</time_excl>
+                                    <time_incl>8.905614</time_incl>
+                                    <time_excl>8.905614</time_excl>
                                     <calls>30444</calls>
                                 </timer>
                                 <timer>
                                     <name>OneBodyJastrow</name>
-                                    <time_incl>0.005936</time_incl>
-                                    <time_excl>0.005936</time_excl>
+                                    <time_incl>0.005985</time_incl>
+                                    <time_excl>0.005985</time_excl>
                                     <calls>30444</calls>
                                 </timer>
                                 <timer>
                                     <name>TwoBodyJastrow</name>
-                                    <time_incl>0.876391</time_incl>
-                                    <time_excl>0.876391</time_excl>
+                                    <time_incl>0.985568</time_incl>
+                                    <time_excl>0.985568</time_excl>
                                     <calls>30444</calls>
                                 </timer>
                             </includes>
@@ -169,92 +169,92 @@
                 </timer>
                 <timer>
                     <name>Initialization</name>
-                    <time_incl>5.339180</time_incl>
-                    <time_excl>1.313853</time_excl>
+                    <time_incl>7.232611</time_incl>
+                    <time_excl>2.181215</time_excl>
                     <calls>1</calls>
                     <includes>
                         <timer>
                             <name>Determinant::inverse</name>
-                            <time_incl>1.480724</time_incl>
-                            <time_excl>1.480724</time_excl>
+                            <time_incl>2.045382</time_incl>
+                            <time_excl>2.045382</time_excl>
                             <calls>8</calls>
                         </timer>
                         <timer>
                             <name>Determinant::spovgl</name>
-                            <time_incl>2.376704</time_incl>
-                            <time_excl>0.112922</time_excl>
+                            <time_incl>2.816988</time_incl>
+                            <time_excl>0.122146</time_excl>
                             <calls>8</calls>
                             <includes>
                                 <timer>
                                     <name>Single-Particle Orbitals</name>
-                                    <time_incl>2.263782</time_incl>
-                                    <time_excl>2.263782</time_excl>
+                                    <time_incl>2.694843</time_incl>
+                                    <time_excl>2.694843</time_excl>
                                     <calls>12288</calls>
                                 </timer>
                             </includes>
                         </timer>
                         <timer>
                             <name>OneBodyJastrow</name>
-                            <time_incl>0.015291</time_incl>
-                            <time_excl>0.015291</time_excl>
+                            <time_incl>0.015789</time_incl>
+                            <time_excl>0.015789</time_excl>
                             <calls>4</calls>
                         </timer>
                         <timer>
                             <name>TwoBodyJastrow</name>
-                            <time_incl>0.152608</time_incl>
-                            <time_excl>0.152608</time_excl>
+                            <time_incl>0.173236</time_incl>
+                            <time_excl>0.173236</time_excl>
                             <calls>4</calls>
                         </timer>
                     </includes>
                 </timer>
                 <timer>
                     <name>Pseudopotential</name>
-                    <time_incl>35.350310</time_incl>
-                    <time_excl>0.151919</time_excl>
+                    <time_incl>46.327276</time_incl>
+                    <time_excl>0.223363</time_excl>
                     <calls>20</calls>
                     <includes>
                         <timer>
                             <name>Make move</name>
-                            <time_incl>16.034546</time_incl>
-                            <time_excl>16.034546</time_excl>
+                            <time_incl>16.229906</time_incl>
+                            <time_excl>16.229906</time_excl>
                             <calls>257232</calls>
                         </timer>
                         <timer>
                             <name>Value</name>
-                            <time_incl>19.163844</time_incl>
-                            <time_excl>0.223140</time_excl>
+                            <time_incl>29.874006</time_incl>
+                            <time_excl>0.271151</time_excl>
                             <calls>257232</calls>
                             <includes>
                                 <timer>
                                     <name>Determinant::ratio</name>
-                                    <time_incl>0.167192</time_incl>
-                                    <time_excl>0.167192</time_excl>
+                                    <time_incl>0.175749</time_incl>
+                                    <time_excl>0.175749</time_excl>
                                     <calls>257232</calls>
                                 </timer>
                                 <timer>
                                     <name>Determinant::spoval</name>
-                                    <time_incl>17.605594</time_incl>
-                                    <time_excl>0.234614</time_excl>
+                                    <time_incl>28.248152</time_incl>
+                                    <time_excl>0.269870</time_excl>
                                     <calls>257232</calls>
                                     <includes>
                                         <timer>
                                             <name>Single-Particle Orbitals</name>
-                                            <time_incl>17.370980</time_incl>
-                                            <time_excl>17.370980</time_excl>
+                                            <time_incl>27.978281</time_incl>
+                                            <time_excl>27.978281</time_excl>
                                             <calls>257232</calls>
                                         </timer>
                                     </includes>
                                 </timer>
                                 <timer>
                                     <name>OneBodyJastrow</name>
-                                    <time_incl>0.143615</time_incl>
-                                    <time_excl>0.143615</time_excl>
+                                    <time_incl>0.148812</time_incl>
+                                    <time_excl>0.148812</time_excl>
                                     <calls>257232</calls>
                                 </timer>
                                 <timer>
                                     <name>TwoBodyJastrow</name>
-                                    <time_incl>1.024302</time_incl>
-                                    <time_excl>1.024302</time_excl>
+                                    <time_incl>1.030143</time_incl>
+                                    <time_excl>1.030143</time_excl>
                                     <calls>257232</calls>
                                 </timer>
                             </includes>
