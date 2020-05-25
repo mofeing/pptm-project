@@ -5,7 +5,7 @@
 # - target: Name of the benchmark, packaged as a folder inside "benchmark"
 .PHONY: benchmark
 benchmark: benchmark/$(target)/run.sh
-	sbatch --workdir=benchmark/$(target)/run.sh
+	sbatch --workdir=benchmark/$(target) $?
 
 # COMMAND xml2csv
 # DESCRIPTION Extract data time in hierarchical format of a benchmark
