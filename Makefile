@@ -7,6 +7,19 @@
 benchmark: benchmark/$(target)/run.sh
 	sbatch --workdir=benchmark/$(target) $?
 
+# COMMAND configure
+# DESCRIPTION Configure build system (CMake)
+.PHONY: configure
+configure:
+	@rm -rf miniqmc/build/omp
+	cmake -S miniqmc -B miniqmc/build/omp -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_CXX_COMPILER=icpc
+
+# COMMAND build
+# DESCRIPTION Build "miniqmc" binaries
+.PHONY: build
+build: miniqmc/build/$(target)/Makefile
+	make -j -C miniqmc/build/$(target) miniqmc
+
 # COMMAND xml2csv
 # DESCRIPTION Extract data time in hierarchical format of a benchmark
 # ARGS
@@ -42,20 +55,6 @@ trace: trace/$(target)/trace.sh
 prv: trace/$(target)/TRACE.mpits
 	cd trace/$(target)
 	mpi2prv -f TRACE.mpits
-
-# COMMAND build
-# DESCRIPTION Build "miniqmc" binaries
-.PHONY: build
-build: miniqmc
-	cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -S miniqmc -B miniqmc/build/OMP
-	@pushd miniqmc/build/OMP
-	make -j
-	@popd
-
-	cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -S miniqmc -B miniqmc/build/OMP+MPI -DQMC_MPI=1
-	@pushd miniqmc/build/OMP+MPI
-	make -j
-	@popd
 
 # COMMAND clean
 # DESCRIPTION Clean all
