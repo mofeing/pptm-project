@@ -1,3 +1,10 @@
+SHELL := /bin/bash
+
+# COMMAND setup
+# DESCRIPTION
+.PHONY: setup
+setup: scripts/load-modules.sh
+	@source $?
 
 # COMMAND benchmark
 # DESCRIPTION Submit a benchmark script to Slurm
