@@ -26,9 +26,6 @@
       <set enabled="yes" domain="all" changeat-time="5ms">
         PAPI_TOT_INS,PAPI_TOT_CYC,PAPI_L1_DCM,PAPI_L2_DCM,PAPI_L3_TCM,PAPI_BR_INS,PAPI_BR_MSP,RESOURCE_STALLS
       </set>
-      <set enabled="yes" domain="all" changeat-time="5ms">
-        PAPI_TOT_INS,PAPI_TOT_CYC,PAPI_L1_DCM,PAPI_L2_DCM,PAPI_CA_SNP,PAPI_CA_SHR,PAPI_CA_CLN,PAPI_CA_ITV
-      </set>
     </cpu>
     <network enabled="no" />
     <resource-usage enabled="no" />
