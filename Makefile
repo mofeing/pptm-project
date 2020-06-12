@@ -1,4 +1,7 @@
 SHELL := /bin/bash
+ifndef VERBOSE
+MAKEFLAGS += --no-print-directory
+endif
 
 # COMMAND setup
 # DESCRIPTION
